@@ -77,7 +77,7 @@ As above, for inside/subterranean areas.
 
 Pillar tile, <character> as above.
 
-[PILLAR_TILE:199]
+[PILLAR_TILE:'O']
 
 Track tiles.  I at the end inverts the material colors.
 
