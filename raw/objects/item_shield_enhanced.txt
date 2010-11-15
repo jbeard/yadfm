@@ -1,0 +1,11 @@
+item_shield_enhanced
+
+[OBJECT:ITEM]
+
+[ITEM_SHIELD:ITEM_SHIELD_TOWER]
+[NAME:tower shield:tower shields]
+[ARMORLEVEL:3]
+[BLOCKCHANCE:40]
+[UPSTEP:2]
+[MATERIAL_SIZE:6]
+
