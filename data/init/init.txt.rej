@@ -1,0 +1,39 @@
+***************
+*** 29,31 ****
+  [WINDOWEDY:25]
+! [FONT:curses_640x300.png]
+  
+--- 29,31 ----
+  [WINDOWEDY:25]
+! [FONT:mayday.png]
+  
+***************
+*** 38,40 ****
+  [FULLSCREENY:0]
+! [FULLFONT:curses_800x600.png]
+  
+--- 38,40 ----
+  [FULLSCREENY:0]
+! [FULLFONT:mayday.png]
+  
+***************
+*** 47,55 ****
+  
+! [GRAPHICS:NO]
+  [GRAPHICS_WINDOWEDX:0]
+  [GRAPHICS_WINDOWEDY:0]
+! [GRAPHICS_FONT:curses_square_16x16.png]
+  [GRAPHICS_FULLSCREENX:0]
+  [GRAPHICS_FULLSCREENY:0]
+! [GRAPHICS_FULLFONT:curses_square_16x16.png]
+  [GRAPHICS_BLACK_SPACE:YES]
+--- 47,55 ----
+  
+! [GRAPHICS:YES]
+  [GRAPHICS_WINDOWEDX:0]
+  [GRAPHICS_WINDOWEDY:0]
+! [GRAPHICS_FONT:mayday.png]
+  [GRAPHICS_FULLSCREENX:0]
+  [GRAPHICS_FULLSCREENY:0]
+! [GRAPHICS_FULLFONT:mayday.png]
+  [GRAPHICS_BLACK_SPACE:YES]
