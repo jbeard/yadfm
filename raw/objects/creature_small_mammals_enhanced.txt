@@ -6,7 +6,7 @@ creature_small_mammals_enhanced
 	[DESCRIPTION:A tiny rodent that breeds quickly.]
 	[NAME:field mouse:field mice:field mouse]
 	[CASTE_NAME:field mouse:field mice:field mouse]
-	[CREATURE_TILE:249][COLOR:0:0:1]
+	[CREATURE_TILE:249][COLOR:0:5:1]
 	[PETVALUE:1]
 	[VERMIN_EATER][PENETRATEPOWER:2][FREQUENCY:100][VERMIN_HATEABLE][VERMIN_GROUNDER]
 	[GNAWER:gnawed]
