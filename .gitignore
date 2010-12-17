@@ -1,2 +1,6 @@
 gamelog.txt
 errorlog.txt
+data/save/*
+data/*.rar
+region*-world*.txt
+world_map*.bmp
