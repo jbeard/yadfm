@@ -4,3 +4,4 @@ data/save/*
 data/*.rar
 region*-world*.txt
 world_map*.bmp
+territory_map*.bmp
