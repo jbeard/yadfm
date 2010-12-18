@@ -2,9 +2,11 @@ item_gloves
 
 [OBJECT:ITEM]
 
+-- This file has been modified for Civilization Forge
+
 [ITEM_GLOVES:ITEM_GLOVES_GAUNTLETS]
-[NAME:gauntlet:gauntlets]
-[ARMORLEVEL:2]
+[NAME:plate gauntlet:plate gauntlets]
+[ARMORLEVEL:3]
 [UPSTEP:1]
 [SHAPED]
 [LAYER:ARMOR]
