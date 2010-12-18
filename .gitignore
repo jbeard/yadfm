@@ -5,3 +5,5 @@ data/*.rar
 region*-world*.txt
 world_map*.bmp
 territory_map*.bmp
+region*-legends.xml
+world_graphic*.bmp
