@@ -57,7 +57,6 @@ item_weapon_enhanced
 
 [ITEM_WEAPON:ITEM_WEAPON_SLING]
 [NAME:sling:slings]
-[LEATHER]
 [SIZE:100]
 [SKILL:WHIP]
 [RANGED:BOW:SLING]
