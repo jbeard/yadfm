@@ -4,3 +4,6 @@ item_toy_enhanced
 
 [ITEM_TOY:ITEM_TOY_CHEWTOY]
 [NAME:chew toy:chew toys]
+
+[ITEM_TOY:ITEM_TOY_DOLL]
+[NAME:doll:dolls]
