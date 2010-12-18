@@ -1,0 +1,6 @@
+item_toy_enhanced
+
+[OBJECT:ITEM]
+
+[ITEM_TOY:ITEM_TOY_CHEWTOY]
+[NAME:chew toy:chew toys]
