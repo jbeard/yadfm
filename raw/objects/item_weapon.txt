@@ -4,6 +4,7 @@ item_weapon
 
 [ITEM_WEAPON:ITEM_WEAPON_WHIP]
 [NAME:whip:whips]
+[LEATHER]
 [SIZE:100]
 [SKILL:WHIP]
 [TWO_HANDED:27500]
