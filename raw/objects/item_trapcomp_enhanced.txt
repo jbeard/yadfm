@@ -1,4 +1,4 @@
-item_trapcomp_kobold
+item_trapcomp_enhanced
 
 [OBJECT:ITEM]
 
