@@ -111,7 +111,7 @@ creature_domestic_enhanced
 	[CHILD:ANIMALS:1:4:AS_IS:DEFAULT]
 	[STANDARD:ANIMALS:2:4:AS_IS:ZOMBIE]
 	[STANDARD:ANIMALS:3:4:AS_IS:SKELETON]
-	
+
 [CREATURE_GRAPHICS:SHEEP]
 	[DEFAULT:ANIMALS:0:4:AS_IS:DEFAULT]
 	[CHILD:ANIMALS:1:4:AS_IS:DEFAULT]
@@ -169,6 +169,13 @@ creature_fanciful
 	[DEFAULT:BEASTS:0:3:AS_IS:DEFAULT]
 
 ------------------------------------------------------------
+creature_giant_frost_cf
+------------------------------------------------------------
+[CREATURE_GRAPHICS:GIANT_FROST]
+	[DEFAULT:MANS:0:5:AS_IS:DEFAULT]
+	[CHILD:MANS:1:5:AS_IS:DEFAULT]
+
+------------------------------------------------------------
 creature_insects
 ------------------------------------------------------------
 CREATURE_GRAPHICS:FLY
@@ -180,6 +187,12 @@ CREATURE_GRAPHICS:FIREFLY
 CREATURE_GRAPHICS:DRAGONFLY
 
 ------------------------------------------------------------
+creature_insects_enhanced
+------------------------------------------------------------
+[CREATURE_GRAPHICS:SPIDER_GIANT]
+     [DEFAULT:NEWBEASTS:4:1:AS_IS:DEFAULT]
+
+------------------------------------------------------------
 creature_large_mountain
 ------------------------------------------------------------
 [CREATURE_GRAPHICS:GOAT_MOUNTAIN]
@@ -187,7 +200,7 @@ creature_large_mountain
 	[CHILD:ANIMALS:1:4:AS_IS:DEFAULT]
 	[STANDARD:ANIMALS:2:4:AS_IS:ZOMBIE]
 	[STANDARD:ANIMALS:3:4:AS_IS:SKELETON]
-	
+
 [CREATURE_GRAPHICS:MARMOT_HOARY]
 	[DEFAULT:ANIMALS:0:19:AS_IS:DEFAULT]
 	[CHILD:ANIMALS:1:19:AS_IS:DEFAULT]
@@ -653,6 +666,11 @@ creature_large_tundra
 	[CHILD:ANIMALS:9:18:AS_IS:DEFAULT]
 	[STANDARD:ANIMALS:10:18:AS_IS:ZOMBIE]
 	[STANDARD:ANIMALS:3:18:AS_IS:SKELETON]
+
+------------------------------------------------------------
+creature_large_tundra_cf
+------------------------------------------------------------
+
 
 ------------------------------------------------------------
 creature_next_underground
