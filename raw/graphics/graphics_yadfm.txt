@@ -42,6 +42,11 @@ graphics_yadfm
 	[TILE_DIM:16:16]
 	[PAGE_DIM:4:5]
 
+[TILE_PAGE:WILDLIFE]
+	[FILE:sphr/wildlife.bmp]
+	[TILE_DIM:16:16]
+	[PAGE_DIM:4:16]
+
 ------------------------------------------------------------
 creature_amphibians
 ------------------------------------------------------------
@@ -212,12 +217,6 @@ creature_large_mountain
 	[CHILD:ANIMALS:9:25:AS_IS:DEFAULT]
 	[STANDARD:ANIMALS:10:25:AS_IS:ZOMBIE]
 	[STANDARD:ANIMALS:11:25:AS_IS:SKELETON]
-
-[CREATURE_GRAPHICS:GNOME_MOUNTAIN]
-        [DEFAULT:MOUNTAIN:0:3:AS_IS:DEFAULT]
-        [CHILD:MOUNTAIN:1:3:AS_IS:DEFAULT]
-        [ZOMBIE:MOUNTAIN:2:3:AS_IS:ZOMBIE]
-        [SKELETON:MOUNTAIN:3:3:AS_IS:SKELETON]
 
 [CREATURE_GRAPHICS:GNOME_DARK]
         [DEFAULT:MOUNTAIN:0:4:AS_IS:DEFAULT]
@@ -493,8 +492,8 @@ creature_large_temperate_enhanced
 creature_large_tropical
 ------------------------------------------------------------
 [CREATURE_GRAPHICS:ELEPHANT]
-	[DEFAULT:ANIMALS:0:7:AS_IS:DEFAULT]
-	[CHILD:ANIMALS:1:7:AS_IS:DEFAULT]
+	[DEFAULT:WILDLIFE:0:0:AS_IS:DEFAULT]
+	[CHILD:WILDLIFE:1:0:AS_IS:DEFAULT]
 	[STANDARD:ANIMALS:2:7:AS_IS:ZOMBIE]
 	[STANDARD:ANIMALS:3:7:AS_IS:SKELETON]
 
@@ -670,7 +669,17 @@ creature_large_tundra
 ------------------------------------------------------------
 creature_large_tundra_cf
 ------------------------------------------------------------
+[CREATURE_GRAPHICS:FOX_ARCTIC]
+	[DEFAULT:ANIMALS:0:6:AS_IS:DEFAULT]
+	[CHILD:ANIMALS:1:6:AS_IS:DEFAULT]
+	[STANDARD:ANIMALS:2:6:AS_IS:ZOMBIE]
+	[STANDARD:ANIMALS:3:6:AS_IS:SKELETON]
 
+[CREATURE_GRAPHICS:MAMMOTH_WOLLY]
+	[DEFAULT:ANIMALS:0:7:AS_IS:DEFAULT]
+	[CHILD:ANIMALS:1:7:AS_IS:DEFAULT]
+	[STANDARD:ANIMALS:2:7:AS_IS:ZOMBIE]
+	[STANDARD:ANIMALS:3:7:AS_IS:SKELETON]
 
 ------------------------------------------------------------
 creature_next_underground
@@ -1094,6 +1103,15 @@ CREATURE_GRAPHICS:KOBOLD (see separate file)
 
 [CREATURE_GRAPHICS:SEA_MONSTER]
 	[DEFAULT:WATER:0:3:AS_IS:DEFAULT]
+
+------------------------------------------------------------
+creature_standard_enhanced
+------------------------------------------------------------
+[CREATURE_GRAPHICS:HOBBIT]
+        [DEFAULT:MOUNTAIN:0:3:AS_IS:DEFAULT]
+        [CHILD:MOUNTAIN:1:3:AS_IS:DEFAULT]
+        [ZOMBIE:MOUNTAIN:2:3:AS_IS:ZOMBIE]
+        [SKELETON:MOUNTAIN:3:3:AS_IS:SKELETON]
 
 ------------------------------------------------------------
 creature_subterranean
