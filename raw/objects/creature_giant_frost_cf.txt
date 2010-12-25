@@ -1,11 +1,9 @@
 creature_giant_frost_cf
 
 [OBJECT:CREATURE]
-
-	
 	[CREATURE:GIANT_FROST]
 	[DESCRIPTION:A large humanoid creature that lives in the frigid lands of the world. It loves combat and prizes strength and valor.]
-	[NAME:frost giant:frost giants:frost giant]
+	[NAME:giant:giants:giant]
 	[CREATURE_TILE:'F'][COLOR:3:0:1]
 	[INTELLIGENT]
 	[CANOPENDOORS]
@@ -174,10 +172,10 @@ creature_giant_frost_cf
 	[CASTE:FEMALE]
 		[FEMALE]
 		[MULTIPLE_LITTER_RARE]
-		[CASTE_NAME:frost giantess:frost giantesses:frost giantess]
+		[CASTE_NAME:giantess:giantesses:giantess]
 	[CASTE:MALE]
 		[MALE]
-		[CASTE_NAME:frost giant:frost giants:frost giant]
+		[CASTE_NAME:giant:giants:giant]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
 		[CASTE_SPEECH:human_male.txt]
 	[SELECT_CASTE:ALL]
