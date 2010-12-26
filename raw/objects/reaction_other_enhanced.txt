@@ -85,15 +85,6 @@ soda, lime, silica, alumina, and small quantities of fining agents (sodium chlor
 	[FUEL]
 	[SKILL:WOOD_BURNING]
 
-[REACTION:RENDER_FAT]
-        [NAME:render fat]
-        [BUILDING:KITCHEN:CUSTOM_R]
-        [REAGENT:A:1:GLOB:NONE:NONE:NONE][REACTION_CLASS:FAT][UNROTTEN]
-                [HAS_MATERIAL_REACTION_PRODUCT:RENDER_MAT]
-        [PRODUCT:100:1:GLOB:NONE:GET_MATERIAL_FROM_REAGENT:A:RENDER_MAT]
-        [SKILL:COOK]
-        [AUTOMATIC]
-
 [REACTION:MAKE_BRICKS_TAN]
 	[NAME:make bricks (from any sand)]
 	[BUILDING:KILN:NONE]
