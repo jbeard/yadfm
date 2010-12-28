@@ -7,8 +7,6 @@ language_words
 		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		[REAR_COMPOUND_NOUN_PLUR]
-		[OF_NOUN_PLUR]
 
 [WORD:ACE]
 	[NOUN:ace:aces]
@@ -27,8 +25,6 @@ language_words
 		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		[REAR_COMPOUND_NOUN_PLUR]
-		[OF_NOUN_PLUR]
 	[VERB:act:acts:acted:acted:acting]
 		[STANDARD_VERB]
 
@@ -63,7 +59,6 @@ language_words
 		[FRONT_COMPOUND_NOUN_PLUR]
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
 
 [WORD:ANCIENT]
 	[NOUN:ancient:ancients]
@@ -167,7 +162,6 @@ language_words
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
 		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
 	[ADJ:artificial]
 		[ADJ_DIST:2]
 
@@ -280,7 +274,6 @@ language_words
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[REAR_COMPOUND_NOUN_PLUR]
-		[OF_NOUN_PLUR]
 
 [WORD:BAR]
 	[NOUN:bar:bars]
@@ -377,10 +370,7 @@ language_words
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
 		[FRONT_COMPOUND_NOUN_PLUR]
-		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_COMPOUND_NOUN_PLUR]
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
 
 [WORD:BEETLE]
 	[NOUN:beetle:beetles]
@@ -435,9 +425,6 @@ language_words
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
-		[REAR_COMPOUND_NOUN_PLUR]
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
 
 [WORD:BIN]
 	[NOUN:bin:bins]
@@ -717,7 +704,6 @@ language_words
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[REAR_COMPOUND_NOUN_PLUR]
-		[OF_NOUN_PLUR]
 	[VERB:breach:breaches:breached:breached:breaching]
 		[STANDARD_VERB]
 
@@ -727,8 +713,6 @@ language_words
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		[REAR_COMPOUND_NOUN_PLUR]
-		[OF_NOUN_PLUR]
 
 [WORD:BREAD]
 	[NOUN:bread:breads]
@@ -737,7 +721,6 @@ language_words
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[REAR_COMPOUND_NOUN_PLUR]
-		[OF_NOUN_PLUR]
 
 [WORD:BREAK]
 	[NOUN:breaker:breakers]
@@ -774,7 +757,6 @@ language_words
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[REAR_COMPOUND_NOUN_PLUR]
-		[OF_NOUN_PLUR]
 
 [WORD:BREW]
 	[NOUN:brew:brews]
@@ -868,9 +850,7 @@ language_words
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
-		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_COMPOUND_NOUN_PLUR]
-		[OF_NOUN_PLUR]
 
 [WORD:BUCK]
 	[NOUN:buck:bucks]
@@ -902,7 +882,6 @@ language_words
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
 
 [WORD:BURDEN]
 	[NOUN:burden:burdens]
@@ -956,7 +935,6 @@ language_words
 		[THE_NOUN_SING]
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
 
 [WORD:BUST_NOUN]
 	[NOUN:bust:busts]
@@ -974,7 +952,6 @@ language_words
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[REAR_COMPOUND_NOUN_PLUR]
-		[OF_NOUN_PLUR]
 	[VERB:bust:busts:busted:busted:busting]
 		[STANDARD_VERB]
 
@@ -1015,10 +992,6 @@ language_words
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
-		[REAR_COMPOUND_NOUN_PLUR]
-		[THE_COMPOUND_NOUN_PLUR]
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
 	[ADJ:buttery]
 		[ADJ_DIST:2]
 		[THE_COMPOUND_ADJ]
@@ -1096,7 +1069,6 @@ language_words
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[REAR_COMPOUND_NOUN_PLUR]
-		[OF_NOUN_PLUR]
 	[VERB:call:calls:called:called:calling]
 		[STANDARD_VERB]
 
@@ -1170,8 +1142,6 @@ language_words
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
-		[REAR_COMPOUND_NOUN_PLUR]
-		[OF_NOUN_PLUR]
 
 [WORD:CASKET]
 	[NOUN:casket:caskets]
@@ -1483,7 +1453,6 @@ language_words
 		[THE_NOUN_SING]
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
 	[VERB:cluster:clusters:clustered:clustered:clustering]
 		[STANDARD_VERB]
 
@@ -1579,7 +1548,6 @@ language_words
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
 	[VERB:cover:covers:covered:covered:covering]
 		[STANDARD_VERB]
 
