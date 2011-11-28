@@ -9,7 +9,7 @@ creature_large_ocean
 	[CHILD:1][GENERAL_CHILD_NAME:walrus calf:walrus calves]
 	[CREATURE_TILE:'W'][COLOR:6:0:0]
 	[PETVALUE:400]
-	[PET_EXOTIC]
+	[PET]
 	[LARGE_ROAMING]
 	[AMPHIBIOUS][UNDERSWIM]
 	[BIOME:OCEAN_ARCTIC]

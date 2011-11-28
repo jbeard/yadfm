@@ -8,7 +8,7 @@ creature_insects_enhanced
 	[CASTE_NAME:giant spider:giant spiders:giant spider]
 	[CREATURE_TILE:'S'][COLOR:7:0:0]
 	[PETVALUE:2500]
-	[PET_EXOTIC]
+	[PET]
 	[BIOME:ANY_FOREST][EVIL]
 	[UNDERGROUND_DEPTH:1:2]
 	[THICKWEB][WEBIMMUNE][AMBUSHPREDATOR][PARALYZEIMMUNE]
