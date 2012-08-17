@@ -1,0 +1,2 @@
+raw/objects/plant_standard.txt
+
