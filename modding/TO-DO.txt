@@ -1,0 +1,8 @@
+TO-DO:
+fix chicken graphics (just 'c' now)
+fix rat/squirrel graphics (appear to be fairy)
+reaction to burn furniture to ash / charcoal
+adjust growing seasons for plants
+rename extraction reactions
+delete "bone bone helm"
+make gunpowder bars, bullets, guns
