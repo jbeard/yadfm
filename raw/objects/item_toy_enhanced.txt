@@ -1,0 +1,45 @@
+item_toy_enhanced
+
+[OBJECT:ITEM]
+
+[ITEM_TOY:ITEM_TOY_CHEWTOY]
+[NAME:chew toy:chew toys]
+
+[ITEM_TOY:ITEM_TOY_DOLL]
+[NAME:doll:dolls]
+
+[ITEM_TOY:ITEM_TOY_SPEAR]
+[NAME:toy spear:toy spears]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_CROWN]
+[NAME:toy crown:toy crowns]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_SWORD]
+[NAME:toy sword:toy swords]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_DRAGON_FIGURINE]
+[NAME:dragon figurine:dragon figurines]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_CHIMERA_FIGURINE]
+[NAME:chimera figurine:chimera figurines]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_CENTAUR_FIGURINE]
+[NAME:centaur figurine:centaur figurines]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_GRIFFON_FIGURINE]
+[NAME:griffon figurine:griffon figurines]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_CROSSBOW]
+[NAME:toy crossbow:toy crossbows]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_BALL]
+[NAME:ball:balls]
+[HARD_MAT]
