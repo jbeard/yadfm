@@ -12,3 +12,4 @@ murderer
 crusher
 extinguisher
 strangler
+butcher
