@@ -2,6 +2,8 @@ creature_equipment
 
 [OBJECT:CREATURE]
 
+-- This file has been modified for Civilization Forge
+
 [CREATURE:EQUIPMENT_WAGON]
 	[DESCRIPTION:A rolling platform for carrying passengers or cargo.]
 	[NAME:wagon:wagons:wagon]
@@ -21,6 +23,5 @@ creature_equipment
 	[ITEMCORPSE:WOOD:NO_SUBTYPE:LOCAL_CREATURE_MAT:WOOD]
 	[BODY_SIZE:0:0:12000]
 	[ALL_ACTIVE]
-	[TRADE_CAPACITY:15000]
-	[MUNDANE]
-	[ODOR_LEVEL:0]
+	[TRADE_CAPACITY:1500]
+	[MUNDANE]	[ODOR_LEVEL:0]
