@@ -1,0 +1,17 @@
+item_helm_enhanced
+
+[OBJECT:ITEM]
+
+------------------- Helms ----------------------
+[ITEM_HELM:ITEM_HELM_COIF]
+	[NAME:chain coif:chain coifs]
+	[METAL_ARMOR_LEVELS]
+	[LAYER:OVER]
+	[COVERAGE:100]
+	[LAYER_SIZE:10]
+	[LAYER_PERMIT:100]
+	[MATERIAL_SIZE:2]
+	[HARD]
+	[METAL]
+	[STRUCTURAL_ELASTICITY_CHAIN_ALL]
+
