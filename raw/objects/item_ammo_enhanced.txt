@@ -1,0 +1,9 @@
+item_ammo_enhanced
+
+[OBJECT:ITEM]
+
+[ITEM_AMMO:ITEM_AMMO_SLING_BULLETS]
+[NAME:sling bullet:sling bullets]
+[CLASS:SLING]
+[SIZE:10]
+[ATTACK:BLUNT:10:50:impact:impacts:NO_SUB:1000]
