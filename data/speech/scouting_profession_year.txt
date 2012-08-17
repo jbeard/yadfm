@@ -1,1 +1,2 @@
 I have been scouting the area around [CONTEXT:PLACE:TRANS_NAME] for [CONTEXT:NUMBER] of my years.
+For [CONTEXT:NUMBER] years I have found danger before it has found us at [CONTEXT:PLACE:TRANS_NAME].
