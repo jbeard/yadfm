@@ -1087,7 +1087,6 @@ creature_next_underground
 	[CREATURE_TILE:'D'][COLOR:6:0:1]
 	[PETVALUE:500]
 	[PET_EXOTIC]
-	(GRAZER:24)
 	[GRAZER:92]	changed by Igfig
 	[LARGE_ROAMING]
 	[BIOME:SUBTERRANEAN_CHASM]
