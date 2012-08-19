@@ -1,2 +1,7 @@
 raw/objects/plant_standard.txt
 
++       [SELECT_MATERIAL:ALL]^M
++               [MULTIPLY_VALUE:4]^M
+
+
++			[YARN]
