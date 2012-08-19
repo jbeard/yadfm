@@ -10,7 +10,7 @@ creature_large_tropical
 	[CREATURE_TILE:'E'][COLOR:7:0:0]
 	[PETVALUE:500]
 	[PET]
-	[GRAZER:12] don't have browsing trees yet
+	[GRAZER:24] don't have browsing trees yet
 	[MOUNT_EXOTIC]
 	[TRAINABLE]
 	[LARGE_ROAMING]
@@ -2277,7 +2277,7 @@ creature_large_tropical
 	[PETVALUE:500]
 	[PET_EXOTIC]
 	[MOUNT_EXOTIC]
-	[GRAZER:20]
+	[GRAZER:40]
 	[TRAINABLE]
 	[LARGE_ROAMING]
 	[BIOME:GRASSLAND_TROPICAL]
@@ -2355,7 +2355,7 @@ creature_large_tropical
 	[PETVALUE:500]
 	[PET_EXOTIC]
 	[MOUNT_EXOTIC]
-	[GRAZER:60] no tree browsing yet
+	[GRAZER:90] no tree browsing yet
 	[TRAINABLE]
 	[LARGE_ROAMING]
 	[BIOME:SAVANNA_TROPICAL]
