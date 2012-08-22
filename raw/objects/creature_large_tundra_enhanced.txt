@@ -101,7 +101,7 @@ creature_large_tundra_enhanced
 	[PETVALUE:500]
 	[PET]
 	[GRAZER:100] don't have browsing trees yet
-	[MOUNT_EXOTIC]
+	[MOUNT]
 	[TRAINABLE]
 	[LARGE_ROAMING]
 	[BIOME:GLACIER]
