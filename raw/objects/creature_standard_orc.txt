@@ -12,7 +12,7 @@ creature_standard_orc
 	[SAVAGE]
 	[INTELLIGENT][LIKES_FIGHTING]
 	[CANOPENDOORS]
-	[BONECARN]
+	[BONECARN][NO_EAT][NO_DRINK]
 	[PREFSTRING:terrifying features]
 	[NOCTURNAL]
 	[PROFESSION_NAME:CRAFTSMAN:bodge-orc:bodge-orcs]
