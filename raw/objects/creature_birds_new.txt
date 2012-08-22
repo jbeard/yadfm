@@ -154,6 +154,7 @@ Ravens were sponsored by the generous contributions of the Bay 12 community.
 	[GENERAL_CHILD_NAME:raven hatchling:raven hatchlings]
 	[CREATURE_TILE:'r'][COLOR:0:0:1]
 	[PETVALUE:25][NATURAL][PET]
+	[CAN_LEARN]
 	[BIOME:GRASSLAND_TEMPERATE]
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:SHRUBLAND_TEMPERATE]
