@@ -14,6 +14,7 @@ Stoats were sponsored by the generous contributions of the Bay 12 community.
 	[CREATURE_TILE:'s'][COLOR:6:0:0]
 	[PETVALUE:25]
 	[PET_EXOTIC]
+	[TRAINABLE_HUNTING]
 	[BONECARN]
 	[NATURAL]
 	[BIOME:FOREST_TAIGA]
