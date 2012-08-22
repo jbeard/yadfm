@@ -1,4 +1,4 @@
-creature_large_tundra_cf
+creature_large_tundra_enhanced
 
 [OBJECT:CREATURE]
 
