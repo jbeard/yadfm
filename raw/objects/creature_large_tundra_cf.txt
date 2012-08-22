@@ -98,7 +98,7 @@ creature_large_tundra_cf
 	[CREATURE_TILE:'M'][COLOR:6:0:0]
 	[PETVALUE:500]
 	[PET]
-	[GRAZER:24] don't have browsing trees yet
+	[GRAZER:100] don't have browsing trees yet
 	[MOUNT]
 	[TRAINABLE]
 	[LARGE_ROAMING]
