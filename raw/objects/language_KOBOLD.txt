@@ -964,7 +964,6 @@ language_KOBOLD
 [T_WORD:VIPER:thlojreekin]
 [T_WORD:VOICE:dirungus]
 [T_WORD:VOID:satasis]
-[T_WORD:VOID_VERB:siroslin]
 [T_WORD:VOLCANO:rupridlus]
 [T_WORD:VOMIT:raguchris]
 [T_WORD:VULTURE:rachrusin]
