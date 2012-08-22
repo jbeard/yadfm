@@ -329,6 +329,12 @@ Anacondas were sponsored by the generous contributions of the Bay 12 community.
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
+		[LAYS_EGGS]
+			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGGSHELL:SOLID]
+			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
+			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
+			[EGG_SIZE:70]
+			[CLUTCH_SIZE:15:25]
 	[CASTE:MALE]
 		[MALE]
 	[SELECT_CASTE:ALL]
@@ -354,6 +360,7 @@ Anacondas were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:giant anaconda:giant anacondas:giant anaconda]
 	[GENERAL_CHILD_NAME:giant anaconda hatchling:giant anaconda hatchlings]	added by Igfig
 	[DESCRIPTION:A huge monster in the form of an anaconda.]
+	[GENERAL_CHILD_NAME:giant anaconda hatchling:giant anaconda hatchlings]
 	[POPULATION_NUMBER:10:25]
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'A']
@@ -611,7 +618,7 @@ King cobras were sponsored by the generous contributions of the Bay 12 community
 	[GO_TO_START]
 	[NAME:giant king cobra:giant king cobras:giant king cobra]
 	[CASTE_NAME:giant king cobra:giant king cobras:giant king cobra]
-	[GENERAL_CHILD_NAME:king cobra hatchling:king cobra hatchlings]	added by Igfig
+	[GENERAL_CHILD_NAME:giant king cobra hatchling:giant king cobra hatchlings]
 	[DESCRIPTION:A large monster in the shape of a king cobra.]
 	[POPULATION_NUMBER:10:20]
 	[CLUSTER_NUMBER:1:1]
@@ -1304,7 +1311,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 	[NAME:black mamba:black mambas:black mamba]
 	[CASTE_NAME:black mamba:black mambas:black mamba]
 	[CHILD:2][GENERAL_CHILD_NAME:black mamba hatchling:black mamba hatchlings]	added by Igfig
-[CREATURE_TILE:'s'][COLOR:0:0:1]
+	[CREATURE_TILE:'s'][COLOR:0:0:1]
 	[PETVALUE:50]
 	[PET_EXOTIC]
 	[FREQUENCY:30]
@@ -1435,6 +1442,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 	[CASTE_NAME:giant black mamba:giant black mambas:giant black mamba]
 	[GENERAL_CHILD_NAME:giant black mamba hatchling:giant black mamba hatchlings]	added by Igfig
 	[DESCRIPTION:A large monster taking the shape of a black mamba.]
+	[GENERAL_CHILD_NAME:giant black mamba hatchling:giant black mamba hatchlings]
 	[POPULATION_NUMBER:10:25]
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'S']
@@ -1806,6 +1814,7 @@ Bushmasters were sponsored by the generous contributions of the Bay 12 community
 	[CASTE_NAME:giant bushmaster:giant bushmasters:giant bushmaster]
 	[GENERAL_CHILD_NAME:giant bushmaster hatchling:giant bushmaster hatchlings]	added by Igfig
 	[DESCRIPTION:A huge monster in the form of a bushmaster.]
+	[GENERAL_CHILD_NAME:giant bushmaster hatchling:giant bushmaster hatchlings]
 	[POPULATION_NUMBER:10:25]
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'S']
@@ -1913,6 +1922,7 @@ Pythons were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:giant python:giant pythons:giant python]
 	[GENERAL_CHILD_NAME:giant python hatchling:giant python hatchlings]	added by Igfig
 	[DESCRIPTION:A huge monster in the form of a python.]
+	[GENERAL_CHILD_NAME:giant python hatchling:giant python hatchlings]
 	[POPULATION_NUMBER:10:25]
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'S']
@@ -2294,6 +2304,7 @@ Lion tamarins were sponsored by the generous contributions of the Bay 12 communi
 	[DESCRIPTION:A small orange monkey with a long tail.]
 	[NAME:lion tamarin:lion tamarins:lion tamarin]
 	[CASTE_NAME:lion tamarin:lion tamarins:lion tamarin]
+	[CHILD:1]
 	[CREATURE_TILE:249][COLOR:6:0:1]
 	[PETVALUE:10]
 	[FREQUENCY:100][VERMIN_GROUNDER]
