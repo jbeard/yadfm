@@ -1142,7 +1142,6 @@ Pandas were sponsored by the generous contributions of the Bay 12 community.
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'P']
 	[COLOR:7:0:1]
-	(GRAZER:92)
 	[GRAZER:1073]	changed by Igfig; creatures with SPECIFIC_FOOD graze as if they were 1/10 the size
 	[TRAINABLE]
 	[PET_EXOTIC]
@@ -1476,7 +1475,6 @@ Moose were sponsored by the generous contributions of the Bay 12 community.
 			[ATTACK_CONTACT_PERC:100]
 			[ATTACK_FLAG_WITH]
 			[ATTACK_PRIORITY:MAIN]
-		(GRAZER:114)
 		[GRAZER:321]	changed by Igfig
 		[BODY_SIZE:0:0:31500]
 		[BODY_SIZE:1:0:262500]
@@ -1561,10 +1559,10 @@ Moose were sponsored by the generous contributions of the Bay 12 community.
 	[MOUNT_EXOTIC]
 	[GO_TO_END]
 	[SELECT_CASTE:FEMALE]
-		[GRAZER:90]	changed by Igfig
+		[GRAZER:100]
 		[CASTE_NAME:giant moose cow:giant moose cows:giant moose cow]
 	[SELECT_CASTE:MALE]
-		[GRAZER:60]	changed by Igfig
+		[GRAZER:100]
 		[CASTE_NAME:giant moose bull:giant moose bulls:giant moose bull]
 	[PREFSTRING:great size]
 	[PREFSTRING:broad antlers]

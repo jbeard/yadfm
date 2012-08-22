@@ -10,7 +10,7 @@ creature_large_tropical
 	[CREATURE_TILE:'E'][COLOR:7:0:0]
 	[PETVALUE:500]
 	[PET]
-	[GRAZER:52]	changed by Igfig (don't have browsing trees yet)
+	[GRAZER:100] don't have browsing trees yet
 	[MOUNT_EXOTIC]
 	[TRAINABLE]
 	[LARGE_ROAMING]
@@ -2283,8 +2283,7 @@ creature_large_tropical
 	[PETVALUE:500]
 	[PET_EXOTIC]
 	[MOUNT_EXOTIC]
-	[GRAZER:40]
-	[GRAZER:79]	changed by Igfig
+	[GRAZER:100]
 	[TRAINABLE]
 	[LARGE_ROAMING]
 	[BIOME:GRASSLAND_TROPICAL]
