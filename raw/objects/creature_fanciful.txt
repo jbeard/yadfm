@@ -8,6 +8,7 @@ creature_fanciful
 	[FANCIFUL]
 	[DOES_NOT_EXIST]
 	[PREFSTRING:terrifying features]
+	[PREFSTRING:awesome majesty]
 	[ALL_ACTIVE]
 
 [CREATURE:CENTAUR]
@@ -16,6 +17,7 @@ creature_fanciful
 	[FANCIFUL]
 	[DOES_NOT_EXIST]
 	[PREFSTRING:strength]
+	[PREFSTRING:virility]
 	[ALL_ACTIVE]
 	[CASTE:FEMALE]
 		[CASTE_NAME:centauress:centauresses:centauress]
@@ -30,6 +32,7 @@ creature_fanciful
 	[FANCIFUL]
 	[DOES_NOT_EXIST]
 	[PREFSTRING:strength]
+	[PREFSTRING:regal bearing]
 	[ALL_ACTIVE]
 	[CASTE:FEMALE]
 		[FEMALE]
