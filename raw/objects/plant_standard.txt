@@ -24,7 +24,7 @@ plant_standard
 		[EDIBLE_VERMIN]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
-	[PICKED_TILE:6][PICKED_COLOR:5:0:0]
+	[PICKED_TILE:133][PICKED_COLOR:5:0:0]
 	[GROWDUR:300][VALUE:2]
 
 	Next we establish an alcohol material in much the same way as the structural material.
@@ -43,6 +43,15 @@ plant_standard
 	[DRINK:LOCAL_PLANT_MAT:DRINK]
 
 	The seed material and information is established in a similar fashion.  Other plants (including trees) add materials in the same way, though trees cannot be used at this time with seeds/thread/drink etc.  They just use the TREE tag to obtain a wood material (they also have a structural material for their live form).
+
+15
+31
+47
+63
+79
+95
+111
+127
 
 	[USE_MATERIAL_TEMPLATE:SEED:SEED_TEMPLATE]
 		[MATERIAL_VALUE:1]
@@ -922,7 +931,6 @@ Uristocrat did the density values.
 		[STATE_NAME:ALL_SOLID:saguaro rib wood]
 		[STATE_ADJ:ALL_SOLID:saguaro rib]
 		[PREFIX:NONE]
-<<<<<<< HEAD
 			Density was determined experimentally.  Contact Uristocrat for a sample if you want to verify this yourself.
 			A 6g (+/- 0.1g) piece of dry Saguaro wood had a volume of approximately 14 cm^3 (+/- 1 cm^3)
 	 	[SOLID_DENSITY:430]
