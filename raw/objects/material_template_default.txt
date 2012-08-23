@@ -538,6 +538,8 @@ material_template_default
 	[IMPLIES_ANIMAL_KILL]
 	[PEARL]		added by Igfig
 	[ITEMS_SOFT]	added by Igfig
+	[LEATHER]
+	[ITEMS_LEATHER]
 
 [MATERIAL_TEMPLATE:SCALE_TEMPLATE]
 	[STATE_COLOR:ALL_SOLID:GRAY]
