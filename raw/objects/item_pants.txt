@@ -18,7 +18,8 @@ item_pants
 [ITEM_PANTS:ITEM_PANTS_GREAVES]
 	this item doesn't make much sense right now, but there aren't any item types you can tie on to your legs yet
 [NAME:greaves:greaves]
-[ARMORLEVEL:3]
+[ARMORLEVEL:2]
+[METAL_ARMOR_LEVELS]
 [LBSTEP:MAX]
 [SHAPED]
 [LAYER:ARMOR]
@@ -29,6 +30,7 @@ item_pants
 [METAL]
 [BARRED]
 [HARD]
+[LEATHER]
 
 [ITEM_PANTS:ITEM_PANTS_LEGGINGS]
 [NAME:leggings:leggings]
