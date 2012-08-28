@@ -6,7 +6,8 @@ item_gloves
 
 [ITEM_GLOVES:ITEM_GLOVES_GAUNTLETS]
 [NAME:plate gauntlet:plate gauntlets]
-[ARMORLEVEL:3]
+[ARMORLEVEL:2]
+[METAL_ARMOR_LEVELS]
 [UPSTEP:1]
 [SHAPED]
 [LAYER:ARMOR]
@@ -18,6 +19,7 @@ item_gloves
 [BARRED]
 [METAL]
 [HARD]
+[LEATHER]
 
 [ITEM_GLOVES:ITEM_GLOVES_GLOVES]
 [NAME:glove:gloves]
