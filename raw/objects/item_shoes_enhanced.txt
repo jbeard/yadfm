@@ -4,15 +4,16 @@ item_shoes_enhanced
 
 ------------------- Foot Armor ----------------------
 [ITEM_SHOES:ITEM_SHOES_BOOTS_PLATE]
-	[NAME:plate boot:plate boots]
-	[ARMORLEVEL:1]
-	[UPSTEP:1]
+	[NAME:sabaton:sabatons]
+	[ARMORLEVEL:2]
+	[UPSTEP:MAX]
 	[METAL_ARMOR_LEVELS]
-	[LAYER:OVER]
+	[LAYER:ARMOR]
 	[COVERAGE:100]
 	[LAYER_SIZE:25]
 	[LAYER_PERMIT:15]
-	[MATERIAL_SIZE:2]
-	[METAL]
+	[MATERIAL_SIZE:3]
+	[LEATHER]
 	[HARD]
+	[METAL]
 
