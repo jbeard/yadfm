@@ -5,7 +5,8 @@ item_armor_enhanced
 ------------------- Body Armor ----------------------
 [ITEM_ARMOR:ITEM_ARMOR_MAIL_VEST]
 	[NAME:mail vest:mail vests]
-	[ARMORLEVEL:2]
+	[ARMORLEVEL:1]
+	[METAL_ARMOR_LEVELS]
 	[UBSTEP:0]
 	[LBSTEP:0]
 	[LAYER:ARMOR]
@@ -14,6 +15,9 @@ item_armor_enhanced
 	[LAYER_PERMIT:50]
 	[MATERIAL_SIZE:3]
 	[HARD]
+	[LEATHER]
+	[BARRED]
+	[SCALED]
 	[METAL]
 	[STRUCTURAL_ELASTICITY_CHAIN_ALL]
 
