@@ -23,7 +23,7 @@ item_pants_enhanced
 
 [ITEM_PANTS:ITEM_PANTS_LEGGINGS_LAMELLAR]
 	[NAME:lamellar leggings:lamellar leggings]
-	[ARMORLEVEL:1]
+	[ARMORLEVEL:2]
 	[METAL_ARMOR_LEVELS]
 	[LBSTEP:MAX]
 	[SHAPED]
