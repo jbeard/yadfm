@@ -2540,6 +2540,8 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 	[ABSORPTION:100]
 	[IMPLIES_ANIMAL_KILL]
 	[ROTS]
+	[GENERATES_MIASMA]
+	[MEAT]
 	[EDIBLE_VERMIN]
 	[EDIBLE_COOKED]
 
@@ -2587,6 +2589,8 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 	[ABSORPTION:100]
 	[IMPLIES_ANIMAL_KILL]
 	[ROTS]
+	[GENERATES_MIASMA]
+	[MEAT]
 	[EDIBLE_VERMIN]
 	[EDIBLE_COOKED]
 
