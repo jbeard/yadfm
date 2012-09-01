@@ -2,18 +2,20 @@ item_shield
 
 [OBJECT:ITEM]
 
--- This File has been modified for Civilization Forge
-
 [ITEM_SHIELD:ITEM_SHIELD_SHIELD]
-[NAME:round shield:round shields]
-[ARMORLEVEL:2]
-[BLOCKCHANCE:20]
-[UPSTEP:2]
-[MATERIAL_SIZE:4]
+	[NAME:round shield:round shields]
+	[ARMORLEVEL:2]
+	[BLOCKCHANCE:20]
+	[UPSTEP:2]
+	[MATERIAL_SIZE:4]
+   [SIZE:300]
+	[ATTACK:BLUNT:20000:4000:bash:bashes:face:1250]
 
 [ITEM_SHIELD:ITEM_SHIELD_BUCKLER]
-[NAME:buckler:bucklers]
-[ARMORLEVEL:1]
-[BLOCKCHANCE:10]
-[UPSTEP:1]
-[MATERIAL_SIZE:2]
+	[NAME:buckler:bucklers]
+	[ARMORLEVEL:1]
+	[BLOCKCHANCE:10]
+	[UPSTEP:1]
+	[MATERIAL_SIZE:2]
+   [SIZE:150]
+	[ATTACK:BLUNT:10000:2000:bash:bashes:face:1250]
