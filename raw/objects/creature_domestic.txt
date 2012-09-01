@@ -909,7 +909,7 @@ creature_domestic
 			[STATE_ADJ:GAS:boiling pig cheese]
 			[PREFIX:NONE]
 	[CASTE:MALE]
-		[CASTE_NAME:boar:boars:boar]
+		[CASTE_NAME:hog:hogs:hog]
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
