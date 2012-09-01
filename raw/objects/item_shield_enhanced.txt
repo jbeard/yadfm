@@ -33,7 +33,7 @@ item_shield_enhanced
 	[SIZE:600]
 	[ATTACK:BLUNT:60000:6000:bash:bashes:face:1250]
 
-[ITEM_SHIELD:ITEM_SHIELD_KITE]
+[ITEM_SHIELD:ITEM_SHIELD_KITE_SPIKED]
 	[NAME:spiked kite shield:spiked kite shields]
 	[ARMORLEVEL:2]
 	[BLOCKCHANCE:30]
