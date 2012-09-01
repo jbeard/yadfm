@@ -39,15 +39,6 @@ plant_standard
 
 	The seed material and information is established in a similar fashion.  Other plants (including trees) add materials in the same way, though trees cannot be used at this time with seeds/thread/drink etc.  They just use the TREE tag to obtain a wood material (they also have a structural material for their live form).
 
-15
-31
-47
-63
-79
-95
-111
-127
-
 	[USE_MATERIAL_TEMPLATE:SEED:SEED_TEMPLATE]
 		[MATERIAL_VALUE:1]
 		[EDIBLE_VERMIN]
