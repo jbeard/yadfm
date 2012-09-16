@@ -192,6 +192,7 @@ creature_next_underground
 	[DESCRIPTION:A huge cave monster with hundreds of feet moving along the bottom of its long body.  In place of a head, it has an enormous toothy maw.]
 	[NAME:voracious cave crawler:voracious cave crawlers:voracious cave crawler]
 	[CASTE_NAME:voracious cave crawler:voracious cave crawlers:voracious cave crawler]
+	[CHILD:2][GENERAL_CHILD_NAME:voracious cave crawler larva:voracious cave crawler larvae]	added by Igfig
 	[CREATURE_TILE:'C'][COLOR:1:0:0]
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:2:3]
@@ -473,6 +474,7 @@ creature_next_underground
 	[DESCRIPTION:A tiny underground monster with large claws and horns.  It walks on two legs and is dangerous when encountered in large numbers.]
 	[NAME:crundle:crundles:crundle]
 	[CASTE_NAME:crundle:crundles:crundle]
+	[CHILD:2][GENERAL_CHILD_NAME:crundle hatchling:crundle hatchlings]	added by Igfig
 	[CREATURE_TILE:'c'][COLOR:4:0:0]
 	[PETVALUE:50]
 	[PET_EXOTIC]
@@ -567,7 +569,7 @@ creature_next_underground
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:60]
-			[CLUTCH_SIZE:5:20]
+			[CLUTCH_SIZE:2:4]	changed by Igfig
 	[CASTE:MALE]
 		[MALE]
 	[SELECT_CASTE:ALL]
@@ -697,7 +699,8 @@ creature_next_underground
 	[PETVALUE:400]
 	[PET_EXOTIC]
 	[MOUNT_EXOTIC]
-	[GRAZER:600]
+	(GRAZER:600)
+	[GRAZER:1209]	changed by Igfig
 	[CHILD:1]
 	[ALL_ACTIVE]
 	[BIOME:SUBTERRANEAN_CHASM]
@@ -769,7 +772,7 @@ creature_next_underground
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:60]
-			[CLUTCH_SIZE:2:10]
+			[CLUTCH_SIZE:1:3]	changed by Igfig
 	[CASTE:MALE]
 		[MALE]
 	[SELECT_CASTE:ALL]
@@ -790,6 +793,7 @@ creature_next_underground
 	[DESCRIPTION:A snake-like creature living deep underground.  Its head is covered in armor so that is resembles the head of a dragon.]
 	[NAME:helmet snake:helmet snakes:helmet snake]
 	[CASTE_NAME:helmet snake:helmet snakes:helmet snake]
+	[CHILD:2][GENERAL_CHILD_NAME:helmet snake hatchling:helmet snake hatchlings]	added by Igfig
 	[CREATURE_TILE:'s'][COLOR:7:0:1]
 	[PETVALUE:50]
 	[PET_EXOTIC]
@@ -877,7 +881,7 @@ creature_next_underground
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:50]
-			[CLUTCH_SIZE:10:30]
+			[CLUTCH_SIZE:3:5]	changed by Igfig
 	[CASTE:MALE]
 		[MALE]
 	[SELECT_CASTE:ALL]
@@ -1589,7 +1593,7 @@ creature_next_underground
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:5100]
-			[CLUTCH_SIZE:1:2]
+			[CLUTCH_SIZE:1:1]	changed by Igfig
 	[CASTE:MALE]
 		[MALE]
 	[SELECT_CASTE:ALL]
@@ -1758,6 +1762,8 @@ creature_next_underground
 	[DESCRIPTION:A gigantic monster, once a dragon, now adapted to and polluted by the underground.  Its wings fall limp at its side.  Its face is full of incredibly long teeth.  Its eyes are large to penetrate the darkness.]
 	[NAME:cave dragon:cave dragons:cave draconic]
 	[CASTE_NAME:cave dragon:cave dragons:cave draconic]
+	[BABY:1][GENERAL_BABY_NAME:baby cave dragon:baby cave dragons]	added by Igfig
+	[CHILD:12][GENERAL_CHILD_NAME:juvenile cave dragon: juvenile cave dragons]	added by Igfig
 	[CREATURE_TILE:'D'][COLOR:7:0:1]
 	[PETVALUE:10000]
 	[PET_EXOTIC]
@@ -1809,6 +1815,8 @@ creature_next_underground
 	[USE_MATERIAL_TEMPLATE:PUS:PUS_TEMPLATE]
 	[PUS:LOCAL_CREATURE_MAT:PUS:LIQUID]
 	[BODY_SIZE:0:0:6000]
+	[BODY_SIZE:1:0:60000]	intermediate numbers
+	[BODY_SIZE:2:0:600000]	added by Igfig
 	[BODY_SIZE:1000:0:15000000]
 	[BODY_APPEARANCE_MODIFIER:LENGTH:90:95:98:100:102:105:110]
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
@@ -1842,7 +1850,7 @@ creature_next_underground
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:6100]
-			[CLUTCH_SIZE:1:3]
+			[CLUTCH_SIZE:1:2]	changed by Igfig
 	[CASTE:MALE]
 		[MALE]
 	[SELECT_CASTE:ALL]

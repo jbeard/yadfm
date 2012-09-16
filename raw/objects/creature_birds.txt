@@ -84,7 +84,7 @@ creature_birds
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:11]
-			[CLUTCH_SIZE:2:7]
+			[CLUTCH_SIZE:1:3]	changed by Igfig
 	[CASTE:MALE]
 		[MALE]
 	[SELECT_CASTE:ALL]
@@ -181,7 +181,7 @@ creature_birds
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:9]
-			[CLUTCH_SIZE:2:5]
+			[CLUTCH_SIZE:1:2]	changed by Igfig
 	[CASTE:MALE]
 		[MALE]
 	[SELECT_CASTE:ALL]
@@ -274,7 +274,7 @@ creature_birds
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:12]
-			[CLUTCH_SIZE:1:7]
+			[CLUTCH_SIZE:1:3]	changed by Igfig
 	[CASTE:MALE]
 		[MALE]
 	[SELECT_CASTE:ALL]
@@ -366,7 +366,7 @@ creature_birds
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:8]
-			[CLUTCH_SIZE:3:7]
+			[CLUTCH_SIZE:2:3]	changed by Igfig
 	[CASTE:MALE]
 		[MALE]
 	[SELECT_CASTE:ALL]
@@ -459,7 +459,7 @@ creature_birds
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:11]
-			[CLUTCH_SIZE:2:4]
+			[CLUTCH_SIZE:1:2]	changed by Igfig
 	[CASTE:MALE]
 		[MALE]
 	[SELECT_CASTE:ALL]
@@ -557,7 +557,7 @@ Penguins were sponsored by the generous contributions of the Bay 12 community.
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:125]
-			[CLUTCH_SIZE:2:2]
+			[CLUTCH_SIZE:1:1]	changed by Igfig
 	[CASTE:MALE]
 		[MALE]
 	[SELECT_CASTE:ALL]
@@ -650,7 +650,7 @@ Penguins were sponsored by the generous contributions of the Bay 12 community.
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:53]
-			[CLUTCH_SIZE:2:2]
+			[CLUTCH_SIZE:1:1]	changed by Igfig
 	[CASTE:MALE]
 		[MALE]
 	[SELECT_CASTE:ALL]
@@ -779,7 +779,7 @@ Penguins were sponsored by the generous contributions of the Bay 12 community.
 	[COLOR:0:0:1]
 	[PET_EXOTIC]
 	[PETVALUE:500]
-	[MOUNT_EXOTIC]
+	(MOUNT_EXOTIC) removed by Igfig
 	[PREFSTRING:enormous size]
 	[PREFSTRING:coloration]
 	[PREFSTRING:waddling gait]
@@ -882,7 +882,7 @@ Peregrine falcons were sponsored by the generous contributions of the Bay 12 com
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:46]
-			[CLUTCH_SIZE:3:4]
+			[CLUTCH_SIZE:2:2]	changed by Igfig
 		[BODY_SIZE:0:0:44]
 		[BODY_SIZE:1:0:550]
 		[BODY_SIZE:2:0:1100]
@@ -919,7 +919,7 @@ Peregrine falcons were sponsored by the generous contributions of the Bay 12 com
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
-	[MOUNT_EXOTIC]
+	(MOUNT_EXOTIC) removed by Igfig
 	[GO_TO_END]
 	[SELECT_CASTE:MALE]
 		[CASTE_NAME:giant tiercel peregrine:giant tiercel peregrines:giant tiercel peregrine]
@@ -1008,7 +1008,7 @@ Kiwis were sponsored by the generous contributions of the Bay 12 community.
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:450]
-			[CLUTCH_SIZE:1:2]
+			[CLUTCH_SIZE:1:1]	changed by Igfig
 	[CASTE:MALE]
 		[CASTE_NAME:kiwi cock:kiwi cocks:kiwi cock]
 		[MALE]
@@ -1141,7 +1141,7 @@ Ostriches were sponsored by the generous contributions of the Bay 12 community.
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:2000]
-			[CLUTCH_SIZE:10:15]
+			[CLUTCH_SIZE:3:4]	changed by Igfig
 	[CASTE:MALE]
 		[CASTE_NAME:ostrich cock:ostrich cocks:ostrich cock]
 		[MALE]

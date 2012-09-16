@@ -80,7 +80,7 @@ creature_subterranean
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:80]
-			[CLUTCH_SIZE:20:60]
+			[CLUTCH_SIZE:4:8]	changed by Igfig
 	[CASTE:MALE]
 		[MALE]
 	[SELECT_CASTE:ALL]
@@ -97,11 +97,11 @@ creature_subterranean
 	[DESCRIPTION:A giant amphibian predator found underground.]
 	[NAME:giant toad:giant toads:giant toad]
 	[CASTE_NAME:giant toad:giant toads:giant toad]
-	[CHILD:3][GENERAL_CHILD_NAME:giant toad tadpole:giant toad tadpoles]
+	[CHILD:1][GENERAL_CHILD_NAME:giant toad tadpole:giant toad tadpoles]	added by Igfig; this is a kludge for until we can do tadpoles properly
 	[CREATURE_TILE:'T'][COLOR:2:0:0]
 	[PETVALUE:750]
 	[PET_EXOTIC]
-	[MOUNT_EXOTIC]
+	(MOUNT_EXOTIC) removed by Igfig
 	[AMPHIBIOUS][UNDERSWIM]
 	[LARGE_PREDATOR]
 	[CARNIVORE]
@@ -178,10 +178,11 @@ creature_subterranean
 	[DESCRIPTION:A giant amphibian predator found underground near water.]
 	[NAME:giant olm:giant olms:giant olm]
 	[CASTE_NAME:giant olm:giant olms:giant olm]
+	[CHILD:1][GENERAL_CHILD_NAME:olm tadpole:olm tadpoles]	added by Igfig; this is a kludge for until we can do tadpoles properly
 	[CREATURE_TILE:'O'][COLOR:7:0:1]
 	[PETVALUE:750]
 	[PET_EXOTIC]
-	[MOUNT_EXOTIC]
+	(MOUNT_EXOTIC) removed by Igfig
 	[AMPHIBIOUS][UNDERSWIM]
 	[LARGE_PREDATOR]
 	[CARNIVORE]
@@ -256,7 +257,7 @@ creature_subterranean
 	[FLIER]
 	[PETVALUE:750]
 	[PET_EXOTIC]
-	[MOUNT_EXOTIC]
+	(MOUNT_EXOTIC) removed by Igfig
 	[TRAINABLE_HUNTING]
 	[LARGE_ROAMING][DIFFICULTY:2]
 	[POPULATION_NUMBER:10:20]
@@ -924,7 +925,7 @@ creature_subterranean
 	[DESCRIPTION:A large underground monster with eight legs and sharp, venomous fangs.]
 	[NAME:giant cave spider:giant cave spiders:giant cave spider]
 	[CASTE_NAME:giant cave spider:giant cave spiders:giant cave spider]
-	[CHILD:1][GENERAL_CHILD_NAME:giant cave spider hatchling:giant cave spider hatchlings]
+	[CHILD:2][GENERAL_CHILD_NAME:giant cave spider hatchling:giant cave spider hatchlings]
 	[CREATURE_TILE:'S'][COLOR:7:0:0]
 	[PETVALUE:2500]
 	[PET_EXOTIC]
@@ -1553,7 +1554,7 @@ creature_subterranean
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:11]
-			[CLUTCH_SIZE:4:5]
+			[CLUTCH_SIZE:2:2]	changed by Igfig
 	[CASTE:MALE]
 		[MALE]
 	[SELECT_CASTE:ALL]
@@ -1578,7 +1579,7 @@ creature_subterranean
 	[BENIGN][NATURAL]
 	[PETVALUE:700]
 	[PET_EXOTIC]
-	[MOUNT_EXOTIC]
+	(MOUNT_EXOTIC) removed by Igfig
 	[TRAINABLE_HUNTING]
 	[FLIER]
 	[BONECARN]
@@ -1649,7 +1650,7 @@ creature_subterranean
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:2100]
-			[CLUTCH_SIZE:2:3]
+			[CLUTCH_SIZE:1:2]	changed by Igfig
 	[CASTE:MALE]
 		[MALE]
 	[SELECT_CASTE:ALL]
@@ -1855,7 +1856,7 @@ creature_subterranean
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:1600]
-			[CLUTCH_SIZE:1:3]
+			[CLUTCH_SIZE:1:2]	changed by Igfig
 	[CASTE:MALE]
 		[MALE]
 	[SELECT_CASTE:ALL]

@@ -499,7 +499,7 @@ Platypuses were sponsored by the generous contributions of the Bay 12 community.
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:11] couldn't find a precise number, but they are small
-			[CLUTCH_SIZE:1:3]
+			[CLUTCH_SIZE:1:2]	changed by Igfig
 		[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 			[ATTACK_SKILL:BITE]
 			[ATTACK_VERB:bite:bites]
@@ -556,7 +556,7 @@ Platypuses were sponsored by the generous contributions of the Bay 12 community.
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
-	[MOUNT_EXOTIC]
+	(MOUNT_EXOTIC) removed by Igfig
 	[PREFSTRING:great size]
 	[PREFSTRING:bizarre appearance]
 	[PREFSTRING:venomous spurs]

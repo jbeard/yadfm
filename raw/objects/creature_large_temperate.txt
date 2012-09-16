@@ -192,7 +192,8 @@ creature_large_temperate
 	[CHILD:1][GENERAL_CHILD_NAME:deer fawn:deer fawns]
 	[CREATURE_TILE:'D'][COLOR:6:0:0]
 	[PETVALUE:50]
-	[GRAZER:428]
+	(GRAZER:428)
+	[GRAZER:924]	changed by Igfig
 	[PREFSTRING:grace]
 	[GRASSTRAMPLE:0]
 	[LARGE_ROAMING]
@@ -890,7 +891,7 @@ creature_large_temperate
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:80]
-			[CLUTCH_SIZE:10:30]
+			[CLUTCH_SIZE:3:5]	changed by Igfig
 	[CASTE:MALE]
 		[MALE]
 	[SELECT_CASTE:ALL]
@@ -990,7 +991,7 @@ creature_large_temperate
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:60]
-			[CLUTCH_SIZE:2:3]
+			[CLUTCH_SIZE:1:2]	changed by Igfig
 	[CASTE:MALE]
 		[MALE]
 	[SELECT_CASTE:ALL]
@@ -1021,7 +1022,8 @@ Pandas were sponsored by the generous contributions of the Bay 12 community.
 	[PETVALUE:300]
 	[PET]
 	[NATURAL]
-	[GRAZER:462]
+	(GRAZER:462)
+	[GRAZER:6188]	changed by Igfig; creatures with SPECIFIC_FOOD graze as if they were 1/10 the size
 	[SPECIFIC_FOOD:PLANT:BAMBOO, ARROW]
 	[SPECIFIC_FOOD:PLANT:BAMBOO, GOLDEN]
 	[SPECIFIC_FOOD:PLANT:BAMBOO, HEDGE]
@@ -1140,7 +1142,7 @@ Pandas were sponsored by the generous contributions of the Bay 12 community.
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'P']
 	[COLOR:7:0:1]
-	[GRAZER:100]
+	[GRAZER:1073]	changed by Igfig; creatures with SPECIFIC_FOOD graze as if they were 1/10 the size
 	[TRAINABLE]
 	[PET_EXOTIC]
 	[PETVALUE:1000]
@@ -1168,7 +1170,8 @@ Capybaras were sponsored by the generous contributions of the Bay 12 community.
 	[PETVALUE:100]
 	[PET]
 	[NATURAL]
-	[GRAZER:1333]
+	(GRAZER:1333)
+	[GRAZER:2291]	changed by Igfig
 	[AMPHIBIOUS]
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:20:30]
@@ -1271,10 +1274,11 @@ Capybaras were sponsored by the generous contributions of the Bay 12 community.
 	[CLUSTER_NUMBER:5:10]
 	[CREATURE_TILE:'C']
 	[COLOR:6:0:0]
-	[GRAZER:133]
+	(GRAZER:133)
+	[GRAZER:321]	changed by Igfig
 	[PET_EXOTIC]
 	[PETVALUE:500]
-	[MOUNT_EXOTIC]
+	(MOUNT_EXOTIC) removed by Igfig
 	[SOUND:ALERT:200:1000:VOCALIZATION:bark:barks:a resounding bark]
 	[SOUND:PEACEFUL_INTERMITTENT:200:10000:VOCALIZATION:whistle:whistles:deep whistling]
 	[SOUND:PEACEFUL_INTERMITTENT:50:10000:VOCALIZATION:grunt:grunts:a loud grunt]
@@ -1456,7 +1460,8 @@ Moose were sponsored by the generous contributions of the Bay 12 community.
 		[CASTE_NAME:cow moose:cow moose:cow moose]
 		[MULTIPLE_LITTER_RARE]
 		[BODY:QUADRUPED_HOOF:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE]
-		[GRAZER:190]
+		(GRAZER:190)
+		[GRAZER:483]	changed by Igfig
 		[BODY_SIZE:0:0:31500]
 		[BODY_SIZE:1:0:157500]
 		[BODY_SIZE:2:0:315000]
@@ -1470,7 +1475,7 @@ Moose were sponsored by the generous contributions of the Bay 12 community.
 			[ATTACK_CONTACT_PERC:100]
 			[ATTACK_FLAG_WITH]
 			[ATTACK_PRIORITY:MAIN]
-		[GRAZER:120]
+		[GRAZER:321]	changed by Igfig
 		[BODY_SIZE:0:0:31500]
 		[BODY_SIZE:1:0:262500]
 		[BODY_SIZE:2:0:525000]
@@ -1581,7 +1586,8 @@ Red pandas were sponsored by the generous contributions of the Bay 12 community.
 	[POPULATION_NUMBER:10:20]
 	[CLUSTER_NUMBER:1:1]
 	[BIOME:ANY_TEMPERATE_FOREST]
-	[GRAZER:12000]
+	(GRAZER:12000)
+	[GRAZER:83859]	changed by Igfig; creatures with SPECIFIC_FOOD graze as if they were 1/10 their size
 	[SPECIFIC_FOOD:PLANT:BAMBOO, ARROW]
 	[SPECIFIC_FOOD:PLANT:BAMBOO, GOLDEN]
 	[SPECIFIC_FOOD:PLANT:BAMBOO, HEDGE]
@@ -1721,4 +1727,4 @@ Red pandas were sponsored by the generous contributions of the Bay 12 community.
 		[CASTE_NAME:giant red panda sow:giant red panda sows:giant red panda sow]
 	[SELECT_CASTE:ALL]
 	[PREFSTRING:large striped tails]
-	[GRAZER:255]
+	[GRAZER:3852]	changed by Igfig; creatures with SPECIFIC_FOOD graze as if they were 1/10 their size

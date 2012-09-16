@@ -59,6 +59,7 @@ material_template_default
 	[ITEMS_HARD]
 	[ITEMS_QUERN]
 	[REACTION_CLASS:CAN_GLAZE]
+	[BUTCHER_SPECIAL:BOULDER:NONE]	added by Igfig
 
 [MATERIAL_TEMPLATE:METAL_TEMPLATE]
 	[STATE_COLOR:ALL_SOLID:GRAY]
@@ -103,6 +104,7 @@ material_template_default
 	[MAX_EDGE:10000]
 	[ABSORPTION:0]
 	[IS_METAL]
+	[BUTCHER_SPECIAL:BAR:NONE]	added by Igfig
 
 [MATERIAL_TEMPLATE:WOOD_TEMPLATE]
 	[STATE_COLOR:ALL_SOLID:BROWN]
@@ -154,6 +156,8 @@ material_template_default
 	[ITEMS_SIEGE_ENGINE]
 	This general material classifier determines various in-game behaviors.  There are several others below.
 	[WOOD]
+	[BUTCHER_SPECIAL:WOOD:NONE]	added by Igfig
+	[BLOCK_NAME:plank:planks]	added by Igfig
 
 [MATERIAL_TEMPLATE:SKIN_TEMPLATE]
 	[STATE_COLOR:ALL_SOLID:GRAY]
@@ -532,8 +536,8 @@ material_template_default
 	[MAX_EDGE:0]
 	[ABSORPTION:100]
 	[IMPLIES_ANIMAL_KILL]
-	[LEATHER]
-	[ITEMS_LEATHER]
+	[PEARL]		added by Igfig
+	[ITEMS_SOFT]	added by Igfig
 
 [MATERIAL_TEMPLATE:SCALE_TEMPLATE]
 	[STATE_COLOR:ALL_SOLID:GRAY]
@@ -578,6 +582,9 @@ material_template_default
 	[MAX_EDGE:0]
 	[ABSORPTION:100]
 	[IMPLIES_ANIMAL_KILL]
+	[LEATHER]	added by Igfig
+	[ITEMS_LEATHER]	added by Igfig
+	[MATERIAL_REACTION_PRODUCT:TAN_MAT:LOCAL_CREATURE_MAT:SCALE]	added by Igfig
 
 [MATERIAL_TEMPLATE:NAIL_TEMPLATE]
 	[STATE_COLOR:ALL_SOLID:GRAY]
@@ -1918,8 +1925,9 @@ material_template_default
 	[MAX_EDGE:5000]
 	[ABSORPTION:100]
 	[IMPLIES_ANIMAL_KILL]
-	[ITEMS_HARD]
-	[ITEMS_SCALED]
+	[SHELL]		added by Igfig
+	[ITEMS_HARD]	added by Igfig
+	[ITEMS_SCALED]	added by Igfig
 	[MATERIAL_REACTION_PRODUCT:TAN_MAT:LOCAL_CREATURE_MAT:TANNED_CHITIN]
 
 [MATERIAL_TEMPLATE:MILK_TEMPLATE]
