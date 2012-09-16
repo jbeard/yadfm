@@ -450,6 +450,7 @@ creature_savage_tropical
 	[DESCRIPTION:A gigantic arachnid with huge pincers and a poisonous barbed tail.  It is found in the savage lands.]
 	[NAME:giant desert scorpion:giant desert scorpions:giant desert scorpion]
 	[CASTE_NAME:giant desert scorpion:giant desert scorpions:giant desert scorpion]
+	[CHILD:2][GENERAL_CHILD_NAME:giant desert scorpion young:giant desert scorpion young]	added by Igfig
 	[CREATURE_TILE:'S'][COLOR:6:0:0]
 	[PETVALUE:2500]
 	[PET_EXOTIC]

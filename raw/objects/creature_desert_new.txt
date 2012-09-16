@@ -195,7 +195,7 @@ Desert tortoises were sponsored by the generous contributions of the Bay 12 comm
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:40] no data
-			[CLUTCH_SIZE:3:5]
+			[CLUTCH_SIZE:2:2]	changed by Igfig
 	[CASTE:MALE]
 		[MALE]
 	[SELECT_CASTE:ALL]
@@ -348,7 +348,7 @@ Gila monsters were sponsored by the generous contributions of the Bay 12 communi
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:32]
-			[CLUTCH_SIZE:2:12]
+			[CLUTCH_SIZE:1:3]	changed by Igfig
 	[CASTE:MALE]
 		[MALE]
 	[SELECT_CASTE:ALL]

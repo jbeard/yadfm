@@ -297,6 +297,7 @@ Anacondas were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A medium-sized snake that lives in the trees.  It eats prey much larger than itself and slays them by crushing them to death.]
 	[NAME:anaconda:anacondas:anaconda]
 	[CASTE_NAME:anaconda:anacondas:anaconda]
+	[CHILD:3][GENERAL_CHILD_NAME:anaconda hatchling:anaconda hatchlings]	added by Igfig
 	[CREATURE_TILE:'A'][COLOR:2:0:1]
 	[PETVALUE:200]
 	[PET_EXOTIC]
@@ -399,6 +400,7 @@ Anacondas were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:giant anaconda:giant anacondas:giant anaconda]
 	[CASTE_NAME:giant anaconda:giant anacondas:giant anaconda]
+	[GENERAL_CHILD_NAME:giant anaconda hatchling:giant anaconda hatchlings]	added by Igfig
 	[DESCRIPTION:A huge monster in the form of an anaconda.]
 	[POPULATION_NUMBER:10:25]
 	[CLUSTER_NUMBER:1:1]
@@ -490,7 +492,7 @@ Monitor lizards were sponsored by the generous contributions of the Bay 12 commu
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:70]
-			[CLUTCH_SIZE:15:25]
+			[CLUTCH_SIZE:4:5]	changed by Igfig
 	[CASTE:MALE]
 		[MALE]
 	[SELECT_CASTE:ALL]
@@ -560,6 +562,7 @@ King cobras were sponsored by the generous contributions of the Bay 12 community
 	[DESCRIPTION:A small limbless reptile known for its deadly venom and the warning of its hood.]
 	[NAME:king cobra:king cobras:king cobra]
 	[CASTE_NAME:king cobra:king cobras:king cobra]
+	[CHILD:2][GENERAL_CHILD_NAME:king cobra hatchling:king cobra hatchlings]	added by Igfig
 	[CREATURE_TILE:'k'][COLOR:0:0:1]
 	[PETVALUE:200]
 	[PET_EXOTIC]
@@ -641,7 +644,7 @@ King cobras were sponsored by the generous contributions of the Bay 12 community
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:5]
-			[CLUTCH_SIZE:10:30] 20 to 40
+			[CLUTCH_SIZE:3:5] 20 to 40	changed by Igfig
 	[CASTE:MALE]
 		[MALE]
 	[SELECT_CASTE:ALL]
@@ -722,6 +725,7 @@ King cobras were sponsored by the generous contributions of the Bay 12 community
 	[GO_TO_START]
 	[NAME:giant king cobra:giant king cobras:giant king cobra]
 	[CASTE_NAME:giant king cobra:giant king cobras:giant king cobra]
+	[GENERAL_CHILD_NAME:king cobra hatchling:king cobra hatchlings]	added by Igfig
 	[DESCRIPTION:A large monster in the shape of a king cobra.]
 	[POPULATION_NUMBER:10:20]
 	[CLUSTER_NUMBER:1:1]
@@ -1569,7 +1573,8 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 	[DESCRIPTION:A small aggressive snake which can move very quickly.  Its venom is deadly.]
 	[NAME:black mamba:black mambas:black mamba]
 	[CASTE_NAME:black mamba:black mambas:black mamba]
-	[CREATURE_TILE:'s'][COLOR:0:0:1]
+	[CHILD:2][GENERAL_CHILD_NAME:black mamba hatchling:black mamba hatchlings]	added by Igfig
+[CREATURE_TILE:'s'][COLOR:0:0:1]
 	[PETVALUE:50]
 	[PET_EXOTIC]
 	[FREQUENCY:30]
@@ -1657,7 +1662,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:50]
-			[CLUTCH_SIZE:10:30]
+			[CLUTCH_SIZE:3:5]	changed by Igfig
 	[CASTE:MALE]
 		[MALE]
 	[SELECT_CASTE:ALL]
@@ -1737,6 +1742,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 	[GO_TO_START]
 	[NAME:giant black mamba:giant black mambas:giant black mamba]
 	[CASTE_NAME:giant black mamba:giant black mambas:giant black mamba]
+	[GENERAL_CHILD_NAME:giant black mamba hatchling:giant black mamba hatchlings]	added by Igfig
 	[DESCRIPTION:A large monster taking the shape of a black mamba.]
 	[POPULATION_NUMBER:10:25]
 	[CLUSTER_NUMBER:1:1]
@@ -2033,6 +2039,7 @@ Bushmasters were sponsored by the generous contributions of the Bay 12 community
 	[DESCRIPTION:A tiny venomous snake.  It is the longest of the pit vipers.]
 	[NAME:bushmaster:bushmasters:bushmaster]
 	[CASTE_NAME:bushmaster:bushmasters:bushmaster]
+	[CHILD:2][GENERAL_CHILD_NAME:bushmaster hatchling:bushmaster hatchlings]	added by Igfig
 	[CREATURE_TILE:'s'][COLOR:6:0:0]
 	[PETVALUE:50]
 	[PET_EXOTIC]
@@ -2117,7 +2124,7 @@ Bushmasters were sponsored by the generous contributions of the Bay 12 community
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:22]
-			[CLUTCH_SIZE:10:20]
+			[CLUTCH_SIZE:3:4]	changed by Igfig
 	[CASTE:MALE]
 		[MALE]
 	[SELECT_CASTE:ALL]
@@ -2197,6 +2204,7 @@ Bushmasters were sponsored by the generous contributions of the Bay 12 community
 	[GO_TO_START]
 	[NAME:giant bushmaster:giant bushmasters:giant bushmaster]
 	[CASTE_NAME:giant bushmaster:giant bushmasters:giant bushmaster]
+	[GENERAL_CHILD_NAME:giant bushmaster hatchling:giant bushmaster hatchlings]	added by Igfig
 	[DESCRIPTION:A huge monster in the form of a bushmaster.]
 	[POPULATION_NUMBER:10:25]
 	[CLUSTER_NUMBER:1:1]
@@ -2216,6 +2224,7 @@ Pythons were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A small snake found in the trees.  It kills its prey by using its long body to constrict them.]
 	[NAME:python:pythons:python]
 	[CASTE_NAME:python:pythons:python]
+	[CHILD:4][GENERAL_CHILD_NAME:python hatchling:python hatchlings]	added by Igfig
 	[CREATURE_TILE:'S'][COLOR:6:0:0]
 	[PETVALUE:50]
 	[PET_EXOTIC]
@@ -2278,7 +2287,7 @@ Pythons were sponsored by the generous contributions of the Bay 12 community.
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:50]
-			[CLUTCH_SIZE:10:30]
+			[CLUTCH_SIZE:3:5]	changed by Igfig
 	[CASTE:MALE]
 		[MALE]
 	[SELECT_CASTE:ALL]
@@ -2324,6 +2333,7 @@ Pythons were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:giant python:giant pythons:giant python]
 	[CASTE_NAME:giant python:giant pythons:giant python]
+	[GENERAL_CHILD_NAME:giant python hatchling:giant python hatchlings]	added by Igfig
 	[DESCRIPTION:A huge monster in the form of a python.]
 	[POPULATION_NUMBER:10:25]
 	[CLUSTER_NUMBER:1:1]
@@ -2352,7 +2362,8 @@ Tapirs were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:floppy noses]
 	[LARGE_ROAMING]
 	[BENIGN][MEANDERER][PET_EXOTIC]
-	[GRAZER:300]
+	(GRAZER:300)
+	[GRAZER:694]	changed by Igfig
 	[BODY:QUADRUPED:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:4TOES_FQ_REG:3TOES_RQ_REG:MOUTH:GENERIC_TEETH:RIBCAGE]
 	[NATURAL]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
@@ -2486,6 +2497,7 @@ Tapirs were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[GRAZER:125]	changed by Igfig
 	[GO_TO_END]
 	[PREFSTRING:floppy noses]
 
@@ -2499,7 +2511,8 @@ Impalas were sponsored by the generous contributions of the Bay 12 community.
 	[CREATURE_TILE:'i'][COLOR:6:0:0]
 	[PETVALUE:50]
 	[PET_EXOTIC]
-	[GRAZER:1200]
+	(GRAZER:1200)
+	[GRAZER:2106]	changed by Igfig
 	[PREFSTRING:mighty leaps]
 	[GRASSTRAMPLE:0]
 	[LARGE_ROAMING]
@@ -2621,6 +2634,7 @@ Impalas were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[GRAZER:304]	changed by Igfig
 	[GO_TO_END]
 	[PREFSTRING:mighty leaps]
 
@@ -2829,6 +2843,7 @@ Lion tamarins were sponsored by the generous contributions of the Bay 12 communi
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PRIORITY:SECOND]
+	[CHILD:1]
 	[DIURNAL]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:2500]

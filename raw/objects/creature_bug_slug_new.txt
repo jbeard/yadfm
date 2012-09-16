@@ -97,7 +97,7 @@ Damselflies were sponsored by the generous contributions of the Bay 12 community
 	[COLOR:3:0:1]
 	[PET_EXOTIC]
 	[PETVALUE:500]
-	[MOUNT_EXOTIC]
+	(MOUNT_EXOTIC) removed by Igfig
 	[GO_TO_END]
 	[PREFSTRING:coloration]
 
@@ -197,7 +197,7 @@ Moths were sponsored by the generous contributions of the Bay 12 community.
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
-	[MOUNT_EXOTIC]
+	(MOUNT_EXOTIC) removed by Igfig
 	[GO_TO_END]
 	[PREFSTRING:coloration]
 
@@ -527,7 +527,7 @@ Mantises were sponsored by the generous contributions of the Bay 12 community.
 	[COLOR:2:0:1]
 	[PET_EXOTIC]
 	[PETVALUE:500]
-	[MOUNT_EXOTIC]
+	(MOUNT_EXOTIC) removed by Igfig
 	[GO_TO_END]
 	[PREFSTRING:predatory nature]
 	[PREFSTRING:grasping legs]
@@ -831,7 +831,7 @@ Thrips were sponsored by the generous contributions of the Bay 12 community.
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
-	[MOUNT_EXOTIC]
+	(MOUNT_EXOTIC) removed by Igfig
 	[GO_TO_END]
 	[PREFSTRING:prolific breeding]
 
@@ -1018,7 +1018,7 @@ Mosquitos were sponsored by the generous contributions of the Bay 12 community.
 	[COLOR:0:0:1]
 	[PET_EXOTIC]
 	[PETVALUE:500]
-	[MOUNT_EXOTIC]
+	(MOUNT_EXOTIC) removed by Igfig
 	[GO_TO_END]
 	[PREFSTRING:high-pitched buzz]
 	[PREFSTRING:ability to feast on blood]
