@@ -4,6 +4,182 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.40.11:
+
+	material templates
+		added very basic fruit/flower/bud/mushroom template based on leaf
+
+	plants
+		used new templates instead of structural_plant_template for leaves etc.
+
+******************************************************
+
+Auxiliary file changes for 0.40.10:
+
+	Just the usual.
+
+******************************************************
+
+Auxiliary file changes for 0.40.09:
+
+	plants
+		finished conversion of pineapple plant out of tree format
+		added seed mat reaction product to quarry bush
+
+	reaction
+		added seeds to bag job, made bag not determine reaction amount
+
+	manual
+		typos and a few updates (Gorobay)
+
+******************************************************
+
+Auxiliary file changes for 0.40.08:
+
+	Just the usual.
+
+******************************************************
+
+Auxiliary file changes for 0.40.07:
+
+	plants
+		acacia flowers/seed pods got GROWTH_HOST_TILE
+
+	keys
+		[BUILDING_TRIGGER_MIN_SIZE_UP_PLUS:SHIFT+R]
+		[BUILDING_TRIGGER_MIN_SIZE_DOWN_PLUS:SHIFT+E]
+		[BUILDING_TRIGGER_MAX_SIZE_UP_PLUS:SHIFT+F]
+		[BUILDING_TRIGGER_MAX_SIZE_DOWN_PLUS:SHIFT+D]
+		STRING_A124 -> | for SDL versions
+		removed STRING_A127 as it was causing a conflict on OSX
+
+******************************************************
+
+Auxiliary file changes for 0.40.06:
+
+	creatures
+		removed leathery egg materials from copperhead in creature_temperate_new
+		went ahead and updated the "evil" animal people pops as with other animal people for completeness
+	
+	keys
+		fixed utf-8 encoding for sdl interface.txt
+
+	plants
+		made soybeans edible when cooked
+
+******************************************************
+
+Auxiliary file changes for 0.40.05:
+
+	creatures
+		added removal of UBIQUITOUS/FREQUENCY in animal person/giant variations (ab9rf)
+		allowed frequencies to be modified by percentage in creature variations
+		changed frequencies/population numbers for animal people
+		moved tiger man to large_tropical after tiger and made it use the standard animal person variation
+		fixed various broken eyelash color/descriptions
+		used correct legless variation for king cobra people
+		added LARGE_ROAMING to desert tortoise and giant tortoise
+		removed lots of HOMEOTHERM tags from bugs
+		added a missing CONNECTOR to generated lower spines, and PREVENTS_PARENT_COLLAPSE to generated upper spines
+		fixed duck/goose root around part category
+		fixed antlers for reindeer/moose/elk/deer, added them to elk bird
+		fixed typo in tapir description
+		fixed typo in dragon description
+		fixed reversed stoat caste names
+		fixed reversed giant armadillo caste names
+		fixed problem with squid skin coloration
+		gave crabs, horseshoe crabs, oysters and mussels blue blood
+		fixed proboscis plural
+		perseverence->ance in creature standard
+		'curiousity' fixed in creature large ocean
+
+	plants
+		fixed several density placement mistakes in the older trees/underground megafungi of plant_standard
+		fixed strawberry plural
+		'buckwheet' fixed in a few places in plant crops
+
+	materials
+		set obsidian's material values properly (UristDaVinci)
+		fixed topaz plural
+
+	entities
+		perseverence->ance in entity values
+		added elven diplomat
+
+	announcements
+		fixed ruler arrival announcement
+
+	manual
+		added a line break so TSK shows up properly in building items page of manual
+
+	language
+		additional typos in language_words fixed
+
+******************************************************
+
+Auxiliary file changes for 0.40.04:
+
+	Changed key
+		A_LOG_ENTITIES was e in SDL, n in legacy, now it is g
+	index/manual technical
+
+******************************************************
+
+Auxiliary file changes for 0.40.03:
+
+	Just the usual (index/manual technical).
+
+******************************************************
+
+Auxiliary file changes for 0.40.02:
+
+	Fixed the tracking key for the SDL version in data/init/interface.txt.
+	Added A_SHORT_WAIT to the manual (you can use , instead of . to wait for just one instant instead of ten).
+	Changed raw/objects/plant_standard.txt so that quarry bushes process to the correct edible leaf material.
+
+******************************************************
+
+Auxiliary file changes for 0.40.01:
+
+	As with the 0.31.01 release, managing the file changes list would be a daunting task this time.  There are the new plant files, and creature now have gait information among other things like odor, sweat, tears, and so on (along with some material templates and creature variations to support them).  The material emission interaction has been tweaked to allow specific creature targeting, and items have some new attack information.  There are new reactions to respect the new plant growths.
+
+	There are many new keys of course.  This is a partial list:
+		QUICK_ATTACK
+		HEAVY_ATTACK
+		WILD_ATTACK
+		PRECISE_ATTACK
+		CHARGE_ATTACK
+		MULTI_ATTACK
+		A_DISPLAY_TRACKS
+		A_FRESHEST_TRACK
+		A_ODOR
+		A_DISPLAY_ODOR
+		A_YIELD
+		A_INV_DRAW_WEAPON
+		A_LOG_PEOPLE
+		A_LOG_AGREEMENTS
+		A_LOG_EVENTS
+		A_LOG_BESTIARY
+		A_LOG_FILTER
+		A_SPEED_SNEAK
+		A_JUMP
+		A_HOLD
+		ARENA_CONFLICT_STATE_1
+		ARENA_CONFLICT_STATE_2
+		ARENA_MORALE
+		ARENA_WEATHER
+		ARENA_WEATHER_SNOW
+		ARENA_WEATHER_MUD
+		ARENA_WEATHER_CLEAR_SPATTER
+		D_LOOK_ARENA_TREE
+		ARENA_TREE_FILTER
+		ARENA_TREE_AGE
+		RECENTER_ON_LEVER
+		D_LOOK_ARENA_MOUNT
+
+
+******************************************************
+
 Auxiliary file changes for 0.34.11:
 
 	armor items

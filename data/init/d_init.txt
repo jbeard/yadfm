@@ -1,3 +1,11 @@
+WARNING: Do NOT copy over the d_init.txt from an earlier version of DF.
+Always read the file carefully, including the comments.
+
+In general, you can copy savegames and tilesets from older DF
+versions, but you should not copy anything else.  You should not, under any
+circumstances, unpack a new DF on top of an older one.
+
+
 Use these to control the automatic saving behavior in the dwarf fortress mode of game.  AUTOSAVE can be set to NONE, SEASONAL or YEARLY.  This updates your save at these intervals, so that some of your progress will be saved in case of system instability.  You can set AUTOBACKUP to YES if you want the updated save to be copied to another folder so that you'll have several copies of your world at different times.  Set AUTOSAVE_PAUSE to YES if you want the game to pause every time it autosaves.
 
 [AUTOSAVE:NONE]
@@ -12,11 +20,15 @@ Set this to NO to make Dwarf Fortress remain in the saved pause state when you l
 
 [PAUSE_ON_LOAD:YES]
 
-Set this to YES if you want Dwarf Fortress to show the warning window on embark as a confirmation even if there are no issues.
+Set this to YES if you want Dwarf Fortress to show the warning window for embark site selection even if there are no issues (as a way of confirming your choice).
 
 [EMBARK_WARNING_ALWAYS:NO]
 
-You can change these to ALWAYS and NO.  More restrictive world parameter settings override these.  ALWAYS lets you see the features in the Local view during embark, and NO stops you from looking for features in the site finder (though if you really want to stop the finder, it might be better for you to generate worlds that restrict the use of this feature completely, in which case you don't need to change the settings here).
+This option controls whether or not your choice to embark has a confirmation window after you have selected any dwarves and equipment.  Valid choices are ALWAYS, IF_POINTS_REMAIN and NO.
+
+[POST_PREPARE_EMBARK_CONFIRMATION:IF_POINTS_REMAIN]
+
+You can change the option below to ALWAYS and NO.  More restrictive world parameter settings override these.  ALWAYS lets you see the features in the Local view during embark, and NO stops you from looking for features in the site finder (though if you really want to stop the finder, it might be better for you to generate worlds that restrict the use of this feature completely, in which case you don't need to change the settings here).
 
 [SHOW_EMBARK_TUNNEL:FINDER]
 
@@ -112,6 +124,113 @@ Track tiles.  I at the end inverts the material colors.
 [TRACK_RAMP_SEW:30I]
 [TRACK_RAMP_NSEW:30I]
 
+Tiles for the parts of trees.
+
+[TREE_ROOT_SLOPING:127]
+[TREE_TRUNK_SLOPING:127]
+[TREE_ROOT_SLOPING_DEAD:127]
+[TREE_TRUNK_SLOPING_DEAD:127]
+[TREE_ROOTS:172]
+[TREE_ROOTS_DEAD:172]
+[TREE_BRANCHES:172]
+[TREE_BRANCHES_DEAD:172]
+[TREE_SMOOTH_BRANCHES:'#']
+[TREE_SMOOTH_BRANCHES_DEAD:'#']
+[TREE_TRUNK_PILLAR:'O']
+[TREE_TRUNK_PILLAR_DEAD:'O']
+[TREE_CAP_PILLAR:'O']
+[TREE_CAP_PILLAR_DEAD:'O']
+[TREE_TRUNK_N:205]
+[TREE_TRUNK_S:205]
+[TREE_TRUNK_N_DEAD:205]
+[TREE_TRUNK_S_DEAD:205]
+[TREE_TRUNK_EW:205]
+[TREE_TRUNK_EW_DEAD:205]
+[TREE_CAP_WALL_N:205]
+[TREE_CAP_WALL_S:205]
+[TREE_CAP_WALL_N_DEAD:205]
+[TREE_CAP_WALL_S_DEAD:205]
+[TREE_TRUNK_E:186]
+[TREE_TRUNK_W:186]
+[TREE_TRUNK_E_DEAD:186]
+[TREE_TRUNK_W_DEAD:186]
+[TREE_TRUNK_NS:186]
+[TREE_TRUNK_NS_DEAD:186]
+[TREE_CAP_WALL_E:186]
+[TREE_CAP_WALL_W:186]
+[TREE_CAP_WALL_E_DEAD:186]
+[TREE_CAP_WALL_W_DEAD:186]
+[TREE_TRUNK_NW:201]
+[TREE_CAP_WALL_NW:201]
+[TREE_TRUNK_NW_DEAD:201]
+[TREE_CAP_WALL_NW_DEAD:201]
+[TREE_TRUNK_NE:187]
+[TREE_CAP_WALL_NE:187]
+[TREE_TRUNK_NE_DEAD:187]
+[TREE_CAP_WALL_NE_DEAD:187]
+[TREE_TRUNK_SW:200]
+[TREE_CAP_WALL_SW:200]
+[TREE_TRUNK_SW_DEAD:200]
+[TREE_CAP_WALL_SW_DEAD:200]
+[TREE_TRUNK_SE:188]
+[TREE_CAP_WALL_SE:188]
+[TREE_TRUNK_SE_DEAD:188]
+[TREE_CAP_WALL_SE_DEAD:188]
+[TREE_TRUNK_NSE:204]
+[TREE_TRUNK_NSE_DEAD:204]
+[TREE_TRUNK_NSW:185]
+[TREE_TRUNK_NSW_DEAD:185]
+[TREE_TRUNK_NEW:202]
+[TREE_TRUNK_NEW_DEAD:202]
+[TREE_TRUNK_SEW:203]
+[TREE_TRUNK_SEW_DEAD:203]
+[TREE_TRUNK_NSEW:206]
+[TREE_TRUNK_NSEW_DEAD:206]
+[TREE_TRUNK_BRANCH_N:207]
+[TREE_TRUNK_BRANCH_N_DEAD:207]
+[TREE_TRUNK_BRANCH_S:209]
+[TREE_TRUNK_BRANCH_S_DEAD:209]
+[TREE_TRUNK_BRANCH_E:199]
+[TREE_TRUNK_BRANCH_E_DEAD:199]
+[TREE_TRUNK_BRANCH_W:182]
+[TREE_TRUNK_BRANCH_W_DEAD:182]
+[TREE_BRANCH_NS:179]
+[TREE_BRANCH_NS_DEAD:179]
+[TREE_BRANCH_EW:196]
+[TREE_BRANCH_EW_DEAD:196]
+[TREE_BRANCH_NW:217]
+[TREE_BRANCH_NW_DEAD:217]
+[TREE_BRANCH_NE:192]
+[TREE_BRANCH_NE_DEAD:192]
+[TREE_BRANCH_SW:191]
+[TREE_BRANCH_SW_DEAD:191]
+[TREE_BRANCH_SE:218]
+[TREE_BRANCH_SE_DEAD:218]
+[TREE_BRANCH_NSE:195]
+[TREE_BRANCH_NSE_DEAD:195]
+[TREE_BRANCH_NSW:180]
+[TREE_BRANCH_NSW_DEAD:180]
+[TREE_BRANCH_NEW:193]
+[TREE_BRANCH_NEW_DEAD:193]
+[TREE_BRANCH_SEW:194]
+[TREE_BRANCH_SEW_DEAD:194]
+[TREE_BRANCH_NSEW:197]
+[TREE_BRANCH_NSEW_DEAD:197]
+[TREE_TWIGS:';']
+[TREE_TWIGS_DEAD:';']
+[TREE_CAP_RAMP:30]
+[TREE_CAP_RAMP_DEAD:30]
+[TREE_CAP_FLOOR1:249]
+[TREE_CAP_FLOOR2:249]
+[TREE_CAP_FLOOR1_DEAD:249]
+[TREE_CAP_FLOOR2_DEAD:249]
+[TREE_CAP_FLOOR3:249]
+[TREE_CAP_FLOOR4:249]
+[TREE_CAP_FLOOR3_DEAD:249]
+[TREE_CAP_FLOOR4_DEAD:249]
+[TREE_TRUNK_INTERIOR:10]
+[TREE_TRUNK_INTERIOR_DEAD:10]
+
 This controls the "IDLERS: <number>" that is displayed in dwarf mode.  You can set it to TOP, BOTTOM or OFF.
 
 [IDLERS:TOP]
@@ -120,13 +239,19 @@ You can have your dwarves start/arrive without any labor types enabled here by s
 
 [SET_LABOR_LISTS:SKILLS]
 
-You can set the maximum population of your fortress here.  Keep in mind that your population must be at least 80 to get a king and 100 to obtain the current game features.
+You can set the maximum population of your fortress here.  Keep in mind that your population must be at least 80 to get a king and 100 to obtain the current game features.  The strict cap also stops fort births.  Both caps can be violated by a few special cases, like the arrival of the monarch if you qualify.
 
 [POPULATION_CAP:200]
+[STRICT_POPULATION_CAP:220]
 
 This allows you to control the number of babies+children in your fortress.  The first number is an absolute cap on the number of babies+children.  The second is a percentage of the current number of adults in your fortress (the default is the essentially meaningless 1000% here).  The lower number is used as the cap.  The cap only prevents further pregancies, so migrant children, multiple births and existing pregnancies from old saves can still push you over the cap.  Setting either number to zero will disallow pregnancies in the fortress.
 
 [BABY_CHILD_CAP:100:1000]
+
+Use the specific seed cap to set the maximum number of seeds of each kind generally allowed in the fortress.  Use the fortress seed cap to control the overall number of seeds allowed.  Seeds over the global cap will be periodically removed, starting with the oldest and most worthless seeds.
+
+[SPECIFIC_SEED_CAP:200]
+[FORTRESS_SEED_CAP:3000]
 
 If you don't like the ,.`' ground, try setting this to NO.  The ground will turn into periods only.
 
@@ -168,6 +293,7 @@ This controls the up/down views in adventure mode.  The first parameter can be O
 
 You can use these to say how nicknames are displayed in each mode
 Options are REPLACE_FIRST, CENTRALIZE (between first and last), REPLACE_ALL
+
 [NICKNAME_DWARF:REPLACE_FIRST]
 [NICKNAME_ADVENTURE:REPLACE_FIRST]
 [NICKNAME_LEGENDS:REPLACE_FIRST]
