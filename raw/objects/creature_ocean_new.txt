@@ -19,7 +19,6 @@ Octopuses were sponsored by the generous contributions of the Bay 12 community.
 	[CARNIVORE]
 	[AQUATIC][NOBONES][IMMOBILE_LAND][UNDERSWIM]
 	[NATURAL]
-	[NOT_BUTCHERABLE]
 	[BIOME:ANY_OCEAN]
 	[NO_DRINK]
 	[POPULATION_NUMBER:50:100]
