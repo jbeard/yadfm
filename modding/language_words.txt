@@ -1,0 +1,32 @@
+
+
+      [ADJ_DIST:1]
+      [ADJ_DIST:2]
+      [ADJ_DIST:3]
+      [ADJ_DIST:4]
+      [ADJ_DIST:5]
+      [ADJ_DIST:6]
+      [ADJ_DIST:7]
+      [FRONT_COMPOUND_ADJ]
+      [REAR_COMPOUND_ADJ]
+      [THE_COMPOUND_ADJ]
+   [NOUN:thorin:thorin]
+      [FRONT_COMPOUND_NOUN_PLUR]
+      [FRONT_COMPOUND_NOUN_SING]
+      [OF_NOUN_PLUR]
+      [OF_NOUN_SING]
+      [REAR_COMPOUND_NOUN_PLUR]
+      [REAR_COMPOUND_NOUN_SING]
+      [THE_COMPOUND_NOUN_PLUR]
+      [THE_COMPOUND_NOUN_SING]
+      [THE_NOUN_PLUR]
+      [THE_NOUN_SING]
+   [PREFIX:thorin]
+      [FRONT_COMPOUND_PREFIX]
+      [THE_COMPOUND_PREFIX]
+   [VERB:thorin:thorin:thorin:thorin:thorin]
+      [STANDARD_VERB]
+
+
+
+
