@@ -9,7 +9,7 @@ creature_insects_enhanced
 	[CHILD:1][GENERAL_CHILD_NAME:giant forest spider hatchling:giant forest spider hatchlings]
 	[CREATURE_TILE:'S'][COLOR:7:0:0]
 	[PETVALUE:2500]
-	[PET]
+	[PET_EXOTIC]
 	[BIOME:ANY_FOREST][EVIL]
 	[THICKWEB][WEBIMMUNE][AMBUSHPREDATOR][PARALYZEIMMUNE]
 	[USE_MATERIAL_TEMPLATE:SILK:SILK_TEMPLATE]
@@ -104,4 +104,3 @@ creature_insects_enhanced
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:4]
-
