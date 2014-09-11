@@ -36,7 +36,6 @@ Crows were sponsored by the generous contributions of the Bay 12 community.
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
 		[REMOVE_MATERIAL:HAIR]
 		[REMOVE_MATERIAL:LEATHER]
-		[REMOVE_MATERIAL:LEATHER]
 		[USE_MATERIAL_TEMPLATE:FEATHER:FEATHER_TEMPLATE]
 	[BODY_DETAIL_PLAN:STANDARD_TISSUES]
 		[REMOVE_TISSUE:HAIR]
@@ -3037,7 +3036,7 @@ Eagles were sponsored by the generous contributions of the Bay 12 community.
 
 Hornbills were sponsored by the generous contributions of the Bay 12 community.
 
-	Sponsored by Hornbill Interactive – Jim Regan / balrogkernel
+	Sponsored by Hornbill Interactive ï¿½ Jim Regan / balrogkernel
 
 [CREATURE:BIRD_HORNBILL]
 	[DESCRIPTION:A tiny bird with a large, brightly-colored bill.]
