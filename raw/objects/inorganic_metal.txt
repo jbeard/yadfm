@@ -1050,4 +1050,3 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 	[DEEP_SPECIAL]
 	[STOCKPILE_THREAD_METAL]
 	[STATE_COLOR:ALL_SOLID:AQUA]
-
