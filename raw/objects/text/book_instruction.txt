@@ -65,3 +65,99 @@ Could It Be [NAME]?
 Did [NAME] Falter?
 First [NAME], Then The World!
 To [NAME] and Glory!
+Faith and [NAME]
+When [ANY_PRONOUN] Met [NAME]
+And [NAME] Came Down
+The Book of [NAME]
+The [NOUN] of [NAME]
+The [ADJ] [NAME]
+[NO_ART_NAME]
+Sweet [NAME]
+Mastering [NAME]
+The [ADJ] News of [NAME]
+The [ADJ] [NOUN]
+[NOUN] in the [NOUN] of [NAME]
+A [NOUN] named [NAME]
+[NAME] and [NO_ART_NAME]
+Exploring [NAME]
+[NOUN] and [NAME]
+[NAME] the [NOUN]
+[ANY_PRONOUN] Shall Know [NAME]
+[NAME] the [ADJ][NOUN]
+[ADJ] [NAME]
+[NAME] and the [ADJ] [NOUN]
+[NAME]: [ADJ] and [ADJ]
+[NAME]: [PHRASE]
+[PHRASE]: A Review of [NO_ART_NAME]
+[NAME] [NOUN]
+[NAME] Forever
+[PHRASE], [ADJ] [NO_ART_NAME]
+The [ADJ] [NOUN] of [NAME]
+[NOUN] of a [NO_ART_NAME] [NOUN]
+[ADJ] Thoughts on [NAME]
+Communion With [NAME]
+[NOUN] of [NAME]
+Submission to [NO_ART_NAME]
+The Secrets of [NAME]
+Let There Be [NO_ART_NAME]
+[NAME] and [ANY_PRONOUN]
+Rituals of [NO_ART_NAME]
+Studies in [NAME]
+Understanding [NAME]
+The [ADJ] Story of [NAME]
+No More [NAME]
+Essays on [NAME]
+Philosophies on [NAME]
+Elementary [NAME]
+The Path to [NAME]
+Exercises in [NAME]
+The [NO_ART_NAME]
+The Ancient [NAME]
+Recordings of [NAME]
+The Definitive [NO_ART_NAME]
+Miracles of [NAME]
+Making Peace With [NAME]
+[NO_ART_NAME]
+The Sorcerer's Guide to [NAME]
+The World of [NAME]
+[ADJ] [NOUN]
+[NAME] [ADJ] 
+[NO_ART_NAME] Stories
+Speading the [NOUN] OF [NAME]
+[NO_ART_NAME] and Related Practices
+[NAME] and The [NO_ART_NAME] of [NO_ART_NAME]
+[ADJ] [NAME] and [NOUN]
+[NAME] and [NOUN]
+[NAME] for Laymen
+[NAME] for Children
+[NAME] for Experts
+[NAME] Until [NAME]
+[NAME] In The [ADJ] [NOUN]
+[NAME] Knows That [PHRASE]
+[NAME] Is The [NOUN]
+[NAME] Is [NO_ART_NAME]
+[NAME] Is [NAME]
+[NAME] and Ethics
+[NAME] and Society
+[NAME] and the Gods
+[NAME], I Wait for Thee
+[NAME], [PHRASE]
+[NAME]: A [ADJ] [NOUN]
+[NAME]: Now and Then
+[NAME]: [PHRASE]
+[NAME]: [NOUN] or [NOUN]?
+[NAME]: [ADJ] Thoughts
+[NAME]: My [NOUN]
+[NAME]: [ADJ] or [ADJ]?
+[NAME]: [NOUN] and [ADJ] Solutions
+[NAME]: Building the [NO_ART_NAME]
+[NAME]: The [ADJ] Guide
+[NAME]: Finding the [ADJ] [NOUN]
+[NAME] in the [ADJ] World
+Do you know [NAME]?
+Remembering [NAME]
+[NAME] and Warfare
+The [ADJ] [NOUN] of [NAME]
+Seeking [NO_ART_NAME]
+A [NOUN] for [NAME]
+The History of [NAME]

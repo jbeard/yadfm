@@ -1,4 +1,4 @@
-descriptor_pattern_pupil_eye
+descriptor_pupil_eye
 
 [OBJECT:DESCRIPTOR_PATTERN]
 

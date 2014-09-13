@@ -5,3 +5,7 @@ item_siegeammo
 [ITEM_SIEGEAMMO:ITEM_SIEGEAMMO_BALLISTA]
 [NAME:ballista arrow:ballista arrows]
 [CLASS:BALLISTA]
+
+[ITEM_SIEGEAMMO:ITEM_SIEGEAMMO_BALLISTA_KOBOLD]
+[NAME:very big pointy stick:very big pointy sticks]
+[CLASS:BALLISTA]

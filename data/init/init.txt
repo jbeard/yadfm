@@ -5,10 +5,9 @@ In general, you can copy savegames and tilesets from older DF
 versions, but you should not copy anything else.  You should not, under any
 circumstances, unpack a new DF on top of an older one.
 
-
 Change this to turn sound off.
 
-[SOUND:YES]
+[SOUND:NO]
 
 The sound volume runs from 0 (off) to 255 (full).  You can set the volume from the ESC options menu as well.
 
@@ -16,18 +15,18 @@ The sound volume runs from 0 (off) to 255 (full).  You can set the volume from t
 
 Change this to skip the wonderful intro movies.
 
-[INTRO:YES]
+[INTRO:NO]
 
 This lets you set the starting windowed/fullscreen setting.  Can be YES, NO or PROMPT.
 
-[WINDOWED:YES]
+[WINDOWED:NO]
 
 This is the size and font for windowed mode.  Changing to the 800x600 font might make you happier.
 If set below 256x256 it specifies the grid size instead, with a minimum of 80x25.
 
 [WINDOWEDX:80]
 [WINDOWEDY:25]
-[FONT:curses_640x300.png]
+[FONT:Font.png]
 
 You may disable window resizing if you wish.
 [RESIZABLE:YES]
@@ -36,22 +35,22 @@ Full screen info.  The 0s below mean that the game will choose a resolution for 
 
 [FULLSCREENX:0]
 [FULLSCREENY:0]
-[FULLFONT:curses_800x600.png]
+[FULLFONT:Font.png]
 
 If this is set to NO, tiles will be stretched to fit the screen if there is a resolution mismatch.
 If this is set to YES, the tiles will not be stretched, but rather the game view will be centralized, surrounded by black space.  Tiles that are too large will always be compressed rather than running off the screen.
 
 [BLACK_SPACE:YES]
 
-Graphics info, most of it as above.  Set GRAPHICS to YES to turn it all on.  This will use the "raw/graphics" folder for tile information.  Currently this is limited to whatever creature graphics you have downloaded.  The game comes with a few pictures to demonstrate.  As of May 2012, the Dwarf Fortress Wiki has custom tilesets available at http://dwarffortresswiki.org/index.php/Tileset_repository and creature graphics at http://dwarffortresswiki.org/index.php/Graphics_set_repository.
+Graphics info, most of it as above.  Set GRAPHICS to YES to turn it all on.  This will use the "raw/graphics" folder for tile information.  Currently this is limited to whatever creature graphics you have downloaded.  The game comes with a few pictures to demonstrate.  As of February 2012, the Dwarf Fortress Wiki has custom tilesets available at http://df.magmawiki.com/index.php/Tileset_repository and creature graphics at http://df.magmawiki.com/index.php/Graphics_set_repository.
 
-[GRAPHICS:NO]
+[GRAPHICS:YES]
 [GRAPHICS_WINDOWEDX:0]
 [GRAPHICS_WINDOWEDY:0]
-[GRAPHICS_FONT:curses_square_16x16.png]
+[GRAPHICS_FONT:Phoebus_16x16.png]
 [GRAPHICS_FULLSCREENX:0]
 [GRAPHICS_FULLSCREENY:0]
-[GRAPHICS_FULLFONT:curses_square_16x16.png]
+[GRAPHICS_FULLFONT:Phoebus_16x16.png]
 [GRAPHICS_BLACK_SPACE:YES]
 
 These settings can have a significant impact on frame rate, especially for people that have slow frame rates on the title screen.  Available modes are 2D, 2DSW, 2DASYNC, STANDARD, PARTIAL:<number>, ACCUM_BUFFER, FRAME_BUFFER and VBO. The number after PARTIAL refers to how many frames it will redo a printed tile before skipping it, so you might try increasing it a bit if you have flickering when PARTIAL is set.  Please note that any of these combinations might cause frame rates to drop significantly or cause unpleasant side effects like flickering.
@@ -64,7 +63,8 @@ On a multi-core machine none of this is very likely to matter; stick to 2D.
 
 Linux/OS X users may also use PRINT_MODE:TEXT for primitive ncurses output.
 
-[PRINT_MODE:2D]
+[PRINT_MODE:STANDARD]
+was 2D, STANDARD needed for JollyBastion
 	Mode examples:
 	 PRINT_MODE:2D
 	 PRINT_MODE:TEXT
@@ -74,7 +74,7 @@ Linux/OS X users may also use PRINT_MODE:TEXT for primitive ncurses output.
 
 Switches truetype on whenever the vertical tile size is this many pixels or larger.  You may also use YES/NO to force it on/off.  Turning it off may provide a minor speed boost (using font small enough that it doesn't activate won't).
 
-[TRUETYPE:24]
+[TRUETYPE:NO]
 
 Change this to YES to keep the DF window on top of your other windows.
 
@@ -82,17 +82,17 @@ Change this to YES to keep the DF window on top of your other windows.
 
 Change this to YES if you want to see an FPS counter at the top left.
 
-[FPS:NO]
+[FPS:YES]
 
 Use this to set the maximum frame rate during play.  The movies are always capped at 100.  A frame in this case is not graphical but related to the movement speed of a creature.  A healthy, unencumbered dwarven peasant takes one step every 10 frames.
 
 You may set FPS_CAP to 0 to make it uncapped.
 
-[FPS_CAP:100]
+[FPS_CAP:150]
 
 Use this to set the maximum graphical frame refresh rate during play.
 
-[G_FPS_CAP:50]
+[G_FPS_CAP:30]
 
 On cards that support the OpenGL ARB_sync extension, turning this on can improve framerates in GPU overload conditions. It defaults to NO, as many cards that claim to support this will crash if asked to do so.
 
@@ -114,7 +114,7 @@ Change this to make the dwarfort.exe process have a different priority.  From hi
 Use this to set how fast the game zooms.  The default corresponds to
 increasing grid size by 10 units each time you zoom.
 
-[ZOOM_SPEED:10]
+[ZOOM_SPEED:5]
 
 Change this to NO if you don't want to have the mouse involved at all.
 
@@ -139,7 +139,7 @@ If you set KEY_REPEAT_ACCEL_LIMIT above one, then after KEY_REPEAT_ACCEL_START r
 
 This controls the number of milliseconds between macro instructions.
 
-[MACRO_MS:15]
+[MACRO_MS:5]
 
 This controls the number of milliseconds that must pass before input works again after the view recenters on an event in dwarf mode.
 
