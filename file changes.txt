@@ -4,6 +4,596 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.42.06:
+
+	announcements
+		removed TRAVEL_ADVISORY
+
+	reaction
+		added adv bone carving reactions, with category support
+		added has_edge for reagent
+
+******************************************************
+
+Auxiliary file changes for 0.42.05:
+
+	creatures
+		added skink, chameleon, anole and iguana to creature_reptiles
+		fixed rhino/giraffe description typos
+		got rid of lizard eggs again, specified it as common lizard zootoca vivipara in note
+		corrected monitor lizard toes, added tongues and teeth
+		added leopard gecko toes, tongues and teeth
+
+******************************************************
+
+Auxiliary file changes for 0.42.04:
+
+	data/speech/general.txt
+		fixed another whom typo
+
+	creatures
+		removed PARCHMENT from rhino lizard
+		leech, moon snail get [EXTRAVISION]
+		moon snail got heart,guts,brain,mouth
+		giant toad -> giant cave toad, made taupe gray
+		walrus attack changed to tusk_stab variation
+		lizards got toes, claws, eggs
+		muskox got horns
+		wild boar/warthog gets tusk attack
+		animal people and giant animals for many old raw entries
+			removed redundant savage_tropical file -- will add replacement scorpion later
+
+	creature variations
+		animal person support for BODY_WITH_HEAD_FLAG (for worm)
+
+	inorganic
+		quicklime got solid density
+		typo in note for dolomite
+
+	plant_crops
+		papyrus structural mat got [STATE_NAME_ADJ:SOLID:papyrus]
+		many crops got [MATERIAL_REACTION_PRODUCT:SEED_MAT:LOCAL_PLANT_MAT:SEED]
+
+	tools
+		added NO_DEFAULT_IMPROVEMENTS to quire to stop it from getting cloth description
+
+	book_instruction typo for practitioner
+
+******************************************************
+
+Auxiliary file changes for 0.42.03:
+
+	critters
+		removed [TRAINABLE] from giraffes
+		changed [TRAINABLE] to [TRAINABLE_WAR] for rhinos
+		gave dog/cat/horse/donkey/pig/sheep/goat adjectives in NAME
+		fixed crocodile/alligator toe count
+		elephant gets more prefstrings
+		fixed some busted venom immunity entries
+
+	init
+		fixed typo in d_init (pregancies -> pregnancies)
+
+	items
+		removed duplicate [UNIMPROVABLE] tag from instrument piece examples
+		removed extra [SHAPED] from helm
+
+	keys
+		fixed input of { in interface (lethosor)
+
+	language
+		fixed summer and mightiness entries in language_words (Captain Mayday)
+
+	plants
+		added [STOCKPILE_PLANT_GROWTH] to feather tree eggs
+
+	reactions
+		added [NOT_WEB] to bookbinding reaction
+
+	speech
+		fixed who/whom in elf.txt
+
+******************************************************
+
+Auxiliary file changes for 0.42.02:
+
+	Just the usual.
+
+******************************************************
+
+Auxiliary file changes for 0.42.01:
+
+	new keys
+		ASSIGN_LOCATION:l
+		LOCATION_NEW:a
+		LOCATION_RETIRE:X
+		LOCATION_INN_TAVERN:i
+		LOCATION_LIBRARY:l
+		LOCATION_TEMPLE:t
+		LOCATION_RENAME:n
+		UNITJOB_VIEW_UNIT:v
+		UNITJOB_VIEW_JOB:j
+		STOCKPILE_SHEET:S
+		D_PETITIONS:P
+		D_LOCATIONS:l
+		A_RANDOM_APPEARANCE:r
+		A_RANDOM_APPEARANCE_FULL:f
+		A_RANDOM_PERSONALITY:r
+		A_COMPOSE_FILTER:f
+		A_CUSTOM_PERSONALITY:f
+		A_CHANGE_DREAM:g
+		A_ACTION_COMPOSE:C
+		A_ACTION_WRITE:w
+		BUILDJOB_DETAILS_FILTER:f
+		BUILDJOB_DETAILS:d
+		UNITVIEW_PRF_OCCUPATION:o
+		LOCATION_DETAILS:d
+		LOCATION_RESTRICTION:r
+		LOCATION_SET_NUMBER_1:a
+		LOCATION_SET_NUMBER_2:b
+		HOTKEY_BUILDING_INSTRUMENT:I
+		HOTKEY_BUILDING_BOOKCASE:alt+c
+
+	changed keys
+		D_ARTLIST:L
+
+	remove keys
+		UNITJOB_VIEW
+		HOTKEY_GLASS_INSTRUMENT
+		HOTKEY_CRAFTS_MAT_INSTRUMENT
+
+	new announcements
+		[GUEST_ARRIVAL:A_D:D_D]
+		[CANNOT_SPEAK:A_D:D_D]
+		[RESEARCH_BREAKTHROUGH:A_D:D_D]
+		[SERVICE_ORDER_DELIVERY:A_D]
+		[PERFORMANCE_START_FAILURE:A_D]
+		[BEGIN_ACTIVITY:A_D]
+		[MIDDLE_OF_ACTIVITY:A_D]
+		[ACTIVITY_SECTION_CHANGE:A_D]
+		[CONCLUDE_ACTIVITY:A_D]
+		[LEARNED_WRITTEN_CONTENT:A_D]
+		[LEARNED_ART_FORM:A_D]
+		[PERFORMER_UPDATE:A_D]
+		[BUILDING_DESTROYED_OR_TOPPLED:A_D:D_D]
+		[DEITY_CURSE:A_D:D_D:BOX:P:R]
+		[COMPOSITION_COMPLETE:A_D]
+		[COMPOSITION_FAILED:A_D]
+		[NEW_APPRENTICESHIP:A_D:D_D]
+		[PETITION_IGNORED:A_D:D_D]
+
+	changed announcements
+		[EAT_ITEM:A_D]
+		[DRINK_ITEM:A_D]
+		[CONSUME_FAILURE:A_D]
+		[DROP_ITEM:A_D]
+		[PICK_UP_ITEM:A_D]
+
+	creatures
+		human gets [OUTSIDER_CONTROLLABLE]
+		animal people get [LOCAL_POPS_CONTROLLABLE][LOCAL_POPS_PRODUCE_HEROES]
+		gorlaks,plump helmet men get [LOCAL_POPS_CONTROLLABLE][LOCAL_POPS_PRODUCE_HEROES]
+		dwarves get [STRANGE_MOODS] <-- add this to any imported save raws!
+		dwarves get [SYNDROME_DILUTION_FACTOR:INEBRIATION:150]
+			general format is [SYNDROME_DILUTION_FACTOR:<SYN_IDENTIFIER>:<percentage, higher means more resistance, 100 is default effect>]
+		beak dogs get [COMMON_DOMESTIC], works with EVIL to make them appear at all, though there is still an issue with them starving
+		both gnomes get [SYNDROME_DILUTION_FACTOR:INEBRIATION:500]
+
+	inorganic
+		[IS_CERAMIC], used by instruments/tools that have [CERAMIC_MAT]
+		added quicklime and milk of lime
+
+	item
+		instruments
+			removed instrument file and added example files for instruments with many new tokens
+
+		tools
+			several tools were added to support the new stuff
+			new mat tokens
+				[LEATHER_MAT]
+				[SILK_MAT]
+				[THREAD_PLANT_MAT]
+				[GLASS_MAT]
+				[CERAMIC_MAT]
+				[STONE_MAT]
+				[BONE_MAT]
+				[SHELL_MAT]
+			[NO_DEFAULT_JOB] -- only custom reactions are used to make this item
+			[INCOMPLETE_ITEM] -- won't be used in world gen libraries (to differentiate scrolls from quires)
+									also put it on bindings, rollers, instr. pieces for completeness/future use
+			[DEFAULT_IMPROVEMENT:<imp type>:<possibly specific type or part token>:<tool mat flag like HARD_MAT or SILK_MAT>]
+
+	entity
+		removed specific instruments
+		[GENERATE_POETIC_FORMS]
+		[GENERATE_MUSICAL_FORMS]
+		[GENERATE_DANCE_FORMS]
+		new value: KNOWLEDGE
+		[VARIABLE_VALUE:<value token or ALL>:<min>:<max>]
+			used this for humans with ALL:-30:30
+		[CIV_CONTROLLABLE] -> [SITE_CONTROLLABLE]
+		removed [INDIV_CONTROLLABLE], now have [ALL_MAIN_POPS_CONTROLLABLE] for adv mode
+		removed ADVENTURE_TIER
+		the normal tokens to include new stuff in entities
+
+	materials
+		new syndrome tokens
+			[SYN_CONCENTRATION_ADDED:<amount>:<max>]
+				each 100 of amount will contribute SEV in general to each effect (before dilution), max goes up to 1000
+				the concentration does not decrease, but will stay at the maximum attained until the syndrome wears off
+			[SYN_IDENTIFIER:<token>]
+				causes these syndromes to use the same concentration pool, first one in wins (the rest just stack)
+				would be better to make syndromes their own raw at this point to needing this, will happen later
+			[SYN_NO_HOSPITAL]
+				affected creature will not go to the hospital for effects no matter how bad they get
+			base effect tokens
+				ABRUPT_START, ABRUPT_END -- without these, effects will generally build toward the peak and then drop off
+				DWF_STRETCH:<factor> -- this makes effects last longer in dwarf mode
+			new effects
+				[CE_CHANGE_PERSONALITY:FACET:<facet token>:<amount>:<base effect tokens>]
+					can have multiple facets in one effect by listing them as FACET:<token>:<amount> over and over -- see inebriation
+				[CE_FEEL_EMOTION:EMOTION:<emotion token>:SEV:<amount>:<base effect tokens>]
+					due to the way emotions work, you'll need additional effects for each emotion you want to stack
+				[CE_ERRATIC_BEHAVIOR:SEV:<amount>:<base effect tokens>]
+
+	reaction
+		various new reactions for paper, codices, scrolls, parchment etc.
+		new buildings supported: GLASS, WOOD (for wood furnace), MASON, ASHERY, LEATHER, BOWYER, SIEGE, CLOTHES, METALSMITH, CARPENTER
+		reagants can get [IS_SAND_MATERIAL] (which checks for soil_sand) and [METAL_ITEM_MATERIAL] (which checks for ITEMS_METAL)
+		improvement products can now target products that are given [PRODUCT_TOKEN:<token>]
+			assuming the target is above the improvement in the raw def
+		improvement products can now be of type INSTRUMENT_PIECE:<piece token>
+		[DESCRIPTION:<string>]
+			used for the helpful hint box in the building menu
+			also have [DESCRIPTION:USE_TOOL:<token>] and [DESCRIPTION:USE_INSTRUMENT:<token>] if you want it to swipe those for hint box
+				can use any of these in succession to create paragraphs, though the helpful hint box only fits so much text
+		can now be placed in categories for building menus
+			within a reaction, define category with [CATEGORY:<token>]
+				after you make a category, in one of its reactions, you can use these to further define it
+					[CATEGORY_NAME:<string>] <-- for name in the menu
+					[CATEGORY_DESCRIPTION:<string>] <-- for helpful hint box
+					[CATEGORY_PARENT:<token>] <-- for nesting in menus
+						if you are defining a nesting structure within a reaction
+							just make sure the category of the reaction itself is the last defined
+					[CATEGORY_KEY:<key>] <-- hot key if any
+				you only need to define each category's subtokens once in any of the raw files
+					repeated subtokens will overwrite any loaded data
+		[MAX_MULTIPLIER:<#>] -- if you've got, say, a reaction with a bone reagent and want it to just do the reaction <#> times
+							instead of processing the whole stack -- this is a REACTION token, not a REAGENT token
+		reagents can have [CAN_USE_HOSPITAL_RESERVED] [CAN_USE_LOCATION_RESERVED] to allow them access to those items
+			(locations are taverns etc.)
+
+	graphics examples units
+		PERFORMER
+		POET
+		BARD
+		DANCER
+		SAGE
+		SCHOLAR
+		PHILOSOPHER
+		MATHEMATICIAN
+		HISTORIAN
+		ASTRONOMER
+		NATURALIST
+		CHEMIST
+		GEOGRAPHER
+		SCRIBE
+		PAPERMAKER
+		BOOKBINDER
+		TAVERN_KEEPER
+
+	skills
+		DANCE
+		MAKE_MUSIC
+		SING
+		PLAY_KEYBOARD_INSTRUMENT
+		PLAY_STRINGED_INSTRUMENT
+		PLAY_WIND_INSTRUMENT
+		PLAY_PERCUSSION_INSTRUMENT
+		CRITICAL_THINKING
+		LOGIC
+		MATHEMATICS
+		ASTRONOMY
+		CHEMISTRY
+		GEOGRAPHY
+		OPTICS_ENGINEER
+		FLUID_ENGINEER
+		PAPERMAKING
+		BOOKBINDING
+
+	d_init
+		[VISITOR_CAP:100]
+		[INVASION_SOLDIER_CAP:120]
+		[INVASION_MONSTER_CAP:40]
+
+******************************************************
+
+Auxiliary file changes for 0.40.24:
+
+	plant_standard:
+			muck root, bloated tubers got seeds
+	creature_tropical_new:
+			pangolin [REMOVE_TISSUE:SKIN]
+	creature_small_ocean:
+			mussel and oyster got leather/tallow/soap
+	creature_other:
+			wambler got leather/tallow/soap, changed FLUFF/PUDGE tokens to HAIR/FAT to avoid template conflict (still named the same)
+	creature_next_underground:
+			floater and blog got leather
+			pond grabber stopped using claw template -- did manual name change instead
+			flesh ball FLESH token to MUSCLE to avoid template conflicts, also added flesh name change
+
+******************************************************
+
+Auxiliary file changes for 0.40.23:
+
+	creature_small_riverlake and creature_standard
+		breath -> breathe a few places (Gorobay)
+
+******************************************************
+
+Auxiliary file changes for 0.40.22:
+
+	Just the usual.
+
+******************************************************
+
+Auxiliary file changes for 0.40.21:
+
+	Just the usual.
+
+******************************************************
+
+Auxiliary file changes for 0.40.20:
+
+	new keys
+		DESIGNATE_STANDARD_MARKER:m
+		DESIGNATE_MINE_MODE:a
+		DESIGNATE_TOGGLE_MARKER:M
+		BUILDJOB_NOW:n
+
+	changed key
+		DESIGNATE_FORTIFY a -> F
+
+******************************************************
+
+Auxiliary file changes for 0.40.19:
+
+	new keys
+		INTERFACEKEY_UNITVIEW_GELD:x
+		INTERFACEKEY_PET_GELD:x
+
+	creatures
+		GELDABLE information added to many creatures.
+		new commands: BP_ADD_TYPE:<tag>, BP_REMOVE_TYPE:<tag> used with SET_BP_GROUP
+			legal tags:
+ 				HEAD
+				UPPERBODY
+				LOWERBODY
+				SIGHT
+				EMBEDDED
+				INTERNAL
+				CIRCULATION
+				SKELETON
+				LIMB
+				GRASP
+				STANCE
+				GUTS
+				GELDABLE
+				BREATHE
+				SMALL
+				THROAT
+				JOINT
+				THOUGHT
+				NERVOUS
+				RIGHT
+				LEFT
+				HEAR
+				SMELL
+				FLIER
+				DIGIT
+				CONNECTOR
+				PREVENTS_PARENT_COLLAPSE
+				MOUTH
+				APERTURE
+				SOCKET
+				TOTEMABLE
+				UNDER_PRESSURE
+				VERMIN_BUTCHER_ITEM
+
+	new announcements
+		[MOVED_OUT_OF_RANGE:A_D:D_D]
+		[CANNOT_JUMP:A_D:D_D]
+		[NO_TRACKS:A_D:D_D]
+		[ALREADY_SEARCHED_AREA:A_D:D_D]
+		[SEARCH_FOUND_SOMETHING:A_D:D_D]
+		[SEARCH_FOUND_NOTHING:A_D:D_D]
+		[NOTHING_TO_INTERACT:A_D:D_D]
+		[NOTHING_TO_EXAMINE:A_D:D_D]
+		[YOU_YIELDED:A_D:D_D]
+		[YOU_UNYIELDED:A_D:D_D]
+		[YOU_STRAP_ITEM:A_D:D_D]
+		[YOU_DRAW_ITEM:A_D:D_D]
+		[NO_GRASP_TO_DRAW_ITEM:A_D:D_D]
+		[NO_ITEM_TO_STRAP:A_D:D_D]
+		[NO_INV_TO_REMOVE:A_D:D_D]
+		[NO_INV_TO_WEAR:A_D:D_D]
+		[NO_INV_TO_EAT:A_D:D_D]
+		[NO_INV_TO_CONTAIN:A_D:D_D]
+		[NO_INV_TO_DROP:A_D:D_D]
+		[NOTHING_TO_PICK_UP:A_D:D_D]
+		[NO_INV_TO_THROW:A_D:D_D]
+		[NO_INV_TO_FIRE:A_D:D_D]
+		[CURRENT_SMELL:A_D:D_D]
+		[CURRENT_WEATHER:A_D:D_D]
+		[CURRENT_TEMPERATURE:A_D:D_D]
+		[CURRENT_DATE:A_D:D_D]
+		[NO_GRASP_FOR_PICKUP:A_D:D_D]
+		[TRAVEL_ADVISORY:A_D:D_D]
+		[CANNOT_CLIMB:A_D:D_D]
+		[CANNOT_STAND:A_D:D_D]
+		[MUST_UNRETRACT_FIRST:A_D:D_D]
+		[CANNOT_REST:A_D:D_D]
+		[CANNOT_MAKE_CAMPFIRE:A_D:D_D]
+		[MADE_CAMPFIRE:A_D:D_D]
+		[CANNOT_SET_FIRE:A_D:D_D]
+		[SET_FIRE:A_D:D_D]
+		[DAWN_BREAKS:A_D:D_D]
+		[NOON:A_D:D_D]
+		[NIGHTFALL:A_D:D_D]
+		[NO_INV_INTERACTION:A_D:D_D]
+		[EMPTY_CONTAINER:A_D:D_D]
+		[TAKE_OUT_OF_CONTAINER:A_D:D_D]
+		[NO_CONTAINER_FOR_ITEM:A_D:D_D]
+		[PUT_INTO_CONTAINER:A_D:D_D]
+		[EAT_ITEM:A_D:D_D]
+		[DRINK_ITEM:A_D:D_D]
+		[CONSUME_FAILURE:A_D:D_D]
+		[DROP_ITEM:A_D:D_D]
+		[PICK_UP_ITEM:A_D:D_D]
+		[YOU_BUILDING_INTERACTION:A_D:D_D]
+		[YOU_ITEM_INTERACTION:A_D:D_D]
+		[YOU_TEMPERATURE_EFFECTS:A_D:D_D]
+		[RESOLVE_SHARED_ITEMS:A_D:D_D]
+		[COUGH_BLOOD:A_D:D_D]
+		[VOMIT_BLOOD:A_D:D_D]
+		[POWER_LEARNED:A_D:D_D]
+		[YOU_FEED_ON_SUCKEE:A_D:D_D]
+		[PROFESSION_CHANGES:A_D:D_D]
+		[RECRUIT_PROMOTED:A_D:D_D]
+		[SOLDIER_BECOMES_MASTER:A_D:D_D]
+		[MERCHANTS_UNLOADING:A_D:D_D]
+		[MERCHANTS_NEED_DEPOT:A_D:D_D]
+		[MERCHANT_WAGONS_BYPASSED:A_D:D_D]
+		[MERCHANTS_LEAVING_SOON:A_D:D_D]
+		[MERCHANTS_EMBARKED:A_D:D_D]
+		[PET_LOSES_DEAD_OWNER:A_D:D_D]
+		[PET_ADOPTS_OWNER:A_D:D_D]
+		[VERMIN_BITE:A_D:D_D]
+		[UNABLE_TO_COMPLETE_BUILDING:A_D:D_D]
+		[JOBS_REMOVED_FROM_UNPOWERED_BUILDING:A_D:D_D]
+		[CITIZEN_SNATCHED:A_D:D_D]
+		[VERMIN_DISTURBED:A_D:D_D]
+		[LAND_GAINS_STATUS:A_D:D_D]
+		[LAND_ELEVATED_STATUS:A_D:D_D]
+		[MASTERPIECE_CRAFTED:A_D:D_D]
+		[ARTWORK_DEFACED:A_D:D_D]
+		[ANIMAL_TRAINED:A_D:D_D]
+		[DYED_MASTERPIECE:A_D:D_D]
+		[COOKED_MASTERPIECE:A_D:D_D]
+		[MANDATE_ENDS:A_D:D_D]
+		[SLOWDOWN_ENDS:A_D:D_D]
+		[FAREWELL_HELPER:A_D:D_D]
+		[ELECTION_RESULTS:A_D:D_D]
+		[SITE_PRESENT:A_D:D_D]
+		[CONSTRUCTION_SUSPENDED:A_D:D_D]
+		[LINKAGE_SUSPENDED:A_D:D_D]
+		[QUOTA_FILLED:A_D:D_D]
+		[JOB_OVERWRITTEN:A_D:D_D]
+		[NOTHING_TO_CATCH_IN_WATER:A_D:D_D]
+		[DEMAND_FORGOTTEN:A_D:D_D]
+		[NEW_DEMAND:A_D:D_D]
+		[NEW_MANDATE:A_D:D_D]
+		[PRICES_ALTERED:A_D:D_D]
+		[NAMED_RESIDENT_CREATURE:A_D:D_D]
+		[SOMEBODY_GROWS_UP:A_D:D_D]
+		[GUILD_REQUEST_TAKEN:A_D:D_D]
+		[GUILD_WAGES_CHANGED:A_D:D_D]
+		[NEW_WORK_MANDATE:A_D:D_D]
+		[CITIZEN_BECOMES_SOLDIER:A_D:D_D]
+		[CITIZEN_BECOMES_NONSOLDIER:A_D:D_D]
+		[PARTY_ORGANIZED:A_D:D_D]
+		[POSSESSED_TANTRUM:A_D:D_D]
+		[BUILDING_TOPPLED_BY_GHOST:A_D:D_D]
+		[MASTERFUL_IMPROVEMENT:A_D:D_D]
+		[MASTERPIECE_ENGRAVING:A_D:D_D]
+		[MARRIAGE:A_D:D_D]
+		[NO_MARRIAGE_CELEBRATION:A_D:D_D]
+		[CURIOUS_GUZZLER:A_D:D_D]
+		[WEATHER_BECOMES_CLEAR:A_D:D_D]
+		[WEATHER_BECOMES_SNOW:A_D:D_D]
+		[WEATHER_BECOMES_RAIN:A_D:D_D]
+		[SEASON_WET:A_D:D_D]
+		[SEASON_DRY:A_D:D_D]
+		[SEASON_SPRING:A_D:D_D]
+		[SEASON_SUMMER:A_D:D_D]
+		[SEASON_AUTUMN:A_D:D_D]
+		[SEASON_WINTER:A_D:D_D]
+
+******************************************************
+
+Auxiliary file changes for 0.40.18:
+
+	Just the usual.
+
+******************************************************
+
+Auxiliary file changes for 0.40.17:
+
+	Just the usual.
+
+******************************************************
+
+Auxiliary file changes for 0.40.16:
+
+	Just the usual.
+
+******************************************************
+
+Auxiliary file changes for 0.40.15:
+
+	new announcements
+		STRESSED_CITIZEN:A_D:D_D
+			for any of the temporary stress states aside from tantrum
+		CITIZEN_LOST_TO_STRESS:A_D:D_D
+			for any of the permanent states aside from berserk
+		CITIZEN_TANTRUM:A_D:D_D
+
+******************************************************
+
+Auxiliary file changes for 0.40.14:
+
+	new/changed keys
+		CIVZONE_DUMP g -> d
+		CIVZONE_GATHER g
+		CIVZONE_GATHER_OPTIONS G
+		CIVZONE_GATHER_OPTIONS_PICK_TREES t
+		CIVZONE_GATHER_OPTIONS_PICK_SHRUBS s
+		CIVZONE_GATHER_OPTIONS_GATHER_FALLEN f
+
+	creatures
+		retired LIKES_FIGHTING, though it shouldn't give an error for the time being
+
+	item_tool
+		added stepladder
+
+	entity_default
+		added stepladder tool to MOUNTAIN
+
+******************************************************
+
+Auxiliary file changes for 0.40.13:
+
+	creature_standard
+		(semi)megabeasts that were missing LARGE_PREDATOR received it
+
+	grazing creatures
+		STANDARD_GRAZER added to replace all grazing numbers, can set coefficient in d_init
+
+	d_init
+		GRAZE_COEFFICIENT to scale grazing amounts
+
+
+******************************************************
+
+Auxiliary file changes for 0.40.12:
+
+	changed keys
+		UNITJOB_REMOVE_CRE from r -> x
+		UNITJOB_ZOOM_CRE from c -> z
+
+******************************************************
+
 Auxiliary file changes for 0.40.11:
 
 	material templates

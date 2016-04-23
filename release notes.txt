@@ -36,6 +36,522 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.42.06 (February 10, 2016):
+
+Here's the material and image specification release, along with several important bug fixes.  There's more to be done with job settings -- we need to improve work orders and allow the decoration of specific objects, to name a few, but this should be a good start.
+
+New stuff
+	(*) Can set specific job material in job details
+	(*) Added jobs to construct the various specific crafts
+	(*) Can specify images in statue, figurine, engraving, decorate jobs to varying degrees
+	(*) Can specify group's symbol at embark
+	(*) Can specify type of decoration
+	(*) Added adv mode bone craft carving with image specification
+
+Major bug fixes
+	(*) Counted exported wealth properly again (old saves will start counting w/ next caravan that leaves)
+	(*) Flour, dye, seeds etc. not dumped out of bags into barrels
+	(*) Allowed captured intelligent non-residents to be chained/caged/pitted again
+	(*) Various useful objects like minecarts and goblets no longer ownable as personal possessions
+	(*) Made ownable objects that aren't worn storeable again
+	(*) Fixed problem causing some surface-underground sites to become disconnected
+
+Other bug fixes/tweaks
+	(*) Allowed travel map to be shown even when you can't travel
+	(*) "Really attack?" gives more information
+	(*) Show adv companions by first name in announcements etc.
+	(*) Used adjectives from physical descriptions for use in adv mode creature designations
+	(*) Stopped premature elevation of wagons to historical status
+	(*) Fixed missing space when reporting success on beast mission
+
+******************************************************
+
+Release notes for 0.42.05 (January 17, 2016):
+
+Here's another one!  We're still going to be working through adventure reputation/quest/etc. improvements, so consider this a first stage.  Other highlights are the fortress mode sparring and mug-carrying fixes.  Enjoy your zombies.
+
+New stuff
+	(*) New hearth orders for killing beasts and fighting outlaws
+	(*) Added a hunter reputation and cleaned up reputation system around beast-slaying
+	(*) Made citizens understand their relationship to bandits and added reputation for protecting people from them
+	(*) A few lizards
+
+Major bug fixes
+	(*) Made drunken dwarves spar properly again
+	(*) Stopped dwarves from carrying mugs forever
+	(*) Stopped adv goblin performance troupes from attacking strangers while traveling
+	(*) Stopped reanimated corpses from being stuck on wrong side of conflicts
+	(*) Gave underground populations zone assignments to stop them from erupting outward
+	(*) Fixed inconsistent underground vegetation generation (which caused underground site maps to generate inconsistently)
+	(*) Fixed various city vegetation clearing routines which were causing holes in the ground above sewers and catacombs
+
+Other bug fixes/tweaks
+	(*) Zombies no longer dodge, parry, block, wrestle or run, and they do charging attacks whenever possible
+	(*) Zombies don't get defense adjustments for body part type and they don't find or stop combat opportunities
+	(*) Reduced zombie strength bonus (old saves will still be strong)
+	(*) Made severing all non-smashed heads put down a zombie (can be reanimated if has working grasp, smashing heads already worked)
+	(*) Made severing/smashing any working grasp put down a headless zombie (can be reanimated if has another working grasp)
+	(*) Neck gets same combat chance adjustment as head
+	(*) Made bandits that run off cancel town harassment goals
+	(*) Bandits camps don't immediately send new armies to re-harass towns
+	(*) Stopped camp bandits from being placed in trees so often
+	(*) Allowed save/load in arena
+	(*) Made creature object load bar page properly
+	(*) Labeled xml encoding as cp437 instead of utf-8
+
+******************************************************
+
+Release notes for 0.42.04 (December 26, 2015):
+
+Various fixes and various giant and peopled animals.  I held off on common domestic animal people for now, but there are plenty of canine and feline critters that got the treatment.
+
+New stuff
+	(*) Giant and person versions of many of the older creatures, including the elephant
+	(*) Vampire purges in world generation to control their overfeeding which was stopping cities from growing
+
+Major bug fixes
+	(*) Allowed dwarves praying at temple dedicated to no particular god to choose prayer target according to need
+	(*) Stopped adv mode goblin animals from fighting gobs and each other
+	(*) Fixed error causing underground sewer dwellers to copy town stockpile, lag-killing certain towns
+	(*) Stopped crash with goblet trading
+	(*) Made retire store away merchants and diplomats and not mark visitors and residents as hostile
+	(*) Made non-military visitors do citizenship petitions properly
+	(*) Fixed broken merchant-elevated-to-liaison that sits at trade depot for entire life
+
+Other bug fixes/tweaks
+	(*) Fixed error with building profiles causing underground bandit leaders to roam streets
+	(*) Vampire guests of various kinds give themselves cover identities (those on-site will still be revealed in old saves)
+	(*) Stopped some position elevation announcements from giving away vampires
+	(*) Removed trade goods from retired sites if living merchant is still present
+	(*) Made animals less afraid of casual relationships
+	(*) Various animal tweaks that came up during the peopling (see file changes.txt)
+	(*) Marked visitors correctly in site text export
+	(*) Fixed a cause of string entry key conflicts
+	(*) Made it list proper subregion when talking about certain adventurer rumor sites instead of subregion where speaker is standing
+
+******************************************************
+
+Release notes for 0.42.03 (December 12, 2015):
+
+Here's another release which cleans up various outstanding issues.
+
+Major bug fixes
+	(*) Fixed world generation crash from wandering artist writing a book
+	(*) Fixed crash from retiring locations in certain circumstances
+	(*) Fixed crash associated to adventurer sleeping in inn rooms
+	(*) Fixed issue with militia not picking up armor
+	(*) Fixed error causing some instruments in chests to not be played
+	(*) Fixed error causing instruments and drink service to fail in dining rooms
+	(*) Fixed error causing scribes not to use some blank writing materials
+	(*) Fixed error causing overall scribe operation to be stalled by a bad target codex
+	(*) Made training marksdwarves want both combat and training ammunition and fetch stacks appropriately (thanks to ag for analyzing this one)
+	(*) Fixed issue with starting instrument causing it to duplicate
+	(*) Fixed one way for horses to become playable (not sure about dogs/donkeys)
+	(*) Stopped dead/caged commanders from stopping invaders from moving (thanks to vjek for preparing a very useful and funny save)
+	(*) Stopped cats from dying of alcohol poisoning after walking over damp tavern floors and cleaning themselves (reduced effect)
+	(*) Put new caps in place on animals in towns during world generation
+	(*) Stopped bookbinders and string makers from trying to use loose spider webs (thanks to Knight Otu for reminded me about raw tag)
+
+Other bug fixes/tweaks
+	(*) Made the add new task list remember where it was again
+	(*) Tweaked how distance is calculated for certain jobs
+	(*) Stopped certain ramp/channel digging jobs from temporarily disturbing pathing and distance calculations (thanks to Loci for reproducible procedure)
+	(*) Made edible seed-type growths gatherable
+	(*) Stopped wander history spam for adventurer
+	(*) Stopped nobles from other civilizations from making mandates and demands
+	(*) Stopped weapon slayer list from giving away fort vampires
+	(*) Handled some basic shaped conflicts with clothing vs. armor
+	(*) Changed how owned objects are managed with clothing -- might be some trinket drops in old saves
+	(*) Allowed goblets on embark
+	(*) Made modded wood furnace reactions list properly
+	(*) Fixed typo with untitled written content
+	(*) Fixed typo in haunting conversation
+	(*) Fixed several typos in personality/value strings
+	(*) Fixed instrument values in old saves
+
+******************************************************
+
+Release notes for 0.42.02 (December 5, 2015):
+
+Here's a quick follow-up for some of the worst bugs.  There are still some strange things going on (horses all over, duplicate companions, etc.), but hopefully this version will work much better than the last one.
+
+Major bug fixes
+	(*) Fixed world generation freeze caused by error in poetry refrains
+	(*) Fixed crash from building constructions on tree leaves etc.
+	(*) Fixed calendar crash from bandit bar hoppers
+	(*) Fixed crash with children joining socialize activities (most common with migrant waves)
+	(*) Made worship activity branch properly (so prayer needs can be satisfied)
+	(*) Fixed world gen seed not repeating after abort
+
+Other bug fixes/tweaks
+	(*) Can see deity for temple in location screen
+	(*) Cannot spot vampires from occupation list anymore
+	(*) Fixed a few typos
+
+******************************************************
+
+Release notes for 0.42.01 (December 1, 2015):
+
+Here is the new version we've been working on all year!  The flow of fortress life is quite a bit different now -- specific breaks and parties have been replaced by taverns and performances and needs and inebriation.  You can designate a tavern, temple or library from a meeting area zone, bedroom or dining room using the new Assign Location option.  The location list ('l') will let you know what sort of furniture and items you need, and you can set tavern keepers, scribes and other occupations there as well.  You'll need to set up a drink stockpile and a chest for goblets in taverns for drink service to work properly, but dwarves can still drink without a tavern as before.  You can assign multiple rooms/zones to a single location.  There's a lot more -- see the feature list below.
+
+The bug fix list below is partial.  Large chunks of the game were changed, which has a way of making old bugs go away while bringing in new ones to take their place.  We'll be focusing on bugs old and new in subsequent releases, starting with crashing saves and moving down the list.  The next set of bug-fix releases will be measured on a scale of days and weeks rather than months, as usual.
+
+New stuff
+	(*) Ability to designate taverns, temples and libraries in the fortress
+	(*) Taverns and libraries also exist in adventure mode and world generation
+	(*) Tavern keepers can serve drinks in both modes, goblets can be used by dwarves to drink (in taverns or otherwise)
+	(*) Performances include stories, poetry, music and dance (you can view activity descriptions from the unit/job list)
+	(*) Art forms are randomly generated for each civilization
+	(*) Instruments are now all generated, instruments can be used in both modes
+	(*) Most instruments are constructed from multiple pieces using different materials
+	(*) Personalities and values lead to needs which can be met by various actions in both modes
+	(*) The fort has visitors, residency petitions and eventual citizenship, including non-dwarves
+	(*) Tavern visitors include mercenaries, monster slayers, bandits, diplomats and performers
+	(*) Can set details for clothing/armor jobs to make them for other races that can equip items
+	(*) Monster slayers can petition your fortress to go down and fight monsters once you discover the underground
+	(*) Performance troupes are active in world generation and into play, visiting the fort, can be formed in adventure mode
+	(*) New knowledge system divided into nine branches (though it has very few practical effects so far)
+	(*) Fortress scholars can advance knowledge, form master-apprentice relationships and write down their findings
+	(*) Fortress scribes can copy works in your library
+	(*) Scholars can visit your fortress libraries, bringing knowledge from around the world
+	(*) Devoted historical figures can visit your fortress temples
+	(*) Three forms of writing material: papyrus sheets, paper sheets and parchment sheets
+	(*) Papyrus sheets are made directly from the plant at the farmer's workshop
+	(*) Paper is made from pressed slurries (start at the quern/mill, then go to a screw press)
+	(*) Parchment is made from hide and milk of lime at the tanner's (bake quicklime at a kiln, then make milk of lime at an ashery)
+	(*) Sheets are used to make quires or with rollers to make scrolls -- these are then used for writing
+	(*) Quires can be bound into codices with bindings after they contain writing
+	(*) Dwarves read books in the library (they don't need to be scholars)
+	(*) Values can be passed in writing (both modes) and through adventure mode arguments (uses some conversation skills)
+	(*) Animal people are playable as adventurers, arrive as fort visitors and sometimes live in towns in (playable) populations
+	(*) Children play with toys now, and they can also play make believe, in both modes
+	(*) Personality can be customized/randomized in adventure mode, appearance can be randomized as well
+	(*) Temples can be defiled in both modes, dwarf temples can be assigned to particular gods
+	(*) Adventurer can rent rooms in inns
+	(*) Adventurers can compose new poems, music and dances
+	(*) Adventurers can write material down on empty quires or scrolls
+	(*) Alcohol causes inebriation, erratic behavior, unconsciousness, death
+	(*) Festivals occur in world generation, though we haven't gotten them out of there yet
+	(*) Dwarves will wear trinkets again
+
+Major bug fixes
+	(*) Fixed some army pathing issues
+	(*) Goblins have mounts again
+	(*) Fixed long-standing flow bug with unit occupancy
+	(*) Stopped some issues with brawls escalating to non-lethal
+
+Other bug fixes/tweaks
+	(*) Looking at reaction screen for redded-out reactions in workshop will indicate missing reagents now
+	(*) Fixed inversion problem with half of the child/parent conversation thoughts
+	(*) Lots of historical figures that weren't around from the beginning didn't have deities when they were supposed to
+	(*) Allowed site finder to look for 1x1 sites
+	(*) Human civilizations now have randomized values
+	(*) Added ability to set invasion wave cap size
+
+******************************************************
+
+Release notes for 0.40.24 (January 7, 2015):
+
+Here is another release with fixes.  Old saves are compatible, but there will be some error logs due to minor issues with the old raws.  These logs can be ignored, but old saves will still experience problems like blank seed names.
+
+Major bug fixes
+	(*) Fixed problem causing dwarves to sometimes fail to attack monsters/invaders
+	(*) Stopped active blocks/parries from rarely freezing adv mode
+	(*) Stopped certain situations where you could be stuck in the air above certain tiles
+	(*) Fixed a few problems with necromancers attacking (and generally being killed by) their zombies
+	(*) Stopped crash from moving/centering squad menu going out of bounds
+	(*) Fixed crash involving squads and minimap
+	(*) Fixed unretire crash that generally triggered when caravan arrived
+	(*) Stopped dwarf from stressing out over the same wound forever
+	(*) Stopped certain inaccessible jobs from blocking lower priority ones
+
+Other bug fixes/tweaks
+	(*) Allowed embarks with x/y dim 1
+	(*) Made removal of trees check building/bridge/machine stability
+	(*) Stopped worker chaining to next construction job from choosing suspended one
+	(*) Tentatively fixed text mode error on OSX (lethosor)
+	(*) Tentatively fixed broken sound on some linuxes (Baughn)
+	(*) Fixed problem with water disappearing when it crosses the z=0 boundary
+	(*) Made certain old civilian weapon assignments clear over time
+	(*) Made t/q building selector respect stockpile shapes when looking for closest one
+	(*) Fixed error with underground pops in small forts not appearing
+	(*) Stopped mood jobs from going outside of burrows
+	(*) Capped various combat skill gains per action (Urist Da Vinci)
+	(*) Stopped "fighting" skill from increasing from trap/projectile attacks
+	(*) Stopped random creature proboscis from sometimes messing up poison attacks
+	(*) Fixed key display issue in bindings screen (lethosor)
+	(*) Fixed problem with display of kill order status
+	(*) Made geld indicator appear for pets on animal screen properly
+	(*) Fixed display problem with agreement conclusion dates
+	(*) Added error logs for missing materials set to defaults, fixed various raws
+	(*) Stopped announcement screen date from overrunning title depending on window size
+	(*) Differentiated two pain readouts on health screen
+	(*) Fixed a few empty announcement errors
+
+******************************************************
+
+Release notes for 0.40.23 (December 24, 2014):
+
+A third set of fixes for the job priority release, as well as a fix for the army "camp forever" problem from July.
+
+Major bug fixes
+	(*) Fixed cancellation bug with farming jobs
+	(*) Fixed problem causing camping armies to lose sight of certain goals once play began
+
+Other bug fixes/tweaks
+	(*) Stopped situation where channeling dwarf decides to stand on channel tile
+	(*) Fixed some raw typos (Gorobay)
+
+******************************************************
+
+Release notes for 0.40.22 (December 21, 2014):
+
+Major bug fixes
+	(*) Multi-item jobs like artifact moods, forging breastplates and smelting pig iron should work now
+
+Other bug fixes/tweaks
+	(*) Made toggle marker behave like toggle engraving mouse-wise
+
+******************************************************
+
+Release notes for 0.40.21 (December 19, 2014):
+
+This fixes some large and small problems with yesterday's release.  Save corruption was quite possible, so upgrading is important!  You can still bring your old saves from 0.40.03+ into this new version.
+
+Major bug fixes
+	(*) Made hauling jobs that chain to other hauling jobs respect job postings, instead of causing crashes and other horror
+	(*) Fixed stair/ramp removal
+
+Other bug fixes/tweaks
+	(*) Made digging look up/down for continuing jobs
+	(*) Fixed problem with harvest jobs stealing dwarves from each other
+
+******************************************************
+
+Release notes for 0.40.20 (December 18, 2014):
+
+Here is the job priorities release.  It should work fine with old saves, though existing hauling jobs may need to work themselves out for a bit.  Further job prioritization work can be done when we get through the framework for start scenarios, since we'll better understand how dwarves fit into the fortress at that time.
+
+New stuff
+	(*) New job selection process where dwarves choose important tasks with more regularity
+	(*) Very important jobs can remove dwarves from less important jobs
+	(*) Ability to prioritize a job so that it gets done immediately
+	(*) Mining, engraving and other designation jobs can now be prioritized numerically
+	(*) Designation jobs can be placed in a "marker only" mode, marker can be removed later to start work
+	(*) Mining jobs can be set to automatically follow veins and clusters
+	(*) Mining designation can be set to only select visible gems or useful stone
+
+Major bug fixes
+	(*) Fixed crash related to armies failing to take over villages
+
+Other bug fixes/tweaks
+	(*) Hauling jobs that used to need a held container now allow the dwarf to carry many items without a container
+	(*) Building jobs can swipe items from hauling jobs if the item is not held
+	(*) Wall/floor construction and road construction use new skill-free labor settings
+
+******************************************************
+
+Release notes for 0.40.19 (November 26, 2014):
+
+Here is another release for November, mostly related to livestock.
+
+New stuff
+	(*) Added gelding and associated profession/skill/etc.
+
+Other bug fixes/tweaks
+	(*) Showed animal gender symbols in a few more places
+	(*) Got rid of mating-at-a-distance
+	(*) Added drink tab to kitchen screen
+	(*) Moved all remaining announcements to announcements.txt
+	(*) Added ability add/remove bp flags to set bp group
+	(*) Tweaked crowded pasture anger counter
+	(*) Stopped liaison from inserting own gender into position change news
+	(*) Added more work-arounds for compiler issue (fixing broken vault weapons and other problems)
+
+******************************************************
+
+Release notes for 0.40.18 (November 20, 2014):
+
+The flag changes brought forth a compiler issue on Windows (breaking smelting, for example).  Hopefully it'll work better now.
+
+******************************************************
+
+Release notes for 0.40.17 (November 19, 2014):
+
+Here is another friendly little release.
+
+Major bug fixes
+	(*) Fixed collapsing shrines
+	(*) Fixed army crash/bad behavior near the right/lower edge of the map
+	(*) Fixed a conversation crash related to uncivilized people/creatures trying to sell something in the market
+	(*) Made people only jump into actual conflicts, rather than animal encounters and training events
+
+Other bug fixes/tweaks
+	(*) Made stress levels drop faster the longer no stressors are applied
+	(*) Made gathering plants from the ground add to herbalist skill properly again
+	(*) Made plants that grow in winter-spring plantable at all proper times (Quietust)
+	(*) Optimized flag checks for non-windows OSs (ag)
+	(*) Fixed problem deleting stockpile links in the case that stockpile had multiple give/take settings
+	(*) Fixed blinking behavior for stockpiles/zones vs. ramps/stairs
+	(*) Fixed blinking behavior for designations vs. anything obscuring them
+	(*) Fixed double untranslated name in thoughts screen
+	(*) Fixed elf diplomacy typo
+
+******************************************************
+
+Release notes for 0.40.16 (November 12, 2014):
+
+The purpose of this release is to make stress from long-term separation due to goblin snatching less severe and to stop attackers from always winning in post-world-generation non-player battles.  The fix for the latter could not be done cleanly at this time, so the battle readouts in legends are a little off compared to the ones from world-gen, but defenders are very often successful now.  I also fixed some missing aunts/uncles/cousins in the listing of relatives.
+
+******************************************************
+
+Release notes for 0.40.15 (November 5, 2014):
+
+Here's another release with bug fixes and small changes to brighten your day.
+
+Major bug fixes
+	(*) Made growing trees update cave-in and light information properly
+	(*) Handled stress counter timing properly in adv mode
+	(*) Stopped nerve check from bypassing broken parts between thought center and body roots
+	(*) Stopped part from being pulped if inner nervous tissue is not detached
+	(*) Made pulped parts bleed properly
+	(*) Stopped crash from trying to place unit in proper connected component of crowded retired fort
+	(*) Fixed reversed inside/outside check for outdoor refuse hauling
+
+Other bug fixes/tweaks
+	(*) Animals that can escape from cages no longer brought by traders
+	(*) Made reactions try to guess how their containers will be filled to stop problems with brewing large stacks etc.
+	(*) Small coin stacks can no longer be stuffed into non-containers
+	(*) Small coin stacks no longer pass through opponents
+	(*) Stopped tantrum dwarves from checking burrows for fistfights
+	(*) Changed tantrum action frequency
+	(*) Being in an owned site makes bogeyman not an issue
+	(*) Made ballista arrow heads and ballista arrows have edges
+	(*) Added ability to trade everything in the depot from either column
+	(*) Made column widths even in trade view and abbreviated strings differently
+	(*) Added select visible and select category to bring-to-depot menu
+	(*) Added totems to crafts tab of bring-to-depot screen
+	(*) Added a few categories to the kitchen menu
+	(*) Alphabetized stone and kitchen menus
+	(*) Added magma-safe indicator to stone menu
+	(*) Made encrust jobs respect furniture tools
+	(*) Cannot go into specific encrust menus if selected gem not available for encrust
+	(*) Dead dwarves removed from burrow count
+	(*) Made toggle button update properly when moving unit labor view to non-laborer
+	(*) Fixed a problem causing the right edge of the embark world map to disappear, including the cursor
+	(*) Fixed location of cursor in minimap for resized windows
+	(*) Made DOES_NOT_EXIST exclude creatures from certain lists properly
+	(*) Stopped stress reactions from being applied to unintelligent critters
+	(*) Stopped stress reactions of hidden creatures from being announced
+	(*) Fixed many typos (Gorobay)
+	(*) Updated description for pulping so it doesn't say "bruised" etc.
+	(*) Fixed broken artifact thought text
+	(*) Stopped immortality goal from having a broken display in thoughts
+	(*) Properly recognized multiple embark minecarts of the same material
+	(*) Slowed down tantrum/mood/etc. indicators
+	(*) Stopped zombies from interrupting your sleep to ask if they can help you with something
+	(*) Increased default embark points to compensate for more default equipment (stepladder etc.)
+	(*) Allowed deletion of first uniform
+	(*) Stopped crafts brought by traders from satisfying craft mandates
+	(*) Made weather init option clear up weather properly instead of just turning off the global simulation
+
+******************************************************
+
+Release notes for 0.40.14 (October 25, 2014):
+
+Here is the next release.  The focus was not bugs this time, but rather completing the work started on emotions as well as basic fruit harvesting.  A note -- adding stepladders to old saves was not possible, so you'll have to wait for a new world for those.  Fallen fruit can still be gathered in old saves using the new plant gathering zones.  Dwarves in old saves have also had their current thoughts wiped clean to make way for the new emotion/circumstance pairs.
+
+New stuff
+	(*) Dwarf thoughts have been replaced with personality-dependent emotion/circumstance pairs
+	(*) Dwarf happiness has been replaced by a longer-term stress level, and a few new effects have been added
+	(*) Plant gathering zones can be used to set up fruit harvesting from trees using the new stepladder
+	(*) Plant gathering zones can also handle the old shrub jobs, and fallen fruit can also be gathered from zones
+	(*) Shrubs now have their berries/etc. gathered properly (bean-type plants that only have edible seeds are still an issue)
+	(*) As a stopgap, farm plot plants yield viable growths out of season upon harvest
+	(*) In adventure mode, it is possible to ask about people about yourself, other people, and how they are feeling
+
+Other bug fixes/tweaks
+	(*) Stopped IMMOBILE creatures from trying to flee terrain
+	(*) Fixed problem with fear vs. stating proper opinion
+	(*) Stopped harvest/plant jobs from being added to farms slated for destruction
+	(*) Deconstructed farm plot loses items
+
+******************************************************
+
+Release notes for 0.40.13 (September 17, 2014):
+
+This release fixes some more bugs, old and new.
+
+Major bug fixes
+	(*) Fixed item storage crash related to minecart being destroyed
+	(*) Stopped dwarves from trying to clean their own missing or internal body parts
+	(*) Cleared old activities properly so they aren't considered by dwarves for too long
+
+Other bug fixes/tweaks
+	(*) Decreased frequency of conversation-skill-building dwarf chats
+	(*) Reworked grazing formula, used fractional exponent to scale properly according to size
+	(*) Made grazing tile selection less top-left biased and made it prefer non-creature'd tiles with denser grass
+	(*) Made butcher jobs for corpses not in piles respect z coordinate of building (Quietust)
+	(*) Handled some issues with subterranean areas being removed through trees
+	(*) Made workshop profile skill checks ignore skill rust
+	(*) Fixed problem with siege operator skill check (Quietust)
+	(*) Stopped a lever linking job from being added if it is already in progress
+	(*) Stopped fort dwarves from throwing their clothes off into a pile during unretire after being visited by adventurer
+	(*) Stopped fort animals from getting clothing during unretire after being visited by adventurer
+	(*) Stopped animals with kills from getting trinkets from corpses
+	(*) Stopped animals from growing attached to and bestowing names on items in their possession
+	(*) Stopped embark screen from setting neighbors with regular sites that happen to have zombies (due to another bug)
+	(*) Made "place item in tomb" job governed by burial instead of item hauling labor
+	(*) Made outside refuse order respect inside/outside instead of above ground/subterranean
+	(*) Stopped inside above ground corpses/corpse pieces from being destroyed periodically
+	(*) Stopped evaporation of inside above ground water from depending on the weather
+	(*) Stopped water items on the ground from being cleanable -- they evaporate instead
+	(*) Made water spatter evaporate properly over time
+	(*) Sped up extrasensory detection
+	(*) Sped up tracking of food consumption
+	(*) Re-enabled effects of cave adaptation
+
+******************************************************
+
+Release notes for 0.40.12 (September 10, 2014):
+
+This release has some more bug fixes in it, mostly related to healthcare, prisoners and morale.
+
+Major bug fixes
+	(*) Made dwarves that fall unconscious while going to rest or sleep location not get stuck on the spot
+	(*) Fixed symptoms of wrestling error that could cause dwarves to freeze in place forever
+	(*) Stopped civs from sending a squad when they failed to find thieves/snatchers to send (led to small sieges in the first year)
+	(*) Allowed recover wounded jobs to bring dwarves to hospital floor if no beds are available
+	(*) Stopped recover wounded jobs from bringing dwarves to non-hospital beds
+	(*) Made caged/chained people request water/food with proper frequency
+
+Other bug fixes/tweaks
+	(*) Made doctors remove dwarves from traction properly (checks weekly)
+	(*) Made dwarves move/get moved to new hospital more quickly if old hospital is removed
+	(*) Roots function as ramp walls properly now
+	(*) Can cross ramps covered by bridges in adventure mode
+	(*) Made critters that join up with your adventurer stop traveling if they were on a journey
+	(*) Made critters with entity-based army duties unwilling to join adventurers
+	(*) Stopped critters joined with you from considering moving, joining armies and other issues
+	(*) Added ability to repeat, suspend and cancel jobs from unit/job lists
+	(*) Made civ-level nobles attached to locations (e.g. barons) include their site in their name when possible
+	(*) Made dwarves that have been grabbed for chaining/etc. cancel their jobs properly
+	(*) Stopped certain events (like giving birth, resting or getting an artifact mood) from causing a working dwarf to suspend jobs for the whole fort
+	(*) Stopped chained mothers from seeking wandering infants
+	(*) Changed name of chaining/other jobs to include target instead of saying "animal" for everybody
+	(*) Made certain creatures like minotaurs act less civilized (requires LARGE_PREDATOR in raws)
+	(*) Stopped alarm moods from persisting long beyond event itself
+	(*) Made non-soldier adventure companions not default to flight (this could include giant demons, etc.)
+	(*) Stopped companions with stranger-kill ethics from starting no-quarter fights with strangers the party meets
+	(*) Made stranger-kill creatures respect their own prisoners/etc.
+	(*) Stopped adventure mode critters from persisting on outmoded paths when destination has changed
+	(*) Made sure dipscripts were loaded in the same order on different platforms (Quietust)
+	(*) Trading a worthless item for a non-worthless item no longer results in you initiating a robbery
+	(*) Wooden chests brought by elven traders are grown now
+	(*) Seeds that should be edible raw in adv mode are now edible
+
+******************************************************
+
 Release notes for 0.40.11 (September 3, 2014):
 
 Here is the first release for September!  As usual, a few bugs like sleep screwups, cowardly companions and wandering children might persist for a while into old saves until the system clears itself out.
