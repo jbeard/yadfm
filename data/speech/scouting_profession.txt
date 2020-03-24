@@ -1,0 +1,2 @@
+It is my duty to scout the area around [CONTEXT:PLACE:TRANS_NAME].
+I find danger before it finds us at [CONTEXT:PLACE:TRANS_NAME].
