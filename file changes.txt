@@ -4,10 +4,453 @@ See command_line.txt for information on world generation from command lines.
 
 ******************************************************
 
+Auxiliary file changes for 0.47.04
+
+	creatures
+		removed sticky feet reference from leopard gecko
+
+******************************************************
+
+Auxiliary file changes for 0.47.03
+
+	new keys
+		HOTKEY_BUILDING_OFFERING_PLACE:Alt+a
+
+	world gen params
+		got rid of extra space
+
+******************************************************
+
+Auxiliary file changes for 0.47.02
+
+	creatures
+		c_variation_default -- added pet_animal to legless animal people
+
+	entities
+		[MINING_UNDERWORLD_DISASTERS] to dwarf entity
+
+	world gen params
+		fixed some newlines for the new parameters
+		changed default civ numbers in world gen params (new numbers suggested by Talvieno)
+		made werebeast attack triggers match semimegabeast (50/5000/50000)
+
+******************************************************
+
+Auxiliary file changes for 0.47.01
+
+	new reaction tags:
+		[SKILL_ROLL_RANGE:<basic range>:<multiplier>]
+			The skill roll is: random(basic range) + random((skill level * multipler)/2 + 1) + random((skill level * multipler)/2 + 1)
+			random(x) returns a number between 0 and x-1, so basic range is always 1 or more.  The default is 11.
+			The default multiplier is 5.
+		[SKILL_IP:<integer>]  Default is 30.
+		[ATTRIBUTE_IP:<integer>]  Default is 10.
+
+	interactions
+		new standard interaction pet animal
+
+	interaction examples
+		interaction_secret.txt has been updated with bogeyman summoning and an example undead lt with the propel and fog powers
+		example - bogeyman transformation.txt has been added to show the body transformation effect
+		example - shrine effects.txt has the new healing and item effects, a summoned pet, and also has another transformation example
+		all creatures w/ spit + animal people variation get it
+		DEFEND as new usage hint so they'll use self-targeting stuff without having to flee combat
+
+	items
+		new tool: altar
+		new tool: die
+
+	creatures
+		many creatures get pet animal (main ones, gremlins, satyrs, giants, cyclopes, minotaurs, harpies, merpeople, gnomes, gorlaks)
+		SHARP_ROCK as a material emission type
+		[SPREAD_EVIL_SPHERES_IF_RULER]
+
+	descriptors
+		some new shapes (used for dice)
+
+	language
+		company word, merchant company symbol
+		removed monastery and convent from language_SYM
+
+	variations
+		animal people get pet animal interaction
+		lessened quadruped gait energy use
+
+	entity
+		main ones get
+			[SELECT_SYMBOL:MERCHANT_COMPANY:NAME_ENTITY_MERCHANT_COMPANY]
+			[SELECT_SYMBOL:CRAFT_GUILD:NAME_ENTITY_CRAFT_GUILD]
+		dungeon master position for dwarves
+		elf princess gets [RESPONSIBILITY:ESPIONAGE]
+		USE_NON_EXOTIC_PET_RACE to PLAINS entities to make them use all local non-exotic pet options
+		altar and die use
+
+	new position responsibilities -- most of these don't do anything yet, but they are linked to the new entity positions
+		ESPIONAGE
+		ADVISE_LEADERS
+		OVERSEE_LEADER_HOUSEHOLD
+		MANAGE_ANIMALS
+		MANAGE_LEADER_HOUSEHOLD_FOOD
+		MANAGE_LEADER_HOUSEHOLD_DRINKS
+		PREPARE_LEADER_MEALS
+		MANAGE_LEADER_HOUSEHOLD_CLEANLINESS
+		MAINTAIN_SEWERS
+		FOOD_SUPPLY
+		FIRE_SAFETY
+		JUDGE
+		BUILDING_SAFETY
+		CONSTRUCTION_PERMITS
+		MAINTAIN_ROADS
+		MAINTAIN_BRIDGES
+		MAINTAIN_TUNNELS
+
+	new announcements
+		[EMERGENCY_TACTICAL_CONTROL:A_D:D_D:BOX]
+		[AGREEMENT_SATISFIED:A_D:D_D]
+		[AGREEMENT_WARNING:A_D:D_D]
+		[AGREEMENT_ABANDONED:A_D:D_D]
+		[NEW_GUILD:A_D:D_D]
+		[CRIME_WITNESS_HANDOFF:A_D:D_D:BOX:P:R]
+		[CRIME_WITNESS_STOLEN:A_D:D_D:BOX:P:R]
+		[CRIME_WITNESS_ITEM_MOVED:A_D:D_D:BOX:P:R]
+		[CRIME_WITNESS_ITEM_MISSING:A_D:D_D:BOX:P:R]
+		[MOUNT:A_D:D_D:UCR]
+		[CANNOT_MOUNT:A_D:D_D]
+		[FAILED_MOUNT:A_D:D_D:UCR]
+		[DISMOUNT:A_D:D_D:UCR]
+		[FAILED_DISMOUNT:A_D:D_D:UCR]
+
+	new keys
+		[A_CONV_PERSUADE:1]
+		[A_CONV_INTIMIDATE:2]
+		[A_TACTICAL_SETTINGS:E]
+		[CSHEET_BACKGROUND:B]
+		[CSHEET_NEW_CHARACTER:N]
+		[CSHEET_SKILLS:S]
+		[CSHEET_APPEARANCE:A]
+		[CSHEET_PERSONALITY:P]
+		[CSHEET_EQUIPMENT:E]
+		[CSHEET_PETS:M]
+		[CSHEET_RANDOMIZE_BACKGROUND:R]
+		[CSHEET_SELECT_BACKGROUND_OPTION:Enter]
+		[CSHEET_WORSHIP_UP:w]
+		[CSHEET_WORSHIP_DOWN:q]
+		[CSHEET_NEW_ITEM:n]
+		[CSHEET_QUALITY_UP:w]
+		[CSHEET_QUALITY_DOWN:q]
+		[CSHEET_NAME_PET:n]
+		[CSHEET_REMOVE_PET:r]
+		[CSHEET_ADD_PET:Enter]
+		[A_LOG_INTRIGUE:i]
+		[ARENA_CREATURE_TAME:t]
+		[JUSTICE_INTERROGATE:i]
+		[JUSTICE_COUNTERINTELLIGENCE:c]
+		[LOCATION_GUILDHALL:g]
+		[LOCATION_RECOGNIZE_PRIESTHOOD:p]
+
+******************************************************
+
+Auxiliary file changes for 0.44.12
+
+	plant_new_trees
+		updated credit information
+
+******************************************************
+
+Auxiliary file changes for 0.44.11
+
+	announcements
+		[NEW_HOLDING:A_D:D_D:BOX:P:R]
+		[NEW_MARKET_LINK:A_D:D_D:BOX:P:R]
+
+	creatures
+		conger eel typo
+		whale shark typo
+		carp typo
+
+	new keys
+		CIV_HOLDINGS:h
+		CIV_MAP_LEGEND:l
+		CIV_MISSION_CONQUER:q
+		CIV_MISSION_DEMAND_SURRENDER:Q
+		UNITVIEW_PRF_EXPEL:e
+
+	changed keys
+		UNITVIEW_PRF_PET:a
+
+	graphics_example
+		MESSENGER added to list (new occupation-linked unit type)
+
+******************************************************
+
+Auxiliary file changes for 0.44.10:
+
+	Note:  Item inaccessible ANNOUNCE_ZOOM/2 will only be correct on new announcements (not 0.44.09 and before.)
+
+	new keys
+		ANNOUNCE_ZOOM_2:x
+		BUILDJOB_NAME:ctrl+n
+		D_BITEM_NAME:ctrl+n
+		CIVZONE_NAME:ctrl+n
+		A_LOG_SORT:o
+
+	removed key
+		BUILDJOB_BED_NAME
+
+	changed key
+		INTERFACEKEY_A_LOG_TASKS -> INTERFACEKEY_A_LOG_PIN
+
+	creatures
+		corrected adder description
+		corrected kingsnake description
+
+******************************************************
+
+Auxiliary file changes for 0.44.09:
+
+	Just the usual.
+
+******************************************************
+
+Auxiliary file changes for 0.44.08:
+
+	Just the usual.
+
+******************************************************
+
+Auxiliary file changes for 0.44.07:
+
+	creatures
+		added [PET] to unicorns and beak dogs
+
+******************************************************
+
+Auxiliary file changes for 0.44.06:
+
+	new keys
+		CIV_MISSION_DETAILS:d
+		CIV_MISSION_FREE_CAPTIVES:f
+		CIV_MISSION_RELEASE_OTHERS:o
+		CIV_MISSION_TAKE_ARTIFACTS:A
+		CIV_MISSION_TAKE_ITEMS:i
+		CIV_MISSION_TAKE_LIVESTOCK:l
+		CIV_MISSION_RAID:r
+		CIV_MISSION_PILLAGE:g
+		CIV_MISSION_RAZE:x
+		CIV_MISSION_TRIBUTE_ONE_TIME:t
+		CIV_MISSION_TRIBUTE_ONGOING:T
+
+******************************************************
+
+Auxiliary file changes for 0.44.05:
+
+	Just the usual.
+
+******************************************************
+
+Auxiliary file changes for 0.44.04:
+
+	reaction_other
+		render fat job gets [BUILDING:KITCHEN:HOTKEY_KITCHEN_RENDER_FAT]
+
+******************************************************
+
+Auxiliary file changes for 0.44.03:
+
+	Updated plant_new_trees with file that has the same encoding as the others (jecowa).
+
+******************************************************
+
+Auxiliary file changes for 0.44.02:
+
+	Just the usual.
+
+******************************************************
+
+Auxiliary file changes for 0.44.01:
+
+	removed scout speech files
+
+	new announcements
+		[AMBUSH_HERO:A_D:D_D:BOX:P:R]
+		[RUMOR_SPREAD:A_D:D_D]
+		[SERVICE_ORDER_RUMOR_RECEIVED:A_D:D_D]
+		[RETURNING_RUMOR_RECEIVED:A_D:D_D]
+
+	new keys
+		HOTKEY_BUILDING_DISPLAY_FURNITURE:F
+		BUILDJOB_DISPLAY_FURNITURE_SET:d
+		BUILDJOB_DISPLAY_FURNITURE_CANCEL:c
+		A_ASSUME_IDENTITY_NEW:n
+		A_ASSUME_IDENTITY_NONE:x
+		A_ASSUME_IDENTITY_NAME:n
+		A_ASSUME_IDENTITY_ORIGIN:o
+		A_ASSUME_IDENTITY_PROFESSION:p
+		A_ASSUME_IDENTITY_WORSHIP:w
+		CHOOSE_NAME_FIRST:f
+		A_BARTER_SHOW:s
+		A_LOG_ARTIFACTS:A
+		CIV_RAID:r
+		CIV_CENTER_ON_FORT:y
+		CIV_REMOVE_MISSION:x
+		CIV_RESCUE:r
+		CIV_RECOVER:r
+		CIV_WORLD:w
+		CIV_MISSIONS:m
+		CIV_NEWS:n
+		CIV_PEOPLE:p
+		CIV_ARTIFACTS:a
+		CIV_CIVS:c
+
+	creatures
+		added [CREATURE_CLASS:MAMMAL] and [CREATURE_CLASS:POISONOUS] for use by SKULKING entity
+
+	items
+		pedestal, display case
+
+	reaction
+		adv: pedestal
+		dwf: display case
+
+	plant_new_trees
+		community-gathered density/color data
+
+	entity
+		pedestal, display case stuff
+		SKULKING lost SCOUT
+		[ANIMAL] def for entities
+			You must use one of the following tags to specify the animal:
+			[ANIMAL_TOKEN:<token>] -- this ANIMAL def only applies to this one creature
+			[ANIMAL_CASTE_TOKEN:<token>] -- this ANIMAL def only applies to this caste (requires ANIMAL_TOKEN)
+			[ANIMAL_CLASS:<class>] -- this ANIMAL def only applies to castes with all of these classes
+			[ANIMAL_FORBIDDEN_CLASS:<class>] -- forbid castes with any of these classes
+			Sites with populations of animals will have all castes, but only use the specified castes for roles like mount.
+			The following tags override creature tags.  If a caste matches two ANIMAL defs, ALWAYS prevails over NEVER.
+			[ANIMAL_ALWAYS_PRESENT] -- without this tag, the animal will only be present if found in the environment
+			[ANIMAL_NEVER_MOUNT] -- overrides MOUNT and MOUNT_EXOTIC (either normally triggers mount role)
+			[ANIMAL_ALWAYS_MOUNT]
+			[ANIMAL_NEVER_WAGON_PULLER] -- overrides WAGON_PULLER
+			[ANIMAL_ALWAYS_WAGON_PULLER]
+			[ANIMAL_NEVER_SIEGE] -- overrides TRAINABLE_WAR + not CAN_LEARN
+			[ANIMAL_ALWAYS_SIEGE]
+			[ANIMAL_NEVER_PET] -- overrides PET and PET_EXOTIC (either normally triggers pet role)
+			[ANIMAL_ALWAYS_PET]
+			[ANIMAL_NEVER_PACK_ANIMAL] -- overrides PACK_ANIMAL
+			[ANIMAL_ALWAYS_PACK_ANIMAL]
+		SKULKING gets animal def
+			[ANIMAL]
+				[ANIMAL_CLASS:POISONOUS]
+				[ANIMAL_FORBIDDEN_CLASS:MAMMAL]
+				[ANIMAL_NEVER_MOUNT]
+				[ANIMAL_NEVER_PULLER]
+				[ANIMAL_NEVER_PACK]
+				[ANIMAL_ALWAYS_PET]
+				[ANIMAL_ALWAYS_SIEGE]
+		skulking gets [NO_ARTIFACT_CLAIMS]
+
+******************************************************
+
+Auxiliary file changes for 0.43.05:
+
+	creatures
+		gorlak CANOPENDOORS and lost HUMANOID_RELSIZES
+
+******************************************************
+
+Auxiliary file changes for 0.43.04:
+
+	announcements
+		RESOLVE_SHARED_ITEMS D_D -> UCR
+
+	creatures
+		fixed kobold agility entry
+
+	materials
+		gave [STOCKPILE_GLOB_PASTE] to the paper slurry thread material (Dwarfu)
+
+******************************************************
+
+Auxiliary file changes for 0.43.03:
+
+	reactions
+		fixed broken adv-mode training weapon creation (SHIELD -> WEAPON)
+
+******************************************************
+
+Auxiliary file changes for 0.43.02:
+
+	body_default
+		fixed plural for some of the left foot entries
+
+******************************************************
+
+Auxiliary file changes for 0.43.01:
+
+	removed TRAVEL_ADVISORY announcement properly
+	added BRANCH item type
+
+	new announcements
+		ANNOUNCEMENT_CANNOT_CHOP_TREE
+		ANNOUNCEMENT_CHOP_TREE
+		ANNOUNCEMENT_CANNOT_CONSTRUCT
+
+	new keys
+		MANAGER_CONDITIONS:c
+		MANAGER_DETAILS:d
+		WORK_ORDER_CONDITION_ADD_ITEM:a
+		WORK_ORDER_CONDITION_ADD_ORDER:o
+		WORK_ORDER_CONDITION_ITEM_TYPE:i
+		WORK_ORDER_CONDITION_ITEM_MATERIAL:m
+		WORK_ORDER_CONDITION_ITEM_TRAITS:t
+		WORK_ORDER_CONDITION_ITEM_INEQUALITY:q
+		WORK_ORDER_CONDITION_ITEM_NUMBER:n
+		WORK_ORDER_CONDITION_DELETE:d
+		WORK_ORDER_CONDITION_ORDER_ACTIVATION:c
+		WORK_ORDER_CONDITION_REAGENTS:r
+		WORK_ORDER_CONDITION_PRODUCTS:p
+		A_CONSTRUCTION:b
+		ADV_CONSTRUCTION_ZONE_NEW:n
+		ADV_CONSTRUCTION_ZONE_EDIT:e
+		ADV_CONSTRUCTION_ZONE_ASSIGN:a
+		ADV_CONSTRUCTION_ZONE_DELETE:d
+		ADV_CONSTRUCTION_ZONE_RECT:r
+		ADV_CONSTRUCTION_ZONE_FLOW:f
+		ADV_CONSTRUCTION_ZONE_REMOVE_RECT:x
+		ADV_CONSTRUCTION_STAIR_UPDOWN:i
+		ADV_CONSTRUCTION_REMOVE_PLANS:x
+		ADV_CONSTRUCTION_REMOVE_EXISTING:X
+		ADV_CONSTRUCTION_MATERIAL:m
+		ADV_CONSTRUCTION_CONSTRUCTION:C
+		ADV_CONSTRUCTION_BUILDING:b
+		ADV_CONSTRUCTION_ZONE:z
+		ADV_CONSTRUCTION_WORK_MENU:s
+		ADV_CONSTRUCTION_NAME_SITE:N
+		ADV_CONSTRUCTION_YOU_WORK:y
+		ADV_CONSTRUCTION_START:w
+		LOCATION_MAIN_HALL:h
+
+	reaction
+		wooden helve making
+		stone axe assembly
+		new file with various adv carpenter shop options
+
+	tool
+		helve
+		stone axe
+
+******************************************************
+
 Auxiliary file changes for 0.42.06:
 
 	announcements
 		removed TRAVEL_ADVISORY
+
+	new keys
+		DESIGNATE_DETAILS:D
+		IMAGE_CREATOR_FILTER:f
+		IMAGE_CREATOR_NAME:n
+		IMAGE_CREATOR_DONE:y
+		SETUP_SYMBOL:y
 
 	reaction
 		added adv bone carving reactions, with category support

@@ -248,7 +248,7 @@ This allows you to control the number of babies+children in your fortress.  The 
 
 [BABY_CHILD_CAP:100:1000]
 
-You can set the maximum number of visitors to your fort here.  This does not include merchants, diplomats, animals or invaders, but only those either dropping by for a temporary visit to a tavern, library or temple, or those seeking permanent employment.  Once you accept a petition from a visitor to stay at your fort, they no longer count against the cap, even if they never become a full citizen.
+You can set the maximum number of visitors to your fort here.  This does not include merchants, diplomats, animals or invaders, but only those either dropping by for a temporary visit to a tavern, library or temple, or those seeking permanent employment.  Once you accept a petition from a visitor to stay at your fort, they no longer count against the cap, even if they never become a full citizen.  Certain traveling groups (e.g. quester parties) may also push slightly over the cap.
 
 [VISITOR_CAP:100]
 
@@ -310,3 +310,10 @@ Options are REPLACE_FIRST, CENTRALIZE (between first and last), REPLACE_ALL
 Set this number to scale how often grazing animals need to eat.  Larger numbers mean less food is necessary.  Metabolism is always set according to the 3/4ths power of size.
 
 [GRAZE_COEFFICIENT:100]
+
+Set these to control how subgroups form and develop in the fortress.
+
+[PRIESTHOOD_UNIT_COUNTS:10:25]
+[TEMPLE_VALUE_LEVELS:2000:10000]
+[GUILD_UNIT_COUNTS:10:25]
+[GUILDHALL_VALUE_LEVELS:2000:10000]

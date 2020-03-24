@@ -36,6 +36,605 @@ If you can get to the ESC keybindings menu (from the start screen, press ESC and
 
 ******************************************************
 
+Release notes for 0.47.04 (February 29, 2020):
+
+Our second leap day release!  Fixes old and new this time.  From the new category, aside from crashes, marriages were being dissolved frequently and friendly visiting experiments were breaking too much furniture.  Among the older bugs fixed, we've got the one where people could teleport through walls while fighting or sparring, a loyalty cascade civil war issue, and a creature/item duplication bugs that was corrupting saves.
+
+Barring sudden issues, this will be the final bug-fix release before we get the code work started on the graphical version.  There's a lot left to fix before that version is ready to be released, and we'll be doing parallel bug fix releases as the graphics stuff progresses.
+
+Major bug fixes
+	(*) Fixed w.g. crash related to society infiltration
+	(*) Fixed w.g. crash related to variable position creation
+	(*) Fixed crash involving misbehaving roads
+	(*) Fixed loyalty cascade due to death of questers etc. that had positive relationships with fort dwarves
+	(*) Stopped charge collisions from teleporting people through walls
+	(*) Fixed save corruption/duplication related to fort/adv retirement
+	(*) Stopped dwarves from silently dissolving their marriages when they make a close friend
+	(*) Stopped large visitors and residents from seeking and destroying buildings even if they do so as invaders
+	(*) Stopped overwide shrines in npc forts from flooding the underground
+	(*) Fixed issue causing broken castle maps
+
+Other bug fixes/tweaks
+	(*) Stopped pantheons of mortal races from frequently having very high numbers of deities
+	(*) Fixed summon effects for small-sized creatures
+	(*) Removed building destroyer/trample/trapavoid from smaller procedural creatures
+	(*) Made divorce thought appear properly
+	(*) Added stone altar building job
+	(*) Fixed broken reunion historical entry
+	(*) Removed various forgotten beast traits from experiments
+	(*) Corrected issue with rumor system
+	(*) Made item creation interactions work harder to select a material if none is provided
+
+******************************************************
+
+Release notes for 0.47.03 (February 16, 2020):
+
+Here's another bug-fix release, ranging into some older issues as well.  There's been some work on the raid crash/corruption problem, though I suspect that is ongoing - hopefully the frequency is lessened.  I've also done a few quick changes to socializing and stress, but that's a longer project as well.  Dwarves clump now in zones and taverns, which should help with the friendship rate, and I've made the most stressable dwarves a little more fixable.  One of the major causes of loyalty spirals/civil wars has been handled, and I did some work with hospital rest and diagnosis problems.
+
+Reminder:  We'll start coding on the graphical version in a few weeks.  We'll still have these bug-fix releases periodically, though there will be an initial gap of some time while I get the core framework done to the point where the artists can use it.  But there should be at least one more bug-fix release around the change of the month before that work begins.
+
+Major bug fixes
+	(*) Cleaned up equipment tracking issue for returning fort-mode raiders
+	(*) Made historical spies drop possibly divisive cover identities when arriving as regular fort citizens
+	(*) Stopped patients that have been in traction for a week from requiring diagnosis repeatedly
+	(*) Made dwarves inside hospitals return to rest if rest is cancelled
+	(*) Supported doctor's guildhall to fix broken petitions
+	(*) Fixed freeze related to forbidding doors/hatches
+	(*) Fixed crash related to starting modded fort mode critters with natural skills
+	(*) Stopped crash related to artifacts/books placed on adv pack animals
+	(*) Fixed crash related to deleting zones in adv mode site planning
+	(*) Fixed unretirement crash in adv mode
+	(*) Fixed bug causing you to become a different historical figure when unretiring
+	(*) Fixed w.g. crash related to imprisonment by civilizations that have lost their capitals
+
+Other bug fixes/tweaks
+	(*) Allowed placement of altars in fort mode (they have no specific function yet)
+	(*) Added person-seeking behavior to socialize activity and to jobless milling about in zones
+	(*) Changed stress calculation for high vulnerability personalities
+	(*) Made mummies control tombs more fully so allies couldn't call on zombies to fight themselves
+	(*) Stopped mercenaries from being hired to attack their own forts
+	(*) Fixed problem causing w.g. people to falsely befriend themselves for information
+	(*) Fixed xml log for entities acquiring buildings
+	(*) Fixed xml log for entities breaching the underworld
+
+******************************************************
+
+Release notes for 0.47.02 (February 6, 2020):
+
+This is the first bug-fix release, focusing on newly introduced problems.  Most notably, world gen crashes should happen less often, having babies should cause less trouble, and some adventure mode problems with quests and mounts should be fixed.  We'll continue on with this process, working in some older bugs for next time as well.
+
+Major bug fixes
+	(*) Fixed crash from starting in adventure mode as an outsider
+	(*) Fixed world gen crash involving civs attacking ruins that still had livestock
+	(*) Fixed world gen crash involving criminals and arrest
+	(*) Fixed crash from certain description strings
+	(*) Fixed crash involving stressed out wilderness creatures wanting to complain to priests
+	(*) Stopped carried newborns from setting their mothers' paths like riders
+	(*) Stopped flying mount from taking control when it is airborne
+	(*) Fixed broken hearthperson links for adventurers
+	(*) Made animals follow the follow command instead of waiting forever
+	(*) Fixed issues with mount movement after fast travel
+
+Other bug fixes/tweaks
+	(*) Made undead riled up by dwarf raids as with normal civs
+	(*) Starting dwarves pulled from underground cultures no longer start with cave adaptation
+	(*) Stopped non-dwarves from doing w.g. underworld disasters
+	(*) Increased werebeast triggers further to match semi-megabeasts
+	(*) Took quantity into consideration in chargen equipment value
+	(*) Fixed item quality interaction effect range setting
+	(*) Fixed masterpiece quality error in chargen equipment value
+	(*) Allowed legless animal people to pet animals
+	(*) Stopped pets from dropping all packed luggage when they attack
+	(*) Stopped some cases of animals being called recruits after travelling
+	(*) Fixed broken scroll/expand commands in adventurer intrigue log
+	(*) Stopped chargen beliefs from persisting incorrectly when certain options are selected
+	(*) Fixed villain network export from legends (only works for living - no snapshots)
+	(*) Changed Create New World civ number distribution (new numbers suggested by Talvieno)
+	(*) Changed human 'fortress' to 'castle' to avoid confusing with dwarf fortresses
+	(*) Fixed inconsistency in kill name changes
+	(*) Fixed interrogator/conspirator xml
+	(*) Fixed some busted world gen param newlines
+
+******************************************************
+
+Release notes for 0.47.01 (January 29, 2020):
+
+Here is the villains release!  There are various bits we're going to have to loop back around to after the graphics work is complete (see previous lengthy dev log), so perhaps this should be called the first villains release, or more "the guilds and temples and adventurer parties and pets release which also has artifact heists and extensive historical villainy, with lots of new mostly evil magical stuff", ha ha.  We will get to the fortress plots beyond artifact heists when we return, as well as the ability for the adventurer to be a villain and to investigate them more effectively.
+
+The features are listed below.  For fortress mode, the most important new elements that will be commonly encountered are petitions for guildhalls and temples.  When enough believers or laboring dwarves are in the fort, you'll receive a petition, and it's up to you if you want to try to build the location for them or not.  To satisfy the temple petitions, you must assign a priest (the game will remind you with an announcement when your temple is ready for one, after a certain value threshold is crossed.)  The main benefits of guildhalls and priests currently is the ability of guild members to share knowledge, and of priests to give inspiring sermons and comfort stressed-out dwarves.
+
+Less commonly, but also important, a villain may target your fortress, especially when you get up to having artifacts they might covet.  If you notice an artifact has been stolen in a non-kobold way (the announcements will be different, make sure you have a sheriff to receive the reports), you will be able to interrogate anybody about the crime - witness reports might be useful with a name, or they might just indicate the artifact is missing.  Interrogation leads to a report indicator on the left, which you can read in the usual way (with 'r'.)  This also opens up the counterintelligence screen, which will keep track of information for you.  If you manage to interrogate the handler of any treacherous dwarf, generally on a return visit, you might even get the name of their master, if they have one, or get details of other plots throughout the world, though most of them cannot impact your fort directly (yet.)
+
+Dwarves have some more general relationship types now (especially the historical ones, who can arrive as war buddies or athletic rivals), and they can also have multiple lovers or get divorced or have children before they are married.
+
+Most aquifers in the fort are now slower filling.  You still have to act pretty quickly (this makes them remain useful for wells and other liquid matter), but it is very possible to just wall them off or otherwise deal with the water if you are ready.  You can still place a wall on top of shallow water.  If you want an old-style aquifer, just embark where there's a "heavy aquifer."
+
+Your fort may also be invaded by horrible things if the necromancers or demons have been entertaining themselves.
+
+The main new bit in adventure mode is right in the beginning - well, not quite.  Don't be fooled by the first character creation screen (which is unchanged), you'll get to the good stuff right after.  There are a lot of new options there (starting background, religion, starting site selection, equipment including quality, mounts/pets), including the option to make party members, who can be from different civilization.  Mounts greatly speed up travel if everybody has one (make sure the mount is their pet.)  If you forget a mount or meet with tragedy, you can claim a new mount generally from the pastures of human cities, or wherever tame animals can be found.  You do not have to purchase them currently.  Just press 'h' near one (the same key you use to mount and lead animals.)  If the wrong party member claims it, that party member can give it to the right one as a gift (a new conversation option which can be applied to anybody.)  Pack animals (including many mounts) can also carry items.  Press 'p' to place an item on a creature.  This can greatly increase your capacity to carry food or treasure.  If you claim a pet that is unnamed, you can name them as a conversation option (with the pet.)
+
+In adventure mode, if you have judge of intent, you'll be able to see the new readout of your conversation partner's mood/relationship with you (without that skill, you still get some basic info.)  You have the ability to interrogate people, using the persuade and intimidate skills, though this is limited now because we didn't get to most evidence.  People can confess to schemes, and sometimes that'll even be meaningful, but it's mostly a giant mush of data until we add more structure.  But it shouldn't be hard to find some even without proper story/evidence hooks - just go to a nearby castle in a human town, and some portion of the nobles and administrators there will be up to something.  But it'll be ultimately unsatisfying until we get to more.  As a small note, only confessions of schemes will show up in the new adv mode intrigue view currently (confessions of masters/handlers don't have a proper evidence link yet.)  Finally, there were a ton of existing conversation options and most are not linked to the new conversation variables (like confidence and agitation and how much they want to leave.)  But you should see them in action if you interrogate, argue about values, flatter, tell jokes or pacify.  Additionally, depending on personality, most people slowly loses patience with a conversation no matter what the subject is, unless they are kept entertained.  These ephemeral conversation values are reset every two hours, so don't worry if you lose a chance to speak to somebody at a given time.
+
+If you want to play with divination dice, you'll need to find a pedestal with some at a shrine.  About half of the shrines should have them, though a lot of the smaller road and intersection shrines won't have room and will just have statues.  Shrines labeled in text on the travel map have the best chance, since they are large.  Temples can also have them in the basement with the relics.  To roll dice, make sure they are in your hand and 'I'nteract with them.  Rolling should be an option there.  Once you do that, the roll announcement has a lot of information.  Statues generally give some idea as to whose shrine you are at.  Shrines can be both for organized religions or generally to a deity, and both types can have divination traditions.
+
+New stuff
+	(*) Guilds organize and petition for guildhalls, guild members can do skill demonstrations
+	(*) Members of organized religions can petition for temples and priesthood recognition, priests give sermons and comfort stressed dwarves
+	(*) Traitor dwarves, artifact heists, interrogation for crime from the justice screen, counterintelligence readout with organization charts
+	(*) Most aquifers are much slower filling
+	(*) Can start with a party in adventure mode
+	(*) Specify background and starting location and beliefs in adventure mode (most labor skills still meaningless)
+	(*) Can start with specified equipment and pets in adventure mode
+	(*) Tactical combat mode for adventurer party
+	(*) Adventurer can ride mounts, place items on pack animals, lead animals, claim pets, gift pets, and name pets (rider skill matters for melee/ranged rolls currently)
+	(*) Can pet animals in adventure mode
+	(*) Addition mood information in adventure mode conversations, (simple) interrogation options, flattery, joke-telling, calming remarks, (very simple) sermons
+	(*) Simple intrigue display with actors and charts discovered in interrogation in adventure mode (in 'Q')
+	(*) Divination shrines with dice and various effects
+	(*) Lots of new intermediate positions (mostly without new mechanics) in entities (chamberlains etc.)
+	(*) Alliances against world-ending threats in world generation
+	(*) Various villainous activity in world generation, in play off-site, and (more limited) in fort mode, world generation surveillance, interrogation and punishment.  Historical plots include theft, sabotage, abduction, assassination, coups, corrupt advancement promises, embezzlement, starting wars, and framing enemies.
+	(*) Romantic relationship changes (multiple lovers, affairs, children outside marriage, divorces, etc.) as well as other relationship changes and details (friendship/rival types, variables like trust, respect and loyalty)
+	(*) Merchant companies, military orders and mercenary companies, craft guilds in world generation
+	(*) Individual mercenaries and companies can upgrade their equipment, and richer world gen people can purchase houses and build up their own city towers
+	(*) Various religious interactions (shrine building, sermons, persecution) in world generation, lots of religious demographics tracking which influences shrine creation, religious sites and sermons influencing membership numbers, holy cities and a few levels of priest
+	(*) Various horrifying new necromancer/mummy/demon/vampire etc. matter - snow-balling zombie invasions, multiple experiment types, intelligent undead lieutenants with new powers, nightmarish summons, spreading evil zones, promises of immortality in villainous plots
+	(*) Dwarves can trigger dig-deep disasters in world generation, with repercussions coming to other sites, including fort mode
+	(*) Some new locations, some map details still in-progress, monasteries, private city towers, guildhalls, merchant counting houses, forts (bandits and mercenaries), castles have returned (basically unchanged), better necromancer towers and simple outlying buildings
+
+Major bug fixes
+	(*) Fixed visitor crash related to broken meetings
+	(*) Fixed crash related to broken crimes and travelers/sent-away dwarves
+
+Other bug fixes/tweaks
+	(*) Changed werecreature trigger condition
+	(*) Bogeyman limited to a few regions and given new powers
+	(*) Fixed error where bandit groups would be deleted prematurely in worldgen
+	(*) Fixed size issue with certain werecreatures
+	(*) Fixed bug where only last half of performance sentence was shown
+	(*) Fixed problem where biome and landmass names were sometimes split on the same biome/landmass
+
+******************************************************
+
+Release notes for 0.44.12 (July 7, 2018):
+
+Just some cleaning before we embark on the villain changes.  There's a new offloading popup that can come up on the season change if you have enough activity in your world; it can take a little time in larger worlds, but that's all time that is no longer intermittent lag and it's also less time overall due to reduced redundancies.  If you have an autosave, the offload will be incorporated into that, so autosaves might seem slightly longer (if so, you are also getting the same lag reduction.)
+
+Major bug fixes
+	(*) Fixed crash from corrupted units
+	(*) Made baron elevate to count properly
+	(*) Removed intermittent lag from off-site conceptions and births (added seasonal unit offloading)
+	(*) Made squad orders respect successful site conquest (so new members don't try to reconquer)
+
+Other bug fixes/tweaks
+	(*) Fixed broken display for multiple adventurer agreements
+	(*) Show proper mission text for messengers instead of No Job
+	(*) Made tantruming dwarves cancel activities
+	(*) Controlled how market links are formed somewhat
+
+******************************************************
+
+Release notes for 0.44.11 (June 23, 2018):
+
+There are now peaceful and not-so-peaceful ways of expanding your influence in the world.  Once a site becomes linked to you (through prosperity or by conquest; you'll see a message), you can send a messenger there to request workers, or send dwarves from the fort out to such sites (from v-p).  This only works on historical figures, so you might find you don't have off-site workers available at first, though some sites do have them.  This release should also improve the issues dwarves were having with negative thoughts, and they can also now experience permanent changes in their personalities and intellectual values due to events in their lives.
+
+Note: Insurrections were such a problem in sites that I had to turn them off for your fortress's holdings; we'll get back to that later.  It wasn't even the insurrections, really; the dwarves were bailing on the occupation immediately because they were afraid of insurrections.
+
+New stuff
+	(*) Your civilization will send out groups to found sites near prosperous fortresses
+	(*) Existing sites near prosperous fortresses will associate themselves to those fortresses
+	(*) Added ability to take over sites and install administrators
+	(*) Can view your new holdings from the 'c' screen
+	(*) Can send workers off-site and send out messengers to request their return
+	(*) Mulling over long-term memories can lead to shifts in intellectual values and personality changes
+
+Major bug fixes
+	(*) Fixed hauling route crash
+	(*) Fixed problem causing county stage to be skipped in noble elevation
+	(*) Stopped all visiting barons from being elevated along with your baron
+	(*) Changed horror calculation from seeing a dead body
+	(*) Stopped similar memories close in time from taking all the memory space
+	(*) Stopped stuttering lag from repeated vegetation connectivity checks
+
+Other bug fixes/tweaks
+	(*) Camping refugees will be awake during the day now
+
+******************************************************
+
+Release notes for 0.44.10 (May 5, 2018):
+
+Here's our next effort, which should change the general situation regarding the (often inebriated) fortress dwarves and their lack of apparent stress.  Part of this involves a new system of memories, which we'll be improving as we go now.  You'll be able to see these in thought paragraphs as they are remembered, so don't worry if they aren't apparent at first.  There were also other problems with inebriation and overall stress balance; some of the latter will be ongoing, if we've overcorrected, as varied long-term forts are difficult to test, but we'll continue working with it.
+
+I've updated how the adventurer information log works.  It's hopefully a bit more useful for navigation now, when it comes to adventuring and reporting back what has happened.  Old saves might not have everything linked up at first.  Hearing rumors again and so forth should make the log start to work better for them.  You can also cross narrow rivers in travel now (the ones that are jumpable or near jumpable at a sprint.)  Uncrossable rivers will display with double lines in the travel view.
+
+New stuff
+	(*) Made short and long term memories of emotions and their circumstances
+
+Major bug fixes
+	(*) Fixed crash relating to religion trying to store holy relic without a temple
+	(*) Stopped inebriation personality alterations from being permanent
+
+Other bug fixes/tweaks
+	(*) Balanced stress effects
+	(*) Allowed nicknaming of all buildings/zones/stockpiles
+	(*) Can now zoom to item and unit for item inaccessible announcements
+	(*) Added dwarf-style personality and other information in adventurer description from status screen
+	(*) Updated adventurer log screen
+	(*) Allowed adventurer to cross over narrow rivers in travel map
+	(*) Shows status of single assigned workers in q/t workshop menus
+	(*) Separated thoughts for seeing somebody die and finding the body
+	(*) Changed how drunken fistfights work
+	(*) Side-stepped unit load failure, creating substitute unit upon irreversible corruption
+	(*) Added check for duplicate items from returning squads and others to avoid crashes/corruption
+
+******************************************************
+
+Release notes for 0.44.09 (April 1, 2018):
+
+And the linux freeze fix process broke projectiles.  So that's hopefully all working all around now.
+
+Major bug fixes
+	(*) Made projectiles and weapon traps work again
+
+Other bug fixes/tweaks
+	(*) Changed w.g. population calculation for conflicts
+
+******************************************************
+
+Release notes for 0.44.08 (March 28, 2018):
+
+This should stop Linux from freezing.  It also includes some other bug fixes that could be quickly incorporated.
+
+Major bug fixes
+	(*) Stopped linux from freezing
+	(*) Fixed crash from demanding tribute from parentless site entities
+	(*) Stopped artifacts from moving out of backpack and similar when at old forts or lairs
+	(*) Properly stopped imprisoned dwarves from claiming positions in fort
+
+Other bug fixes/tweaks
+	(*) Made dwarves visit museums properly
+	(*) Stopped every tribute rejection from being attached to your fort's history
+	(*) Cleaned tribute/spoil reports between forts properly
+	(*) Added military tactics and leaderships as relevant skills for squad-leading nobles/appointments
+	(*) Made uniform settings copy properly when pasting schedule orders
+
+******************************************************
+
+Release notes for 0.44.07 (March 12, 2018):
+
+This is a stability patch for the last release.  A few raid-related crashes are fixed, as well as some strange behavior related to stolen livestock.  To get the full fix for stolen livestock, old saves will need to add [PET] to beak dogs and unicorns.  This isn't crucial; if it isn't done, those animals will no longer be stolen in that save.  But if you were experiencing the bug, the existing animals will be broken until the tag is added.
+
+Major bug fixes
+	(*) Fixed crash from returning certain kinds of contained loot
+	(*) Fixed crash from exploring entity-free site
+	(*) Stopped certain failed tribute raids from staying out forever
+	(*) Stopped certain stolen livestock from being treated like half-citizens
+
+Other bug fixes/tweaks
+	(*) Fixed sieger behavior that caused them to mill around outside for too long
+	(*) Stopped stolen livestock from being attacked after they are named
+	(*) Fixed failure to give half of the one-time tribute items
+	(*) Allowed military tactics as starting skill choice on embark
+	(*) Corrected one-time tribute text
+	(*) Made it produce a proper spoils report if only livestock are stolen
+
+******************************************************
+
+Release notes for 0.44.06 (March 9, 2018):
+
+Here's the first substantial update to the fortress's world map screen.  New raid options are available, and it shouldn't be hard for you to antagonize your neighbors now if that's what you want to do.  Use the 'd'etails option when preparing the raid to set what sorts of actions you'd like your raiders to perform.  Skills and equipment matter, and skills can be improved during missions.  The skill of your best tactician is important (you'll see feedback in the mission report.)  If you demand tribute on an ongoing basis and the target site agrees to your demands, you'll receive something like a merchant caravan on an annual basis a few seasons after the initial demand.  They'll drop goods off at your depot and depart.  These goods can be carried off immediately for storage, but there's a new report so you can look at a complete list of what was delivered; the same is true of spoils from raids.
+
+A few notes on the bug fixes below:  the identity fixes won't stop bad feelings from existing conflicts in old saves.  Also in old saves, distracted animals might still appear to be broken at first, but they should sort themselves out after a bit.
+
+New stuff
+	(*) Can pillage and raze and demand tribute from other sites
+	(*) Dwarves on missions can now can gain skills
+	(*) Military tactics skill is now gained and matters in off-site battles
+
+Major bug fixes
+	(*) Fixed several problems causing the meeting queue to get gummed up
+	(*) Made monster-type critters and non-monster-type critters have proper hostile again
+	(*) Allowed people in the same squad to know each other's identities
+	(*) Made scribe copy job cancel properly to free up materials
+	(*) Fixed calculation of available writing materials in library
+
+Other bug fixes/tweaks
+	(*) Various speed tweaks
+	(*) Made clean job work inside and on outdoor constructions
+	(*) Made clean jobs continue to nearby tiles
+	(*) Made drunkenness make you less private instead of more private and fixed a typo there
+	(*) Made dwarven adventurers experience trances properly
+	(*) Made non-historical populations defend sites post w.g.
+	(*) Made off-site raid stealth success depend on site
+	(*) Fixed broken flags on merchant historical event
+	(*) Stopped dwarves being dragged to cages/chains from trying to clean the floor
+	(*) Stopped live generals from being elevated from zombie populations
+	(*) Stopped animals from developing need for alcohol after experiencing trauma
+	(*) Stopped unintelligent creatures associated to civilizations, like domestic animals, from worshipping gods when given historical status
+	(*) Stopped animals from revealing the location of artifacts to questers
+	(*) Stopped animals from forming grudges and other chat-based relationships
+	(*) Sped up legends loading in high-artifact worlds
+	(*) Stopped rooting around in the dirt from resetting path
+	(*) Fixed issue causing certain older army units from not appearing
+	(*) Fixed a few errors with abstract skill calculation for armies
+	(*) Reconciled bandit's map and in-play valuations of opponent strength to stop aborted ambushes
+	(*) Disallowed certain flying/swimming/visual/projectile/attack moves involving half-stairways
+	(*) Made branches/twigs burning over walls leave behind a floor properly
+
+
+******************************************************
+
+Release notes for 0.44.05 (January 14, 2018):
+
+One fix on top of the last release, for visitors that had become broken, acting like partial residents.  Any broken visitors themselves are unpatchable in affected saves, so it was important to get this one up quickly.  Old saves are compatible as usual, and should not get new broken visitors, but visitors that are currently acting strange will still be acting strange, and likely will not depart.
+
+Major bug fixes
+	(*) Stopped certain visitors from being treated like (buggy) residents
+
+******************************************************
+
+Release notes for 0.44.04 (January 10, 2018):
+
+This is another bug fix release to start the new year.  A few of the bad five-second freeze/lag problems caused by the new release have been fixed, and large beasts should move off the edge of the map again.  Over in adventure mode, inappropriate creatures shouldn't yell 'identify yourself' and companions should participate in conflicts as they used to, and some other issues of reputation should be solved, especially among citizens of the starting town.
+
+Major bug fixes
+	(*) Stopped displayed artifacts from duplicating on retirement/offloading of site
+	(*) Made attacking giant monsters path to targets properly again
+	(*) Stopped extraneous dwarf mode conversation text generation (freezes)
+	(*) Stopped negative artifact location rumors from passing around so much (freezes)
+	(*) Made removing first stop of hauling route w/ assigned vehicle not cause issues/crashes
+	(*) Stopped crash caused by yielding to muggers
+	(*) Stopped creatures from asking for identity when they shouldn't be able to speak
+	(*) Fixed problem with companions and other close people not always recognizing your relationship to them
+
+Other bug fixes/tweaks
+	(*) Made returning mercenaries stop petitioning for sanctuary (existing petitions will still be there)
+	(*) Prevented unirrigated etc. top-left corners etc. from stopping planting in farms
+	(*) Stopped inaccessible pile tiles from stopping bin/barrel placement throughout pile
+	(*) Allowed stairs to be carved in ice that is one tile above stone properly
+	(*) Added building item TSK indicator to ground items as well
+	(*) Stopped designations for removal of ramps/constructions from working on hidden tiles
+	(*) Removed incorrect back instruction from burrow naming
+	(*) Properly saved freeing hf in relevant historical event (Quietust)
+	(*) Fixed a few cases of historical event for identities reporting wrong historical figure
+	(*) Fixed kitchen job hotkeys
+
+******************************************************
+
+Release notes for 0.44.03 (December 25, 2017):
+
+Here are some bug fixes to close out the year.  Notably, visitors shouldn't arrive in such large numbers so early on, and fewer of them should overstay their welcome (in old saves, people already in transit will arrive, but it should taper off.)  Adventure mode commanders etc. should recognize more of your accomplishments properly and not talk about unknown creatures so much, but identities have introduced some non-trivial issues there that we'll have to build through more carefully, and there'll be some ongoing silliness.
+
+Major bug fixes
+	(*) Fixed crash from guide agreements
+	(*) Fixed crash related to off-loaded items coming into play
+	(*) Made agents and roaming questers respect visitor cap
+	(*) Fixed problem causing agents not to check fort for tavern
+	(*) Made fort-visiting questers leave properly
+	(*) Made fort claim certain looted artifacts properly instead of leaving them on edge of map
+	(*) Fixed several cases of "unknown creature" utterances
+	(*) Fixed problem with neighbors not recognizing you, including commander and other quest givers
+	(*) Stopped undisplayed items from lingering on display furniture
+	(*) Made dwarven off-site squads stranded during preparation return to the fort
+	(*) Made 32-bit Mac version recognize new keys
+
+Other bug fixes/tweaks
+	(*) Fixed broken plant indicator on food stockpile
+	(*) Made opinion monologues on performances etc. show text properly
+	(*) Made log show completed kill orders properly
+
+******************************************************
+
+Release notes for 0.44.02 (November 23, 2017):
+
+Hopefully this'll stop the problems we've been having in world generation!
+
+Linux Update: I should be able to test the Linux drive on Saturday once I get the hard drive enclosure, and we'll go from there.  Apologies for the continuing delay.
+
+Major bug fixes
+	(*) Fixed world gen crash associated to agents checking on site government after it collapses
+
+Other bug fixes/tweaks
+	(*) Stopped returning pet dogs from petitioning for sanctuary like rescued prisoners
+	(*) Stopped uncontested raids reports from starting at year 0
+
+******************************************************
+
+Release notes for 0.44.01 (November 22, 2017):
+
+This is the artifact release, featuring the ability to send your dwarves off to cause trouble in the world, improved kobold sites, cover identities, artifact questers, and a bit of artifact diplomacy.
+
+In fort mode, the 'c' screen which used to list civilizations still does that as a suboption, but its main purpose now is to show the world map and allow you to interact with it.  You can either raid a neighbor generally, or send off squads to recover specific artifacts or rescue particular people (in which case, the squads will still bring back other artifacts and prisoners, but focus on the goal.)  A squad questing after an artifact will seek out information if the first site doesn't work out, and this might take several months, so be prepared.  Squads can also be captured during raids, though typically someone will return to tell the tale.  When squads return, a report will become available; a yellow 'R' will appear over on the left margin, and pressing 'r' will let you see it.  Sometimes reports are quite lengthy as squads stumble from tavern to tavern; you can press enter to skip to the end of the path animation.
+
+There are some rough edges here!  Be sure not to send off your commander if you are planning to reorganize your military, as they are the only one with the power to assign new squads and cannot do so while off the map.  There was a last-minute hiccup with artifacts known to be held by people (rather than stored on sites); these fort-mode missions will be fruitless for the moment; the most common instance here is books authored by people that then hang on to them, so don't try to steal their books!  It says on the map screen when an artifact is held by somebody, so it should be easy to avoid.  Raids do not bring back non-artifacts or build skills; these issues may or may not be addressed in the short-term depending on difficulties that arise.
+
+The interactions with heroes and invading armies are more straightforward.  There will either be 'P'etitions or a diplomacy popup to handle.
+
+In adventure mode, you can assume a cover identity.  You do this from the 'k' conversation menu (if you are already talking to somebody, it'll be hidden in "start new conversation".)  If you choose to link your identity to a civilization, you'll be carrying that baggage with you, especially when you are being interrogated by goblin guards, so one should be prudent.  To turn off the identity, go back to the "assume an identity" menu and choose the 'x' "no identity" option.  You can also reuse existing identities from this menu.
+
+People in adventure mode that are seeking an artifact will list "missing treasure" among their troubles, and you can then inquire further.
+
+In order to name an object, use 'I' to interact with it, and it'll be one of the options for appropriate objects.  For example, you can give a name to your spear or waterskin, but not to the water or food you start with.
+
+There are also various adventure rough edges.  For instance, if you pick up and then immediately replace a museum piece in adventure mode, and then tell somebody about it, you'll get credit as a Treasure Hunter.  It'll be difficult to fix that without additional property information, etc.  It's also generally hard right now to find artifact quests, as most things are in their proper place and/or not subject to an outside claim.  We'll be working with this a bit as we generally work on stabilizing the release.
+
+Overall, many of the changes occurred under the hood, in preparation for the myth and magic release, but now the magic release will be able to incorporate artifacts of all kinds without additional delay, so hopefully it was time well spent.
+
+As usual, your old saves should work, but please back them up before diving into the new release!  It is quite likely that forts will fall into technical ruin as bugs come up and are handled at this early stage.  Old forts won't have object additions like the pedestals and display cases, but they should be able to send out raids from the 'c' screen.
+
+We will be focusing on the worst bugs (crashes etc.) at first, and then we'll broaden out into other bugs, old and new, and minor suggestions/usability improvements, as well as a general smoothing out of the new features.  We're still working on the design side of the first magic release, so we anticipate we'll be doing smaller releases for a while.
+
+New stuff
+	(*) Ability to send out squads to raid sites, rescuing prisoners and recovering artifacts
+	(*) Display cases and pedestals, museum zones, both in forts and other sites
+	(*) Can view the world map w/ rumors from fort mode
+	(*) Artifacts created during worldgen: dwarf moods, named heroic objects, holy relics, heirlooms
+	(*) New artifact events in play and worldgen: questers seek artifacts and ask for or steal them, invaders demand artifacts
+	(*) New historical events associated to the creation of artifacts (used in fort and worldgen)
+	(*) Agents used by civilizations to gather information, can assume cover identities
+	(*) Improved kobold site maps
+	(*) Goblin site denizens demand an identity instead of immediately attacking every stranger
+	(*) More modding control over pets and other animals
+	(*) Adventurer can assume a cover identity at will
+	(*) Adventurer can name their possessions
+	(*) New adventurer reputations related to artifacts
+	(*) New religious activity: monks, pilgrims and prophets
+	(*) Museums and other room types can be added to fort locations like taverns and libraries
+	(*) Various additional data in the XML export
+
+Major bug fixes
+	(*) Fixed weapon trap crash vs. item breakage
+	(*) Fixed bug preventing monster slayers from visiting those forts with monsters to slay
+	(*) Made animated skulls, hair and other bits easier to pulp
+	(*) Made idle and vermin-hunting dwarves come down from trees more successfully
+	(*) Made thirst/hunger and being pushed out of the way less likely to terminate dances
+
+Other bug fixes/tweaks
+	(*) Alphabetized broad stock screen categories
+	(*) Fixed problem with historical bodies not respecting wounds/processing
+	(*) Fixed bug causing religions to worship too many gods, with duplicates
+	(*) Made simple burrow beasts start in caves as possible
+	(*) Fixed broken historical collection linkage with beast attacks during festivals
+	(*) Fixed one instance of broken animal person greetings
+	(*) Stopped natural animals from w.g. rampaging through sites owned by entities at peace with wildlife
+	(*) Took age into account for w.g. fights vs. body size (e.g. proper dragon size)
+	(*) Stopped people from being enough to satisfy a need to see great beasts
+	(*) Made visitors less nervous about going to neutral locations
+
+******************************************************
+
+Release notes for 0.43.05 (July 5, 2016):
+
+Here are the first official 64-bit releases!  This would not be possible without help from our community -- you can view the exciting and sometimes late-night discussion over in the 0.43.04 release thread if you want to see how the cake was baked.  This release should also make worlds generated with the same seed more consistent, and it has a few other minor fixes we managed to sneak in.
+
+New stuff
+	(*) 64-bit support, pulling the game from the distant past into the previous decade
+
+Major bug fixes
+	(*) Fixed problem with artistic skill assignment causing world histories to diverge
+	(*) Fixed problem with worldgen trade causing world histories to diverge
+
+Other bug fixes/tweaks
+	(*) Stopped babies/children from competing in w.g. events
+	(*) Made gorlaks able to open doors, stopped desizing of their heads
+	(*) Fixed some mem leaks
+
+******************************************************
+
+Release notes for 0.43.04 (June 20, 2016):
+
+Here's another bug-fix release.  Assuming no issues crop up immediately, we'll now dive into 64-bit land for next time!
+
+Major bug fixes
+	(*) Fixed error deciding when patients should be moved
+	(*) Fixed initialization problem with tools causing stone axes to be thought of as ranged
+	(*) Stopped completed work order jobs from checking off every matching order
+	(*) Stopped masterpiece trades in containers from triggering artwork defacement
+	(*) Stopped storage from always failing in the second tavern/library/temple you define
+	(*) Stopped broken crash-prone entry from appearing at the end of the stocks list
+
+Other bug fixes/tweaks
+	(*) Attackers will remove armor from unconscious opponents if it is blocking attacks
+	(*) Made people wear more armor according to their roles again
+	(*) Allowed new citizens with some previously site-wide occupations to be reassigned
+	(*) Allowed some site-wide occupations for dwarves
+	(*) Made combat damage weapon and armors depending on material differences etc.
+	(*) Made dwarves prefer undamaged equipment during the periodic uniform upgrades
+	(*) Allowed strong attacks/shakes to translate some force to joints and parent parts even if blocked by armor
+	(*) Reduced clothing stopping power based on penetration depth
+	(*) Made paper slurries stockpile-able (won't work without updated raws)
+	(*) Fixed problem with adv mode tribute demand check
+	(*) Fixed ghost initial positioning problem
+	(*) Made macros save correctly even if the macro directory is deleted
+
+******************************************************
+
+Release notes for 0.43.03 (May 22, 2016):
+
+Here are some more bug fixes.
+
+Major bug fixes
+	(*) Made customized magma forge jobs use metal instead of making things out of coal
+	(*) Adjusted conflict code to stop taverngoers from joining siegers over petty grievances
+	(*) Fixed material overcount in adv site work menu
+
+Other bug fixes/tweaks
+	(*) Made pain from broken tissues depend on relative part size
+	(*) Made embark profiles load fish properly
+	(*) Made assigning an animal to a restraint remove it from pasture assignments properly
+	(*) Made pasturing jobs respect connectivity in creation and in seeing if they should continue
+	(*) Made dwarves remove animals assigned to pastures from cages/chains that are in the pasture
+	(*) Fixed display error causing creature to be described as gigantic too often
+	(*) Allowed metal mechanisms to be made from the job manager
+	(*) Made dragonfire affect metal items and generally amplified fire effects a bit
+	(*) Stopped veins in large mineral clusters from being improperly restricted
+	(*) Stopped placement issue with minerals that had more than one specific environment
+	(*) Stopped woodcutters from using axes without edges (like training axes)
+	(*) Allowed soil critters to live in wider temperature ranges
+	(*) Fixed problem with temperature checks on certain wilderness populations
+	(*) Made construct mechanisms job show material
+	(*) Made mountain travel restriction not affect other actions
+	(*) Allowed adventure mode divers to move through deep water properly
+	(*) Made placing items on tables remove item from your inventory properly
+	(*) Made improvement reactions increase and apply skill properly
+	(*) Reported site of adventurer masterpieces correctly
+	(*) Stopped manually-set low frame rate cap from being stuck
+
+******************************************************
+
+Release notes for 0.43.02 (May 11, 2016):
+
+Smoothed out some rough areas in the adventure part of the release.  We'll be continuing on with bug fix releases.
+
+Major bug fixes
+	(*) Stopped zone corruption problem from adventure sites (caused crashes)
+	(*) Stopped adventure camps from being aged by the age of the world repeatedly
+	(*) Stopped certain site build orders from skipping the collapse check
+	(*) Stopped prisoners in goblin sites from starting no quarter fights with their rescuers
+	(*) Made people that join you stop personal/shared activities that might interfere them from following you
+
+Other bug fixes/tweaks
+	(*) Stopped felling of trees in the arena, so you wouldn't be teleported to a weird hidden region map
+	(*) Indicated child/baby state of prisoners during look etc.
+
+******************************************************
+
+Release notes for 0.43.01 (May 9, 2016):
+
+A new version number!  With the work order additions and adventurer-created sites, this one ended up with more new stuff and fewer bug fixes than expected, and my version calculator just tipped over at 0.43.  You can use the new 'b' site building option in adventure mode to create a site (outside the bounds of other sites).  For dwarf mode work orders, you can set conditions and details from the manager.  You can also create orders tied to specific shops from their workshop profiles.
+
+A miscellaneous note: in order to retire at the adventurer sites you create, you'll need to name the site, create a main hall zone, and claim the hall during conversation (or while shouting to yourself).
+
+Next up we'll be doing more bug fix releases to make sure we have a vaguely presentable DF before we disappear into a new compiler and 64 bits.
+
+New stuff
+	(*) Ability to build up new sites in adv mode, either yourself or by assigning companions
+	(*) Ability to do carpentry in adv mode
+	(*) Ability to chop down trees in adv mode
+	(*) Ability to make stone axes in adv mode
+	(*) Ability to pull branches from trees in adv mode
+	(*) Can put start conditions on work orders (by amount of resources or dependence on other work orders)
+	(*) Can specify materials/images/etc. in work orders
+	(*) Can create work order from profile which is tied to specific workshop
+	(*) Can set maximum number of shops that a general work order can task at once
+	(*) Can set maximum number of general work orders per shop or disallow them by profession or altogether (note: this won't work for active old-save jobs)
+	(*) Allowed perpetual work orders
+	(*) Repeatable work orders, ability to set restart frequencies
+
+Major bug fixes
+	(*) Stopped masterpiece trading from causing artisans to suffer effects of art defacement
+
+Other bug fixes/tweaks
+	(*) Got rid of work order limit of 30 jobs
+	(*) Improved work order filtering (respect partial vs. full results etc.)
+	(*) Stopped work orders from taking more than one slot per workshop
+	(*) Stopped non-citizens from being charged for violating production orders
+	(*) Stopped mother from getting both her and spouse's miscarriage thought
+	(*) Refreshed material list when deleting uniform item
+	(*) XML export now has the exact site rectangle
+
+******************************************************
+
 Release notes for 0.42.06 (February 10, 2016):
 
 Here's the material and image specification release, along with several important bug fixes.  There's more to be done with job settings -- we need to improve work orders and allow the decoration of specific objects, to name a few, but this should be a good start.
