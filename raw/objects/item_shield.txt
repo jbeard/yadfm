@@ -3,7 +3,7 @@ item_shield
 [OBJECT:ITEM]
 
 [ITEM_SHIELD:ITEM_SHIELD_SHIELD]
-[NAME:shield:shields]
+[NAME:round shield:round shields]
 [ARMORLEVEL:2]
 [BLOCKCHANCE:20]
 [UPSTEP:2]
