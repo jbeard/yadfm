@@ -80,7 +80,9 @@ http://www.bay12forums.com/smf/index.php?topic=80022.0
 [STATE_NAME_ADJ:ALL_SOLID:dolomite][DISPLAY_COLOR:7:7:1][TILE:'`']
 [REACTION_CLASS:FLUX] not CaCO3, has Mg, makes "calcined dolomite" in calcination instead of quicklime, not sure of effective differences
 [SEDIMENTARY]
-[MATERIAL_VALUE:2]
+if magnesium extraction reactions are enabled, this can be a source
+[METAL_ORE:MAGNESIUM:100]
+[MATERIAL_VALUE:30]
 [IS_STONE]
 [MELTING_POINT:16507]
 [BOILING_POINT:18000]
