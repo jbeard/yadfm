@@ -1,0 +1,120 @@
+reaction_other_enhanced
+
+[OBJECT:REACTION]
+
+adding water to calcium oxide (quicklime) produces calcium hydroxide (slaked lime).
+note, formerly included: reagent 1 liquid_misc no_subtype water no_matgloss
+[REACTION:MAKE_SLAKEDLIME]
+        [NAME:make slaked lime]
+	[BUILDING:SOAP_MAKER:CUSTOM_S]
+        [REAGENT:A:1:STONE:NO_SUBTYPE:STONE:QUICKLIME]
+        [PRODUCT:100:1:STONE:NO_SUBTYPE:STONE:SLAKEDLIME][PRODUCT_DIMENSION:150]
+	[SKILL:SOAP_MAKING]
+
+calcium hydroxide (slaked lime) can be mixed in aqueous solution with an aqueous solution of potassium carbonate (potash) to produce a precipitate of calcium carbonate (limestone) and potassium hydroxide (caustic potash)
+[REACTION:MAKE_LIME]
+        [NAME:make lime]
+	[BUILDING:SOAP_MAKER:CUSTOM_L]
+        [REAGENT:A:150:BAR:NONE:POTASH:NONE]
+        [REAGENT:B:1:STONE:NO_SUBTYPE:STONE:SLAKEDLIME]
+        [PRODUCT:100:1:STONE:NO_SUBTYPE:STONE:LIME][PRODUCT_DIMENSION:150]
+	[SKILL:SOAP_MAKING]
+
+bones can be burnt to make calcium oxide (quicklime)
+[REACTION:MAKE_QUICKLIME_FROM_BONE]
+        [NAME:make quicklime (from bone ash)]
+        [BUILDING:KILN:CUSTOM_Q]
+	[REAGENT:A:2:NONE:NONE:NONE:NONE][REACTION_CLASS:BONES]
+        [PRODUCT:100:1:STONE:NO_SUBTYPE:STONE:QUICKLIME][PRODUCT_DIMENSION:150]
+	[FUEL]
+	[SKILL:SOAP_MAKING]
+
+[REACTION:MAKE_SYNTHETIC_QUARTZ]
+        [NAME:make synthetic quartz]
+        [BUILDING:KILN:CUSTOM_Z]
+        [REAGENT:A:3:STONE:NO_SUBTYPE:STONE:OLIVINE]
+        [REAGENT:B:1:ROUGH:NO_SUBTYPE:STONE:CRYSTAL_ROCK]
+        [PRODUCT:100:4:ROUGH:NO_SUBTYPE:STONE:CRYSTAL_ROCK][PRODUCT_DIMENSION:150]
+	[FUEL]
+        [SKILL:ALCHEMY]
+
+Solvay Process
+sodium chloride (rock salt) + calcium carbonate flux (limestone, chalk, marble, dolomite) gives sodium carbonate (soda ash) + calcium chloride (road salt)
+[REACTION:MAKE_SODA_ASH]
+        [NAME:make soda ash (from salt and limestone)]
+	[BUILDING:SOAP_MAKER:CUSTOM_A]
+        [REAGENT:A:1:STONE:NO_SUBTYPE:STONE:ROCK_SALT]
+	[REAGENT:B:1:BOULDER:NO_SUBTYPE:NONE:NONE][REACTION_CLASS:FLUX]
+        [PRODUCT:100:1:STONE:NO_SUBTYPE:STONE:SODA_ASH][PRODUCT_DIMENSION:150]
+	[SKILL:SOAP_MAKING]
+
+DeVille Process, phase 1
+sodium hydroxide (lye) can be mixed in aqueous solution with an aqueous solution of potassium carbonate (potash) to produce a precipitate of sodium carbonate (soda ash) and potassium hydroxide (caustic potash)
+[REACTION:MAKE_SODA_ASH2]
+        [NAME:make soda ash (from lye and potash)]
+	[BUILDING:SOAP_MAKER:CUSTOM_H]
+        [REAGENT:A:1:BARREL:NONE:NONE:NONE][CONTAINS_LYE]
+        [REAGENT:B:150:BAR:NONE:POTASH:NONE]
+        [PRODUCT:100:1:STONE:NO_SUBTYPE:STONE:SODA_ASH][PRODUCT_DIMENSION:150]
+	[SKILL:SOAP_MAKING]
+
+soda, lime, silica, alumina, and small quantities of fining agents (sodium chloride)
+[REACTION:MAKE_SODA_LIME_GLASS]
+        [NAME:make soda lime glass]
+        [BUILDING:KILN:CUSTOM_G]
+        [REAGENT:A:1:STONE:NO_SUBTYPE:STONE:ROCK_SALT]
+        [REAGENT:B:1:STONE:NO_SUBTYPE:STONE:OLIVINE]
+        [REAGENT:C:1:STONE:NO_SUBTYPE:STONE:ALUMINA]
+        [REAGENT:D:1:STONE:NO_SUBTYPE:STONE:SODA_ASH]
+        [PRODUCT:100:5:STONE:NO_SUBTYPE:GLASS_GREEN:NO_MATGLOSS][PRODUCT_DIMENSION:150]
+	[FUEL]
+        [SKILL:GLASSMAKER]
+
+[REACTION:MAKE_PLANT_CHARCOAL]
+	[NAME:make charcoal (from plants)]
+	[BUILDING:KILN:NONE]
+	[REAGENT:A:3:PLANT:NO_SUBTYPE:NONE:NONE:NONE]
+	[PRODUCT:100:1:BAR:NO_SUBTYPE:COAL:COKE][PRODUCT_DIMENSION:150]
+	[FUEL]
+	[SKILL:WOOD_BURNING]
+
+[REACTION:MAKE_BRICKS_TAN]
+	[NAME:make bricks (from any sand)]
+	[BUILDING:KILN:NONE]
+	[REAGENT:A:1:POWDER_MISC:NONE:NONE:NONE][REACTION_CLASS:SAND]
+	[PRODUCT:100:1:BLOCKS:NO_SUBTYPE:GET_MATERIAL_FROM_REAGENT:A:NONE]
+	[FUEL]
+	[SKILL:GLASSMAKER]
+
+[REACTION:MAKE_BRICKS_RED]
+	[NAME:make bricks (from red sand)]
+	[BUILDING:KILN:NONE]
+	[REAGENT:A:1:POWDER_MISC:NONE:NONE:SAND_RED][REACTION_CLASS:SAND]
+	[PRODUCT:100:1:BLOCKS:NO_SUBTYPE:GET_MATERIAL_FROM_REAGENT:A:NONE]
+	[FUEL]
+	[SKILL:GLASSMAKER]
+
+[REACTION:MAKE_BRICKS_YELLOW]
+	[NAME:make bricks (from yellow sand)]
+	[BUILDING:KILN:NONE]
+	[REAGENT:A:1:POWDER_MISC:NONE:NONE:SAND_YELLOW][REACTION_CLASS:SAND]
+	[PRODUCT:100:1:BLOCKS:NO_SUBTYPE:GET_MATERIAL_FROM_REAGENT:A:NONE]
+	[FUEL]
+	[SKILL:GLASSMAKER]
+
+[REACTION:MAKE_BRICKS_WHITE]
+	[NAME:make bricks (from white sand)]
+	[BUILDING:KILN:NONE]
+	[REAGENT:A:1:POWDER_MISC:NONE:NONE:SAND_WHITE][REACTION_CLASS:SAND]
+	[PRODUCT:100:1:BLOCKS:NO_SUBTYPE:GET_MATERIAL_FROM_REAGENT:A:NONE]
+	[FUEL]
+	[SKILL:GLASSMAKER]
+
+[REACTION:MAKE_BRICKS_BLACK]
+	[NAME:make bricks (from black sand)]
+	[BUILDING:KILN:NONE]
+	[REAGENT:A:1:POWDER_MISC:NONE:NONE:SAND_BLACK][REACTION_CLASS:SAND]
+	[PRODUCT:100:1:BLOCKS:NO_SUBTYPE:GET_MATERIAL_FROM_REAGENT:A:NONE]
+	[FUEL]
+	[SKILL:GLASSMAKER]
+
