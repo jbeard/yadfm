@@ -1,4 +1,4 @@
-reaction_kobold
+reaction_tribal
 
 [OBJECT:REACTION]
 
@@ -412,3 +412,4 @@ reaction_kobold
 	[REAGENT:B:1:WOOD:NO_SUBTYPE:NONE:NONE]
 	[PRODUCT:100:1:STATUE:NO_SUBTYPE:METAL:PLATINUM]
 	[SKILL:STONECRAFT]
+
