@@ -1,4 +1,4 @@
-reaction_wanderer
+reaction_adventurer
 
 [OBJECT:REACTION]
 
