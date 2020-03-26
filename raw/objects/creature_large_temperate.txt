@@ -485,6 +485,18 @@ creature_large_temperate
 			[TL_COLOR_MODIFIER:IRIS_EYE_BROWN:1]
 				[TLCM_NOUN:eyes:PLURAL]
 
+[CREATURE:ARCTIC_FOX]
+	[COPY_TAGS_FROM:FOX]
+	[GO_TO_START]
+	[DESCRIPTION:A small carnivorous animal found in frozen climates.  It has white fur and is known for its cleverness.]
+	[NAME:arctic fox:arctic foxes:arctic fox]
+	[CASTE_NAME:arctic fox:arctic foxes:arctic fox]
+	[CHILD:1][GENERAL_CHILD_NAME:arctic fox pup:arctic fox pups]
+	[CREATURE_TILE:'f'][COLOR:4:0:0]
+	[BIOME:TUNDRA]
+	[GO_TO_END]
+	[PREFSTRING:cunning]
+
 [CREATURE:GIANT_FOX]
 	[COPY_TAGS_FROM:FOX]
 	[APPLY_CREATURE_VARIATION:GIANT]
