@@ -9191,6 +9191,10 @@ language_words
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
 
+[WORD:VOID_VERB]
+	[VERB:void:voids:voided:voided:voiding]
+		[STANDARD_VERB]
+
 [WORD:VOLCANO]
 	[NOUN:volcano:volcanos]
 		[THE_COMPOUND_NOUN_SING]
