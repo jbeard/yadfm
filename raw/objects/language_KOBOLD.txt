@@ -2103,7 +2103,7 @@ language_KOBOLD
 	[T_WORD:YEARLING:breeyrimus]
 	[T_WORD:YELL:jeesanin]
 	[T_WORD:YELLOW:jladeemis]
-	[T_WORD:YOR:chuslulber]
+	[T_WORD:YORE:chuslulber]
 	[T_WORD:YOUNG:klotobin]
 	[T_WORD:YOUTH:richrisrus]
 	[T_WORD:ZEAL:tumoklus]
