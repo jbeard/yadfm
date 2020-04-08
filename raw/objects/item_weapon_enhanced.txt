@@ -27,7 +27,7 @@ item_weapon_enhanced
 [ATTACK:EDGE:10:50:fling:flings:NO_SUB:2000]
 
 [ITEM_WEAPON:ITEM_WEAPON_CLUB]
-[NAME:club:clubs]
+[NAME:truncheon:truncheons]
 [SIZE:300]
 [SKILL:MACE]
 [TWO_HANDED:30000]
