@@ -1290,7 +1290,7 @@ material_template_default
 	[GENERATES_MIASMA]
 	[MEAT]
 	[BUTCHER_SPECIAL:MEAT:NONE]
-	[MEAT_NAME:spleen:pudding:pudding]
+	[MEAT_NAME:NONE:spleen pudding:spleen pudding]
 	[EDIBLE_VERMIN]
 	[EDIBLE_COOKED]
 
