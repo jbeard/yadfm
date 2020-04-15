@@ -1,6 +1,7 @@
 gamelog.txt
 errorlog.txt
 map_rejection_log.txt
+data/init/embark_profiles.txt
 data/save/*
 data/*.rar
 region*-world*.txt
