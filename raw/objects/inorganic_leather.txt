@@ -46,7 +46,7 @@ inorganic_leather
 	[ABSORPTION:100]
 	This lets the game know to use this item to determine the exact material type for the leather product in the tanning reaction.
 	[MATERIAL_REACTION_PRODUCT:TAN_MAT:CREATURE_MAT:ANIMAL_GENERIC:LEATHER]
-	[MATERIAL_REACTION_PRODUCT:TAN_MAT:CREATURE_MAT:ANIMAL_GENERIC:PARCHMENT]
+	[MATERIAL_REACTION_PRODUCT:PARCHMENT_MAT:CREATURE_MAT:ANIMAL_GENERIC:PARCHMENT]
 	This lets the game know that an animal was likely killed in the production of this item.
 	[IMPLIES_ANIMAL_KILL]
 	[ROTS]
