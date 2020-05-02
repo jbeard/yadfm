@@ -315,8 +315,7 @@ material_template_default
 	This lets the game know that an animal was likely killed in the production of this item.
 	[IMPLIES_ANIMAL_KILL]
 	[ROTS]
-	[REACTION_CLASS:SKIN]
-	[REACTION_CLASS:SKIN_LEATHER]
+	[REACTION_CLASS:SKIN_FUR]
 	[STOCKPILE_GLOB]
 	[DO_NOT_CLEAN_GLOB]
 	[BUTCHER_SPECIAL:GLOB:NONE]
@@ -423,8 +422,7 @@ material_template_default
 	This lets the game know that an animal was likely killed in the production of this item.
 	[IMPLIES_ANIMAL_KILL]
 	[ROTS]
-	[REACTION_CLASS:SKIN]
-	[REACTION_CLASS:SKIN_LEATHER]
+	[REACTION_CLASS:SKIN_HIDE]
 	[STOCKPILE_GLOB]
 	[DO_NOT_CLEAN_GLOB]
 	[BUTCHER_SPECIAL:GLOB:NONE]
