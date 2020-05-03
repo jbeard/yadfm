@@ -9,9 +9,11 @@ plant_standard
 
 	Here the material is added to the plant, using a template from the material file.
 	[USE_MATERIAL_TEMPLATE:STRUCTURAL:STRUCTURAL_PLANT_TEMPLATE]
+		[MATERIAL_REACTION_PRODUCT:DYE_MAT:LOCAL_PLANT_MAT:MILL]
 		[MATERIAL_VALUE:2]
 		[MATERIAL_REACTION_PRODUCT:DRINK_MAT:LOCAL_PLANT_MAT:DRINK]
 		[MATERIAL_REACTION_PRODUCT:SEED_MAT:LOCAL_PLANT_MAT:SEED]
+		[MATERIAL_REACTION_PRODUCT:MILL_MAT:LOCAL_PLANT_MAT:MILL]
 
 	Here the material is marked as the structural material (this could be below the edible tags which come next).  In general, you can use LOCAL_PLANT_MAT|<token>, PLANT_MAT|<plant>|<token>, CREATURE_MAT|<creature>|<token> or INORGANIC|IRON (though the game might hiccup for a while specifically on plants that aren't structurally plants).
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
@@ -24,8 +26,18 @@ plant_standard
 		[EDIBLE_VERMIN]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
-	[PICKED_TILE:6][PICKED_COLOR:5:0:0]
-	[GROWDUR:300][VALUE:2]
+	[PICKED_TILE:6][PICKED_COLOR:5:0:0][DEAD_PICKED_TILE:6]
+	[GROWDUR:600][VALUE:2][REACTION_CLASS:DYE]
+
+	[USE_MATERIAL_TEMPLATE:MILL:PLANT_POWDER_TEMPLATE]
+		[STATE_NAME_ADJ:ALL_SOLID:violet plump helmet dye]
+		[STATE_COLOR:ALL_SOLID:VIOLET]
+		[DISPLAY_COLOR:5:5:1]
+		[MATERIAL_VALUE:20]
+		[POWDER_DYE:VIOLET]
+		[PREFIX:NONE]
+		[REACTION_CLASS:VIOLET]
+	[MILL:LOCAL_PLANT_MAT:MILL]
 
 	Next we establish an alcohol material in much the same way as the structural material.
 	
