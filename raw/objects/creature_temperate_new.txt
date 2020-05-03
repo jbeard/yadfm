@@ -97,6 +97,8 @@ Wild boars were sponsored by the generous contributions of the Bay 12 community.
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph, NO DATA
 	[SWIMS_INNATE]
 	[MUNDANE]
+	[SELECT_MATERIAL:MUSCLE]
+		[MEAT_NAME:NONE:pork:pork]
 	[CASTE:FEMALE]
 		[FEMALE]
 		[MULTIPLE_LITTER_RARE]
